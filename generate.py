@@ -30,20 +30,29 @@ CATS = [
     ("Weekend Getaway",    "weekend-getaway",     "Chapter retreats and road trips deserve merch to match the memory."),
 ]
 
-MEANDER = "data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.18)'/%3E%3C/svg%3E"
+DESIGN_LABELS = [
+    "Classic Design","Letters Edition","Vintage Print","Bold Script",
+    "Modern Design","Premium Edition","Heritage Print","Signature Edition",
+    "Arch Design","Block Letter Print","Crest Edition","Script Design",
+]
+
+MEANDER_URL = "data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.18)'/%3E%3C/svg%3E"
+MEANDER_DARK_URL = "data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.06)'/%3E%3C/svg%3E"
+
+COL_SVG_DARK = '<svg width="32" height="32" viewBox="0 0 44 44" fill="none" style="opacity:0.18"><rect x="6" y="38" width="32" height="3" fill="#3D2A0A"/><rect x="10" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="20" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="30" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="6" y="6" width="32" height="4" fill="#3D2A0A"/><rect x="4" y="3" width="36" height="3" fill="#3D2A0A"/></svg>'
 
 CSS = """
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{--obsidian:#0A0A0A;--gold:#B8963E;--gold-lt:#D4AF60;--cream:#F0EBE0;--muted:#5C5750;--border:rgba(184,150,62,0.2);}
+:root{--obsidian:#0A0A0A;--gold:#B8963E;--gold-lt:#D4AF60;--cream:#F0EBE0;--muted:#5C5750;--border:rgba(184,150,62,0.2);--card:#111111;}
 body{background:var(--obsidian);color:var(--cream);font-family:'DM Sans',sans-serif;min-height:100vh;}
-.meander{width:100%;height:12px;background-image:url('""" + MEANDER + """');background-repeat:repeat-x;}
+.meander{width:100%;height:12px;background-image:url('""" + MEANDER_URL + """');background-repeat:repeat-x;}
 nav{display:flex;justify-content:space-between;align-items:center;padding:22px 60px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);z-index:100;}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--cream);text-decoration:none;}
 .nav-logo em{font-style:normal;color:var(--gold);}
 .nav-back{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-back:hover{color:var(--cream);}
-.eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;}
-.rule{width:36px;height:1px;background:var(--gold);margin:24px auto;}
+.eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.rule{width:36px;height:1px;background:var(--gold);margin:22px auto;}
 .hero{text-align:center;padding:88px 60px 72px;border-bottom:1px solid var(--border);}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,8vw,96px);font-weight:600;line-height:0.92;color:var(--cream);}
 .hero-sub{font-size:14px;font-weight:300;color:var(--muted);font-style:italic;}
@@ -62,31 +71,46 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 6
 footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
 .foot-brand{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);}
 .foot-tag{font-size:12px;color:var(--muted);font-style:italic;}
-.cat-hero{text-align:center;padding:100px 60px 80px;border-bottom:1px solid var(--border);}
-.cat-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,6vw,80px);font-weight:600;line-height:1;color:var(--cream);}
-.cat-desc{font-size:16px;font-weight:300;color:var(--muted);max-width:500px;margin:0 auto 40px;line-height:1.75;}
-.browse-section{padding:56px 60px 80px;max-width:1280px;margin:0 auto;}
+.cat-hero-banner{position:relative;padding:120px 60px 88px;text-align:center;background:linear-gradient(160deg,#070707 0%,#100E04 100%);overflow:hidden;border-bottom:1px solid var(--border);}
+.cat-hero-banner::before{content:'';position:absolute;inset:0;background-image:url('""" + MEANDER_DARK_URL + """');background-repeat:repeat;background-size:40px 12px;pointer-events:none;}
+.cat-hero-content{position:relative;z-index:1;}
+.cat-hero-banner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:600;line-height:0.9;color:var(--cream);margin-bottom:0;}
+.cat-hero-banner .eyebrow{color:var(--gold);margin-bottom:20px;}
+.cat-desc{font-size:15px;font-weight:300;color:var(--muted);max-width:520px;margin:0 auto 40px;line-height:1.8;}
+.designs-section{padding:56px 60px 72px;max-width:1320px;margin:0 auto;}
+.designs-label{font-size:11px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
+.designs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.design-card{background:var(--card);border:1px solid var(--border);transition:border-color .3s,transform .25s;cursor:pointer;text-decoration:none;display:block;}
+.design-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+.design-img{aspect-ratio:4/5;background:#F5F3EE;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden;}
+.design-ph-label{font-size:9px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#8A7060;}
+.design-info{padding:12px 14px;border-top:1px solid var(--border);}
+.design-name{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:500;color:var(--cream);display:block;margin-bottom:2px;}
+.design-num{font-size:10px;color:var(--muted);letter-spacing:0.1em;}
+.browse-section{padding:0 60px 72px;max-width:1320px;margin:0 auto;border-top:1px solid var(--border);padding-top:56px;}
 .browse-label{font-size:11px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
 .browse-grid{display:grid;grid-template-columns:repeat(4,1fr);}
 .browse-item{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;color:var(--muted);text-decoration:none;padding:13px 12px 13px 0;border-bottom:1px solid rgba(184,150,62,0.1);display:block;transition:color .2s;}
 .browse-item:hover{color:var(--cream);}
 @media(max-width:1024px){
-  nav,footer{padding-left:32px;padding-right:32px;}
-  .hero{padding:64px 32px 56px;}
-  .cat-section,.browse-section{padding-left:32px;padding-right:32px;}
-  .cat-grid,.browse-grid{grid-template-columns:repeat(3,1fr);}
-  .cta{padding:56px 32px;}
-  .cat-hero{padding:72px 32px 60px;}
+nav,footer{padding-left:32px;padding-right:32px;}
+.hero,.cat-hero-banner{padding-left:32px;padding-right:32px;}
+.cat-hero-banner{padding-top:80px;padding-bottom:64px;}
+.cat-section,.designs-section,.browse-section{padding-left:32px;padding-right:32px;}
+.cat-grid,.browse-grid{grid-template-columns:repeat(3,1fr);}
+.designs-grid{grid-template-columns:repeat(3,1fr);}
+.cta{padding:56px 32px;}
 }
 @media(max-width:640px){
-  nav,footer{padding-left:20px;padding-right:20px;}
-  .hero{padding:56px 20px 40px;}
-  .cat-section,.browse-section{padding-left:20px;padding-right:20px;}
-  .cat-grid,.browse-grid{grid-template-columns:repeat(2,1fr);}
-  .cat-item{font-size:18px;}
-  .cta{padding:48px 20px;}
-  .cat-hero{padding:56px 20px 48px;}
-  footer{flex-direction:column;gap:8px;text-align:center;}
+nav,footer{padding-left:20px;padding-right:20px;}
+.hero,.cat-hero-banner{padding-left:20px;padding-right:20px;}
+.cat-hero-banner{padding-top:64px;padding-bottom:48px;}
+.cat-section,.designs-section,.browse-section{padding-left:20px;padding-right:20px;}
+.cat-grid,.browse-grid{grid-template-columns:repeat(2,1fr);}
+.designs-grid{grid-template-columns:repeat(2,1fr);gap:10px;}
+.cat-item{font-size:18px;}
+.cta{padding:48px 20px;}
+footer{flex-direction:column;gap:8px;text-align:center;}
 }
 """
 
@@ -105,22 +129,39 @@ def head(title):
 <body>"""
 
 def nav_bar(back_text, back_href):
-    return f"""
-<div class="meander"></div>
+    return f"""<div class="meander"></div>
 <nav>
   <a href="index.html" class="nav-logo">Greek <em>Empire</em></a>
   <a href="{back_href}" class="nav-back">{back_text}</a>
 </nav>"""
 
 def foot():
-    return """
-<div class="meander"></div>
+    return """<div class="meander"></div>
 <footer>
   <span class="foot-brand">Greek Empire</span>
   <span class="foot-tag">College Branded Merchandise for the Best Years of Your Life</span>
 </footer>
 </body>
 </html>"""
+
+def design_cards(cat_name, cat_idx, count=12):
+    cards = ""
+    base_num = 1000 + (cat_idx * 50)
+    for i in range(count):
+        label = DESIGN_LABELS[i % len(DESIGN_LABELS)]
+        num = base_num + (i + 1)
+        cards += f"""    <a href="#" class="design-card">
+      <div class="design-img">
+        {COL_SVG_DARK}
+        <span class="design-ph-label">Image Coming Soon</span>
+      </div>
+      <div class="design-info">
+        <span class="design-name">{cat_name} — {label}</span>
+        <span class="design-num">#{num}</span>
+      </div>
+    </a>
+"""
+    return cards
 
 def make_index():
     items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
@@ -146,17 +187,31 @@ def make_index():
         f.write(html)
     print("✓ index.html")
 
-def make_cat(name, slug, desc):
+def make_cat(idx, name, slug, desc):
     others = "\n".join(
         f'    <a href="{s}.html" class="browse-item">{n}</a>'
         for n, s, _ in CATS if s != slug
     )
+    cards = design_cards(name, idx, count=12)
     html = head(name) + nav_bar("&larr; Design Gallery", "index.html") + f"""
-<section class="cat-hero">
-  <p class="eyebrow">Design Gallery</p>
-  <h1>{name}</h1>
-  <div class="rule"></div>
-  <p class="cat-desc">{desc}</p>
+<section class="cat-hero-banner">
+  <div class="cat-hero-content">
+    <p class="eyebrow">Design Gallery</p>
+    <h1>{name}</h1>
+    <div class="rule"></div>
+    <p class="cat-desc">{desc}</p>
+    <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
+  </div>
+</section>
+<section class="designs-section">
+  <p class="designs-label">Browse Designs</p>
+  <div class="designs-grid">
+{cards}
+  </div>
+</section>
+<section class="cta">
+  <h2>Ready to Place Your Order?</h2>
+  <p>Custom {name.lower()} apparel designed for your chapter.</p>
   <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
 </section>
 <section class="browse-section">
@@ -170,7 +225,7 @@ def make_cat(name, slug, desc):
     print(f"✓ {slug}.html")
 
 make_index()
-for name, slug, desc in CATS:
-    make_cat(name, slug, desc)
+for idx, (name, slug, desc) in enumerate(CATS):
+    make_cat(idx, name, slug, desc)
 
 print(f"\nDone — {len(CATS) + 1} pages generated.")
