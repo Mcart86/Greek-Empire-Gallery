@@ -46,21 +46,23 @@ CSS = """
 :root{--obsidian:#0A0A0A;--gold:#B8963E;--gold-lt:#D4AF60;--cream:#F0EBE0;--muted:#5C5750;--border:rgba(184,150,62,0.2);--card:#111111;}
 body{background:var(--obsidian);color:var(--cream);font-family:'DM Sans',sans-serif;min-height:100vh;}
 .meander{width:100%;height:12px;background-image:url('""" + MEANDER_URL + """');background-repeat:repeat-x;}
-nav{display:flex;justify-content:space-between;align-items:center;padding:22px 60px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);z-index:100;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 60px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);z-index:100;}
 .nav-logo{display:flex;align-items:center;text-decoration:none;}
 .nav-logo img{height:52px;width:auto;}
 .nav-back{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-back:hover{color:var(--cream);}
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
-.rule{width:36px;height:1px;background:var(--gold);margin:22px auto;}
-.hero{text-align:center;padding:88px 60px 72px;border-bottom:1px solid var(--border);}
+.rule{width:48px;height:2px;background:var(--gold);margin:22px auto;}
+.hero{text-align:center;padding:0;border-bottom:1px solid var(--border);position:relative;background-image:url('hero.jpg');background-size:cover;background-position:center;background-color:#0A0A0A;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.58) 100%);z-index:0;}
+.hero-inner{padding:100px 60px 80px;position:relative;z-index:1;}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,80px);font-weight:700;line-height:1;background:linear-gradient(135deg,#7A5010 0%,#C4881A 25%,#F0C840 50%,#C4901C 75%,#8B6212 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .hero-sub{font-size:14px;font-weight:300;color:var(--muted);font-style:italic;}
 .cat-bg{background:#FFFFFF;}
-.cat-section{padding:64px 60px 80px;max-width:1280px;margin:0 auto;}
+.cat-section{padding:80px 60px 96px;max-width:1280px;margin:0 auto;}
 .cat-count{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#B8963E;margin-bottom:36px;}
 .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);}
-.cat-item{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;color:#1A1A1A;text-decoration:none;padding:16px 16px 16px 0;border-bottom:1px solid rgba(0,0,0,0.08);display:flex;align-items:center;transition:color .2s,padding-left .2s;}
+.cat-item{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;color:#1A1A1A;text-decoration:none;padding:18px 16px 18px 0;border-bottom:1px solid rgba(0,0,0,0.08);display:flex;align-items:center;letter-spacing:0.07em;transition:color .2s,padding-left .2s;}
 .cat-item:before{content:'— ';font-size:14px;color:var(--gold);opacity:0;width:0;overflow:hidden;transition:opacity .2s,width .2s;white-space:nowrap;}
 .cat-item:hover{color:var(--gold);padding-left:4px;}
 .cat-item:hover:before{opacity:1;width:22px;}
@@ -81,8 +83,8 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .designs-section{padding:56px 60px 72px;max-width:1320px;margin:0 auto;}
 .designs-label{font-size:11px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
 .designs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-.design-card{background:var(--card);border:1px solid var(--border);transition:border-color .3s,transform .25s;cursor:pointer;text-decoration:none;display:block;}
-.design-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+.design-card{background:var(--card);border:1px solid var(--border);box-shadow:0 4px 24px rgba(0,0,0,0.5);transition:border-color .3s,transform .25s,box-shadow .3s;cursor:pointer;text-decoration:none;display:block;}
+.design-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,0.65),0 0 0 1px rgba(184,150,62,0.25);}
 .design-img{aspect-ratio:4/5;background:#F5F3EE;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;position:relative;overflow:hidden;}
 .design-ph-label{font-size:9px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#8A7060;}
 .design-info{padding:12px 14px;border-top:1px solid var(--border);}
@@ -95,8 +97,8 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .browse-item:hover{color:var(--cream);}
 @media(max-width:1024px){
 nav,footer{padding-left:32px;padding-right:32px;}
-.hero,.cat-hero-banner{padding-left:32px;padding-right:32px;}
-.cat-hero-banner{padding-top:80px;padding-bottom:64px;}
+.hero-inner,.cat-hero-banner{padding-left:32px;padding-right:32px;}
+.hero-inner{padding-top:80px;padding-bottom:64px;}
 .cat-section,.designs-section,.browse-section{padding-left:32px;padding-right:32px;}
 .cat-grid,.browse-grid{grid-template-columns:repeat(3,1fr);}
 .designs-grid{grid-template-columns:repeat(3,1fr);}
@@ -104,7 +106,8 @@ nav,footer{padding-left:32px;padding-right:32px;}
 }
 @media(max-width:640px){
 nav,footer{padding-left:20px;padding-right:20px;}
-.hero,.cat-hero-banner{padding-left:20px;padding-right:20px;}
+.hero-inner,.cat-hero-banner{padding-left:20px;padding-right:20px;}
+.hero-inner{padding-top:64px;padding-bottom:48px;}
 .cat-hero-banner{padding-top:64px;padding-bottom:48px;}
 .cat-section,.designs-section,.browse-section{padding-left:20px;padding-right:20px;}
 .cat-grid,.browse-grid{grid-template-columns:repeat(2,1fr);}
@@ -168,9 +171,11 @@ def make_index():
     items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
     html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greek-empire.vercel.app") + f"""
 <section class="hero">
-  <h1>Design Gallery</h1>
-  <div class="rule"></div>
-  <p class="hero-sub">Designed for the moments that define your college years.</p>
+  <div class="hero-inner">
+    <h1>Design Gallery</h1>
+    <div class="rule"></div>
+    <p class="hero-sub">Designed for the moments that define your college years.</p>
+  </div>
 </section>
 <div class="cat-bg"><section class="cat-section">
   <div class="cat-grid">
