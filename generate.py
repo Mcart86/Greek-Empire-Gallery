@@ -56,10 +56,11 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 6
 .hero{text-align:center;padding:88px 60px 72px;border-bottom:1px solid var(--border);}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,8vw,96px);font-weight:600;line-height:0.92;color:var(--cream);}
 .hero-sub{font-size:14px;font-weight:300;color:var(--muted);font-style:italic;}
+.cat-bg{background:#FFFFFF;}
 .cat-section{padding:64px 60px 80px;max-width:1280px;margin:0 auto;}
-.cat-count{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:36px;}
+.cat-count{font-size:11px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:#B8963E;margin-bottom:36px;}
 .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);}
-.cat-item{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;color:var(--cream);text-decoration:none;padding:16px 16px 16px 0;border-bottom:1px solid var(--border);display:flex;align-items:center;transition:color .2s,padding-left .2s;}
+.cat-item{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:500;color:#1A1A1A;text-decoration:none;padding:16px 16px 16px 0;border-bottom:1px solid rgba(0,0,0,0.08);display:flex;align-items:center;transition:color .2s,padding-left .2s;}
 .cat-item:before{content:'— ';font-size:14px;color:var(--gold);opacity:0;width:0;overflow:hidden;transition:opacity .2s,width .2s;white-space:nowrap;}
 .cat-item:hover{color:var(--gold);padding-left:4px;}
 .cat-item:hover:before{opacity:1;width:22px;}
@@ -172,12 +173,12 @@ def make_index():
   <div class="rule"></div>
   <p class="hero-sub">College Branded Merchandise for the Best Years of Your Life.</p>
 </section>
-<section class="cat-section">
+<div class="cat-bg"><section class="cat-section">
   <p class="cat-count">{len(CATS)} Categories</p>
   <div class="cat-grid">
 {items}
   </div>
-</section>
+</section></div>
 <section class="cta">
   <h2>Don&rsquo;t See What You Need?</h2>
   <p>We design for any event, any theme, any chapter.</p>
