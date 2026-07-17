@@ -11,8 +11,8 @@
 body{background:var(--obsidian);color:var(--cream);font-family:'DM Sans',sans-serif;min-height:100vh;}
 .meander{width:100%;height:12px;background-image:url('data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.18)'/%3E%3C/svg%3E');background-repeat:repeat-x;}
 nav{display:flex;justify-content:space-between;align-items:center;padding:22px 60px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);z-index:100;}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--cream);text-decoration:none;}
-.nav-logo em{font-style:normal;color:var(--gold);}
+.nav-logo{display:flex;align-items:center;text-decoration:none;}
+.nav-logo img{height:46px;width:auto;}
 .nav-back{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-back:hover{color:var(--cream);}
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
@@ -81,7 +81,7 @@ footer{flex-direction:column;gap:8px;text-align:center;}
 </head>
 <body><div class="meander"></div>
 <nav>
-  <a href="index.html" class="nav-logo">Greek <em>Empire</em></a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Greek Empire"></a>
   <a href="https://greek-empire.vercel.app" class="nav-back">&larr; Back to Site</a>
 </nav>
 <section class="hero">
@@ -91,7 +91,6 @@ footer{flex-direction:column;gap:8px;text-align:center;}
   <p class="hero-sub">College Branded Merchandise for the Best Years of Your Life.</p>
 </section>
 <div class="cat-bg"><section class="cat-section">
-  <p class="cat-count">24 Categories</p>
   <div class="cat-grid">
     <a href="spring-break.html" class="cat-item">Spring Break</a>
     <a href="winter.html" class="cat-item">Winter</a>

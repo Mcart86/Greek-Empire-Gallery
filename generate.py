@@ -47,8 +47,8 @@ CSS = """
 body{background:var(--obsidian);color:var(--cream);font-family:'DM Sans',sans-serif;min-height:100vh;}
 .meander{width:100%;height:12px;background-image:url('""" + MEANDER_URL + """');background-repeat:repeat-x;}
 nav{display:flex;justify-content:space-between;align-items:center;padding:22px 60px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);z-index:100;}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--cream);text-decoration:none;}
-.nav-logo em{font-style:normal;color:var(--gold);}
+.nav-logo{display:flex;align-items:center;text-decoration:none;}
+.nav-logo img{height:46px;width:auto;}
 .nav-back{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-back:hover{color:var(--cream);}
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
@@ -132,7 +132,7 @@ def head(title):
 def nav_bar(back_text, back_href):
     return f"""<div class="meander"></div>
 <nav>
-  <a href="index.html" class="nav-logo">Greek <em>Empire</em></a>
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Greek Empire"></a>
   <a href="{back_href}" class="nav-back">{back_text}</a>
 </nav>"""
 
@@ -174,7 +174,6 @@ def make_index():
   <p class="hero-sub">College Branded Merchandise for the Best Years of Your Life.</p>
 </section>
 <div class="cat-bg"><section class="cat-section">
-  <p class="cat-count">{len(CATS)} Categories</p>
   <div class="cat-grid">
 {items}
   </div>
