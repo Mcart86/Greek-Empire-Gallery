@@ -170,7 +170,7 @@ def make_index():
 <section class="hero">
   <h1>Design Gallery</h1>
   <div class="rule"></div>
-  <p class="hero-sub">College Branded Merchandise for the Best Years of Your Life.</p>
+  <p class="hero-sub">Designed for the moments that define your college years.</p>
 </section>
 <div class="cat-bg"><section class="cat-section">
   <div class="cat-grid">
