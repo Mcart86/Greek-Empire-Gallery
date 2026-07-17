@@ -54,7 +54,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 6
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
 .rule{width:36px;height:1px;background:var(--gold);margin:22px auto;}
 .hero{text-align:center;padding:88px 60px 72px;border-bottom:1px solid var(--border);}
-.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,8vw,96px);font-weight:600;line-height:0.92;color:var(--cream);}
+.hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,80px);font-weight:600;line-height:1;color:var(--cream);}
 .hero-sub{font-size:14px;font-weight:300;color:var(--muted);font-style:italic;}
 .cat-bg{background:#FFFFFF;}
 .cat-section{padding:64px 60px 80px;max-width:1280px;margin:0 auto;}
@@ -168,8 +168,7 @@ def make_index():
     items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
     html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greek-empire.vercel.app") + f"""
 <section class="hero">
-  <p class="eyebrow">Est. 334 BC</p>
-  <h1>Design<br>Gallery</h1>
+  <h1>Design Gallery</h1>
   <div class="rule"></div>
   <p class="hero-sub">College Branded Merchandise for the Best Years of Your Life.</p>
 </section>
