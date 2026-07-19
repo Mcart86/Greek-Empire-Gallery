@@ -498,6 +498,11 @@ REAL_DESIGNS = {
         {"name": "Walk for the Kids — Sigma Chi", "image": "philanthropy-walk-kids-sigma-chi.jpg"},
         {"name": "Walk for the Kids — Kappa Delta", "image": "philanthropy-walk-kids-kappa-delta.jpg"},
     ],
+    "Big Little": [
+        {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
+        {"name": "Delta Zeta — Boots Better Together Reveal", "image": "big-little-dz-boots-better-together.jpg"},
+        {"name": "Kappa Delta — Skates Good Times Ahead Reveal", "image": "big-little-kd-skates-good-times-ahead.jpg"},
+    ],
 }
 
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
