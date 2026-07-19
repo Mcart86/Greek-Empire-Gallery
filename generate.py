@@ -458,6 +458,7 @@ REAL_DESIGNS = {
         {"name": "Delta Delta Delta — Ski Spring Rush 2026", "image": "winter-tri-delta-ski-spring-rush-2026.jpg"},
         {"name": "Kappa Alpha Order — Winter Rush 2026 Breckenridge", "image": "winter-ka-winter-rush-2026-breckenridge.jpg"},
         {"name": "Kappa Alpha Order — Spring Rush 2026 Park City", "image": "winter-ka-spring-rush-2026-park-city.jpg"},
+        {"name": "Kappa Delta — Golf Spring Rush 2026", "image": "sports-kd-golf-spring-rush-2026.jpg"},
     ],
     "Winter": [
         {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
@@ -501,6 +502,11 @@ REAL_DESIGNS = {
         {"name": "Walk for the Kids — Alpha Phi", "image": "philanthropy-walk-kids-alpha-phi.jpg"},
         {"name": "Walk for the Kids — Sigma Chi", "image": "philanthropy-walk-kids-sigma-chi.jpg"},
         {"name": "Walk for the Kids — Kappa Delta", "image": "philanthropy-walk-kids-kappa-delta.jpg"},
+    ],
+    "Sports": [
+        {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
+        {"name": "Kappa Delta — Golf Tournament 2026 Navy", "image": "sports-kd-golf-tournament-2026-navy.jpg"},
+        {"name": "Kappa Delta — Golf Spring Rush 2026", "image": "sports-kd-golf-spring-rush-2026.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
