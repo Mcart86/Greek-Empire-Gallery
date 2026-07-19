@@ -254,7 +254,7 @@ def subnav():
     return """<div class="subnav">
   <a href="https://greekempire.swagflo.com/design-your-own">Design Your Own</a>
   <a href="index.html" class="active">Design Gallery</a>
-  <a href="https://greekempire.swagflo.com/sororities">Shop by Sorority</a>
+  <a href="https://greek-empire-sorority.vercel.app/">Shop by Sorority</a>
   <a href="https://greek-empire-fraternity.vercel.app/">Shop by Fraternity</a>
   <a href="https://greek-empire-ambassador-landing-new.vercel.app/">Campus Ambassador</a>
 </div>"""
