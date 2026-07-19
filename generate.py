@@ -446,6 +446,14 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Jeep Dog Fall Rush 2025 Boulder", "image": "rush-axo-jeep-dog-boulder-2025.jpg"},
         {"name": "Kappa Kappa Gamma — Jeep Dog Fall Rush 2025 Tuscaloosa", "image": "rush-kkg-jeep-dog-tuscaloosa-2025.jpg"},
         {"name": "Zeta Tau Alpha — Jeep Dog Fall Rush 2025 Knoxville", "image": "rush-zta-jeep-dog-knoxville-2025.jpg"},
+        {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
+        {"name": "Alpha Gamma Delta — Ski Spring Rush 2026", "image": "winter-agd-ski-spring-rush-2026.jpg"},
+        {"name": "Delta Delta Delta — Ski Spring Rush 2026", "image": "winter-tri-delta-ski-spring-rush-2026.jpg"},
+    ],
+    "Winter": [
+        {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
+        {"name": "Alpha Gamma Delta — Ski Spring Rush 2026", "image": "winter-agd-ski-spring-rush-2026.jpg"},
+        {"name": "Delta Delta Delta — Ski Spring Rush 2026", "image": "winter-tri-delta-ski-spring-rush-2026.jpg"},
     ],
     "Recruitment": [
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
