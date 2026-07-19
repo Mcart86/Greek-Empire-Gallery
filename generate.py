@@ -424,6 +424,9 @@ REAL_DESIGNS = {
         {"name": "Spread The Legacy 5K — Arkansas–Fort Smith", "image": "5k-spread-the-legacy-arkansas-fort-smith.jpg"},
         {"name": "Baylor 5K — Alpha Xi Delta 2020", "image": "5k-baylor-alpha-xi-delta-2020.jpg"},
         {"name": "Auburn 5K — Delta Gamma 2020", "image": "5k-auburn-delta-gamma-2020.jpg"},
+        {"name": "Walk for the Kids — Alpha Phi", "image": "philanthropy-walk-kids-alpha-phi.jpg"},
+        {"name": "Walk for the Kids — Sigma Chi", "image": "philanthropy-walk-kids-sigma-chi.jpg"},
+        {"name": "Walk for the Kids — Kappa Delta", "image": "philanthropy-walk-kids-kappa-delta.jpg"},
     ],
     "Shamrock": [
         {"name": "Kappa Delta — Shamrock 5K Run/Walk Green", "image": "shamrock-kd-5k-green.jpg"},
@@ -433,6 +436,9 @@ REAL_DESIGNS = {
     "Philanthropy": [
         {"name": "Shoes Speak Louder — Prevent Child Abuse 2020", "image": "philanthropy-shoes-speak-louder-2020.jpg"},
         {"name": "Strides for Stronger Tomorrows — Prevent Child Abuse 2020", "image": "philanthropy-strides-stronger-tomorrows-2020.jpg"},
+        {"name": "Walk for the Kids — Alpha Phi", "image": "philanthropy-walk-kids-alpha-phi.jpg"},
+        {"name": "Walk for the Kids — Sigma Chi", "image": "philanthropy-walk-kids-sigma-chi.jpg"},
+        {"name": "Walk for the Kids — Kappa Delta", "image": "philanthropy-walk-kids-kappa-delta.jpg"},
     ],
 }
 
