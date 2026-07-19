@@ -426,6 +426,7 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma Chi — UFO Rush Austin 2024", "image": "rush-dg-chi-ufo-austin-2024.jpg"},
         {"name": "Kappa Sigma Chi — UFO Rush Phoenix 2024", "image": "rush-kappa-sigma-chi-ufo-phoenix-2024.jpg"},
         {"name": "Sigma Chi Omega — UFO Rush Dallas 2024", "image": "rush-sigma-chi-omega-ufo-dallas-2024.jpg"},
+        {"name": "Gamma Phi Beta — Cowboy Boots Big Little Reveal", "image": "big-little-gamma-phi-beta-boots.jpg"},
     ],
     "Rush": [
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
@@ -505,6 +506,9 @@ REAL_DESIGNS = {
         {"name": "Delta Zeta — Vintage Car Reveal 2022 Rollins College", "image": "big-little-dz-car-rollins-2022.jpg"},
         {"name": "Alpha Omicron Pi — Picnic Reveal 2023 Tennessee", "image": "big-little-aopi-picnic-tennessee-2023.jpg"},
         {"name": "Kappa Delta — Bicycle Reveal 2024 Georgia", "image": "big-little-kd-bicycle-georgia-2024.jpg"},
+        {"name": "Alpha Delta Pi — Disco Ornaments Big Little Reveal", "image": "big-little-adpi-disco-ornaments.jpg"},
+        {"name": "Gamma Phi Beta — Cowboy Boots Big Little Reveal", "image": "big-little-gamma-phi-beta-boots.jpg"},
+        {"name": "Zeta Tau Alpha — Bottle Tumbler Big Little Reveal", "image": "big-little-zta-bottle-tumbler.jpg"},
     ],
 }
 
