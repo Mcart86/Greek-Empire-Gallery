@@ -397,6 +397,9 @@ REAL_DESIGNS = {
         {"name": "Rush Sigma Chi — Puppy in Boots Spring 2021", "image": "rush-sigma-chi-puppy-boots-spring-2021.jpg"},
         {"name": "Rush Kappa Sigma — Puppy in Boots Fall 2022", "image": "rush-kappa-sigma-puppy-boots-fall-2022.jpg"},
         {"name": "Rush Delta Tau Delta — Puppy in Sneakers Spring 2023", "image": "rush-delta-tau-delta-puppy-sneakers-spring-2023.jpg"},
+        {"name": "Phi Delta Theta — Puppies in Cooler Fall Rush 2024", "image": "rush-phi-delta-theta-puppies-cooler-2024.jpg"},
+        {"name": "Phi Delta Theta — Puppies in Wagon Fall Rush 2025", "image": "rush-phi-delta-theta-puppies-wagon-2025.jpg"},
+        {"name": "Phi Delta Theta — Puppies Camping Fall Rush 2026", "image": "rush-phi-delta-theta-puppies-camping-2026.jpg"},
     ],
     "Western": [
         {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
@@ -434,6 +437,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
         {"name": "Kappa Kappa Gamma — Lake Dog Recruitment Fall 2024", "image": "recruitment-kkg-lake-dog-fall-2024.jpg"},
         {"name": "Delta Gamma — Coastal Dog Recruitment Fall 2024", "image": "recruitment-dg-coastal-dog-fall-2024.jpg"},
+        {"name": "Phi Delta Theta — Puppies in Cooler Fall Rush 2024", "image": "rush-phi-delta-theta-puppies-cooler-2024.jpg"},
+        {"name": "Phi Delta Theta — Puppies in Wagon Fall Rush 2025", "image": "rush-phi-delta-theta-puppies-wagon-2025.jpg"},
+        {"name": "Phi Delta Theta — Puppies Camping Fall Rush 2026", "image": "rush-phi-delta-theta-puppies-camping-2026.jpg"},
     ],
     "Recruitment": [
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
