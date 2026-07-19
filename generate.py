@@ -76,6 +76,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:14px 6
 .cat-item:hover:before{opacity:1;width:22px;}
 .cta{text-align:center;padding:72px 60px 80px;border-top:1px solid var(--border);}
 .cta h2{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,48px);font-weight:600;color:var(--cream);margin-bottom:12px;}
+.shimmer-h2{background:linear-gradient(90deg,#7A5010 0%,#C4881A 20%,#F5D77A 35%,#FFF6D8 45%,#F0C840 55%,#C4901C 70%,#8B6212 100%);background-size:250% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmerGold 4s linear infinite;}
 .cta p{font-size:14px;color:var(--muted);margin-bottom:32px;}
 .follow-us-text{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:700;background:linear-gradient(135deg,#7A5010 0%,#C4881A 25%,#F0C840 50%,#C4901C 75%,#8B6212 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 .cta-link{display:inline-block;padding:15px 40px;background:var(--gold);color:var(--obsidian);font-family:'DM Sans',sans-serif;font-size:11px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;text-decoration:none;transition:background .2s;}
@@ -329,7 +330,7 @@ def make_index():
   </div>
 </section></div>
 <section class="cta">
-  <h2>New Designs Drop First on the Feed.</h2>
+  <h2 class="shimmer-h2">New Designs Drop First on the Feed.</h2>
   <p class="follow-us-text">Follow us.</p>
   <div class="cta-social">
     <a href="https://www.instagram.com/_greekempire_" target="_blank" rel="noopener" aria-label="Instagram" class="foot-social-link">
