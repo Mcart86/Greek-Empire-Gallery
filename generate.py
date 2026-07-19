@@ -454,6 +454,9 @@ REAL_DESIGNS = {
         {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
         {"name": "Alpha Gamma Delta — Ski Spring Rush 2026", "image": "winter-agd-ski-spring-rush-2026.jpg"},
         {"name": "Delta Delta Delta — Ski Spring Rush 2026", "image": "winter-tri-delta-ski-spring-rush-2026.jpg"},
+        {"name": "Kappa Alpha Psi — Bear Mountain Retreat", "image": "winter-kappa-alpha-psi-bear-mountain-retreat.jpg"},
+        {"name": "Phi Beta Sigma — Bear Mountain Retreat", "image": "winter-phi-beta-sigma-bear-mountain-retreat.jpg"},
+        {"name": "Alpha Phi Alpha — Bear Mountain Retreat", "image": "winter-alpha-phi-alpha-bear-mountain-retreat.jpg"},
     ],
     "Recruitment": [
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
