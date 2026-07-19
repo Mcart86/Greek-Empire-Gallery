@@ -323,6 +323,7 @@ REAL_DESIGNS = {
         {"name": "Kappa Sigma — Bid Day 2022", "image": "bid-day-kappa-sigma.jpg"},
         {"name": "Theta Chi — Bid Day 2023", "image": "bid-day-theta-chi.jpg"},
         {"name": "Delta Gamma — Bid Day 2024 Daisy Smiley", "image": "bid-day-delta-gamma-daisy.jpg"},
+        {"name": "Chi Omega — Bid Day 2026 Citrus", "image": "bid-day-chi-omega.jpg"},
     ],
 }
 
