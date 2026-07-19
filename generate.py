@@ -371,6 +371,9 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Spring Formal 2025 Denver", "image": "formal-dg-spring-denver-2025.jpg"},
         {"name": "Pi Beta Phi — Spring Formal 2026 Chicago", "image": "formal-pbp-spring-chicago-2026.jpg"},
         {"name": "Gamma Phi Beta — Spring Formal 2027 Philadelphia", "image": "formal-gpb-spring-philadelphia-2027.jpg"},
+        {"name": "Pi Beta Phi — Spring Formal March 2023", "image": "formal-pbp-spring-2023-march.jpg"},
+        {"name": "Kappa Alpha Theta — Spring Formal April 2023", "image": "formal-kat-spring-2023-april.jpg"},
+        {"name": "Delta Gamma — Spring Formal April 2023", "image": "formal-dg-spring-2023-april.jpg"},
     ],
 }
 
