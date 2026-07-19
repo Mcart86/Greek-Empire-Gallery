@@ -374,6 +374,9 @@ REAL_DESIGNS = {
         {"name": "Pi Beta Phi — Spring Formal March 2023", "image": "formal-pbp-spring-2023-march.jpg"},
         {"name": "Kappa Alpha Theta — Spring Formal April 2023", "image": "formal-kat-spring-2023-april.jpg"},
         {"name": "Delta Gamma — Spring Formal April 2023", "image": "formal-dg-spring-2023-april.jpg"},
+        {"name": "Pi Beta Phi — Barn Dance 2024 Stillwater", "image": "formal-pbp-barn-dance-2024.jpg"},
+        {"name": "Alpha Delta Pi — Barn Dance 2023 Fayetteville", "image": "formal-adpi-barn-dance-2023.jpg"},
+        {"name": "Kappa Kappa Gamma — Barn Dance 2025 College Station", "image": "formal-kkg-barn-dance-2025.jpg"},
     ],
 }
 
