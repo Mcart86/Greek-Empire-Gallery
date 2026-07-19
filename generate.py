@@ -422,6 +422,8 @@ REAL_DESIGNS = {
         {"name": "Run The Yard 5K — Arkansas–Fort Smith", "image": "5k-run-the-yard-arkansas-fort-smith.jpg"},
         {"name": "Lace Up Lead On 5K — Arkansas–Fort Smith", "image": "5k-lace-up-lead-on-arkansas-fort-smith.jpg"},
         {"name": "Spread The Legacy 5K — Arkansas–Fort Smith", "image": "5k-spread-the-legacy-arkansas-fort-smith.jpg"},
+        {"name": "Baylor 5K — Alpha Xi Delta 2020", "image": "5k-baylor-alpha-xi-delta-2020.jpg"},
+        {"name": "Auburn 5K — Delta Gamma 2020", "image": "5k-auburn-delta-gamma-2020.jpg"},
     ],
 }
 
