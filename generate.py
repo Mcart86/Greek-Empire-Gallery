@@ -4,30 +4,30 @@ import os
 DIR = "/home/claude/greek-empire-gallery"
 
 CATS = [
-    ("Spring Break",       "spring-break",       "Your chapter's spring break run needs a shirt that keeps up."),
-    ("Winter",             "winter",              "Cold weather, warm chapter. Custom winter apparel built for the season."),
+    ("Spring Break",       "spring-break",       "Your organization's spring break run needs a shirt that keeps up."),
+    ("Winter",             "winter",              "Cold weather, warm organization. Custom winter apparel built for the season."),
     ("Western",            "western",             "Your letters. Their hats. Custom western theme shirts done right."),
-    ("Sixties",            "sixties",             "Groovy chapter, iconic shirts. The sixties theme, elevated."),
+    ("Sixties",            "sixties",             "Groovy organization, iconic shirts. The sixties theme, elevated."),
     ("Halloween",          "halloween",           "The annual costume party deserves a design that haunts them all semester."),
-    ("Formal",             "formal",              "Chapter formals done right — from the bid to the bow tie."),
+    ("Formal",             "formal",              "Organization formals done right — from the bid to the bow tie."),
     ("Dog & Puppy",        "dog-and-puppy",       "Philanthropy events, big little reveals, and every excuse to put a dog on a shirt."),
-    ("Christmas",          "christmas",           "Holiday chapter events. Custom apparel that actually looks good."),
+    ("Christmas",          "christmas",           "Holiday organization events. Custom apparel that actually looks good."),
     ("5K Run",             "5k-run",              "Philanthropy runs, campus 5Ks, and everything in between."),
     ("Rush",               "rush",                "First impressions are everything. Make yours last four years."),
-    ("Sports",             "sports",              "From intramurals to watch parties — custom sports apparel for your chapter."),
-    ("Fraternity",         "fraternity",          "Chapter gear that represents who you are — not just where you're from."),
-    ("Sisterhood Retreat", "sisterhood-retreat",  "The weekend that brings chapters together. Custom apparel for every retreat."),
-    ("Cowgirl",            "cowgirl",             "Boots up. Custom cowgirl theme shirts built for your chapter's biggest events."),
+    ("Sports",             "sports",              "From intramurals to watch parties — custom sports apparel for your organization."),
+    ("Fraternity",         "fraternity",          "Organization gear that represents who you are — not just where you're from."),
+    ("Sisterhood Retreat", "sisterhood-retreat",  "The weekend that brings organizations together. Custom apparel for every retreat."),
+    ("Cowgirl",            "cowgirl",             "Boots up. Custom cowgirl theme shirts built for your organization's biggest events."),
     ("Bid Day",            "bid-day",             "The best day of the year deserves a shirt to prove it."),
-    ("Recruitment",        "recruitment",         "Your chapter's first impression. Make it count."),
+    ("Recruitment",        "recruitment",         "Your organization's first impression. Make it count."),
     ("Panhellenic",        "panhellenic",         "Custom apparel for Panhellenic events, councils, and community."),
     ("Philanthropy",       "philanthropy",        "Do good. Look good. Give back in custom apparel that means something."),
     ("Big Little",         "big-little",          "The reveal. The gift. The shirt they'll keep forever."),
     ("Beach",              "beach",               "Sun, sand, and your letters. Beach theme shirts built for the culture."),
-    ("Shamrock",           "shamrock",            "St. Patrick's Day chapter events deserve a shirt actually worth keeping."),
+    ("Shamrock",           "shamrock",            "St. Patrick's Day organization events deserve a shirt actually worth keeping."),
     ("Mixers",             "mixers",              "Social events, mixer nights, and the shirts everyone talks about the next day."),
     ("Mom's Day",          "moms-day",            "Your mom's weekend deserves custom apparel she'll actually wear home."),
-    ("Weekend Getaway",    "weekend-getaway",     "Chapter retreats and road trips deserve merch to match the memory."),
+    ("Weekend Getaway",    "weekend-getaway",     "Organization retreats and road trips deserve merch to match the memory."),
 ]
 
 DESIGN_LABELS = [
@@ -231,6 +231,12 @@ def head(title):
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{title} — Greek Empire</title>
+<meta name="description" content="Greek Empire — College branded merchandise for the best years of your life. Browse designs by theme and customize for your campus organization.">
+<link rel="icon" type="image/png" href="favicon.png">
+<meta property="og:title" content="{title} — Greek Empire">
+<meta property="og:description" content="College branded merchandise for the best years of your life.">
+<meta property="og:image" content="shield-logo.png">
+<meta property="og:type" content="website">
 {FONTS}
 <style>{CSS}</style>
 </head>
@@ -372,8 +378,8 @@ def make_cat(idx, name, slug, desc):
 </div>
 <section class="cta">
   <h2>Ready to Place Your Order?</h2>
-  <p>Custom {name.lower()} apparel designed for your chapter.</p>
-  <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
+  <p>Custom {name.lower()} apparel designed for your organization.</p>
+  <a href="https://greekempire.swagflo.com/" class="cta-link">Start Your Order</a>
 </section>
 <div class="cat-bg">
 <section class="browse-section">
