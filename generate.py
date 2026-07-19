@@ -77,6 +77,7 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .foot-social{display:flex;align-items:center;gap:18px;}
 .foot-social-link{color:var(--gold);display:flex;align-items:center;justify-content:center;width:38px;height:38px;border:1px solid var(--border);border-radius:50%;transition:color .2s,border-color .2s,background .2s,transform .2s;}
 .foot-social-link:hover{color:var(--obsidian);background:var(--gold);border-color:var(--gold);transform:translateY(-2px);}
+.cta-social{display:flex;justify-content:center;gap:18px;}
 .cat-hero-banner{position:relative;padding:120px 60px 88px;text-align:center;background:linear-gradient(160deg,#070707 0%,#100E04 100%);overflow:hidden;border-bottom:1px solid var(--border);}
 .cat-hero-banner::before{content:'';position:absolute;inset:0;background-image:url('""" + MEANDER_DARK_URL + """');background-repeat:repeat;background-size:40px 12px;pointer-events:none;}
 .cat-hero-content{position:relative;z-index:1;}
@@ -283,7 +284,14 @@ def make_index():
 <section class="cta">
   <h2>New Designs Drop First on the Feed.</h2>
   <p>Follow us.</p>
-  <a href="https://www.instagram.com/_greekempire_" target="_blank" rel="noopener" class="cta-link">Follow Us</a>
+  <div class="cta-social">
+    <a href="https://www.instagram.com/_greekempire_" target="_blank" rel="noopener" aria-label="Instagram" class="foot-social-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor"/></svg>
+    </a>
+    <a href="https://www.tiktok.com/@_greekempire_" target="_blank" rel="noopener" aria-label="TikTok" class="foot-social-link">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16.5 2c.4 2.2 1.9 3.9 4 4.3v2.9c-1.5 0-2.9-.4-4-1.2v6.7c0 3.4-2.8 6.1-6.1 6.1S4.3 18.1 4.3 14.7c0-3.3 2.6-6 5.9-6.1v3c-1.6.1-2.9 1.4-2.9 3.1 0 1.7 1.4 3.1 3.1 3.1s3.1-1.4 3.1-3.1V2h2.9z" fill="currentColor"/></svg>
+    </a>
+  </div>
 </section>""" + foot()
     with open(f"{DIR}/index.html", "w") as f:
         f.write(html)
