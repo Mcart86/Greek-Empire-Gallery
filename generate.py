@@ -320,6 +320,9 @@ REAL_DESIGNS = {
         {"name": "Pi Beta Phi — Bid Day Thank You Note", "image": "bid-day-pi-phi.jpg"},
         {"name": "Kappa Kappa Gamma — Bid Day Vinyl Record", "image": "bid-day-kkg.jpg"},
         {"name": "Sigma Kappa — Bid Day Racing", "image": "bid-day-sigma-kappa.jpg"},
+        {"name": "Kappa Sigma — Bid Day 2022", "image": "bid-day-kappa-sigma.jpg"},
+        {"name": "Theta Chi — Bid Day 2023", "image": "bid-day-theta-chi.jpg"},
+        {"name": "Delta Gamma — Bid Day 2024 Daisy Smiley", "image": "bid-day-delta-gamma-daisy.jpg"},
     ],
 }
 
@@ -393,7 +396,7 @@ def make_cat(idx, name, slug, desc):
         f'    <a href="{s}.html" class="browse-item">{n}</a>'
         for n, s, _ in CATS if s != slug
     )
-    cards = design_cards(name, slug, idx, count=12)
+    cards = design_cards(name, slug, idx, count=max(12, len(REAL_DESIGNS.get(name, []))))
     html = head(name) + nav_bar("&larr; The Collection", "index.html") + subnav() + f"""
 <section class="cat-hero-banner">
   <div class="cat-hero-content">
@@ -774,7 +777,7 @@ def make_customize():
         base_num = 1000 + (idx * 50)
         real_list = REAL_DESIGNS.get(cname, [])
         designs = []
-        for i in range(12):
+        for i in range(max(12, len(real_list))):
             num = base_num + (i + 1)
             if i < len(real_list):
                 designs.append({"name": real_list[i]["name"], "num": num, "image": real_list[i]["image"]})
