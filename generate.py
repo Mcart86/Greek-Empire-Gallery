@@ -380,11 +380,17 @@ REAL_DESIGNS = {
         {"name": "Pi Beta Phi — Barn Dance 2024 Stillwater", "image": "formal-pbp-barn-dance-2024.jpg"},
         {"name": "Alpha Delta Pi — Barn Dance 2023 Fayetteville", "image": "formal-adpi-barn-dance-2023.jpg"},
         {"name": "Kappa Kappa Gamma — Barn Dance 2025 College Station", "image": "formal-kkg-barn-dance-2025.jpg"},
+        {"name": "Delta Gamma — Fall Formal 2026 Dallas", "image": "western-dg-fall-formal-2026-dallas.jpg"},
+        {"name": "Kappa Alpha Theta — Fall Formal 2026 Phoenix", "image": "western-kat-fall-formal-2026-phoenix.jpg"},
+        {"name": "Alpha Omicron Pi — Fall Formal 2026 Lake Travis", "image": "western-aopi-fall-formal-2026-lake-travis.jpg"},
     ],
     "Western": [
         {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
         {"name": "Alpha Xi Delta — Bid Day 2020 Boho", "image": "western-axd-bid-day-2020.jpg"},
         {"name": "Alpha Xi Delta — Bid Day 2021 Boho", "image": "western-axd-bid-day-2021.jpg"},
+        {"name": "Delta Gamma — Fall Formal 2026 Dallas", "image": "western-dg-fall-formal-2026-dallas.jpg"},
+        {"name": "Kappa Alpha Theta — Fall Formal 2026 Phoenix", "image": "western-kat-fall-formal-2026-phoenix.jpg"},
+        {"name": "Alpha Omicron Pi — Fall Formal 2026 Lake Travis", "image": "western-aopi-fall-formal-2026-lake-travis.jpg"},
     ],
 }
 
