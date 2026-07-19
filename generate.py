@@ -234,7 +234,8 @@ def subnav():
     return """<div class="subnav">
   <a href="https://greekempire.swagflo.com/">Design Your Own</a>
   <a href="index.html">Design Gallery</a>
-  <a href="index.html">Shop By Organization</a>
+  <a href="index.html">Shop by Sorority</a>
+  <a href="index.html">Shop by Fraternity</a>
   <a href="https://greek-empire-ambassador-sign-up.vercel.app">Campus Ambassador</a>
 </div>"""
 
