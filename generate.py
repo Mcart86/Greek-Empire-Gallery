@@ -304,7 +304,7 @@ def make_cat(idx, name, slug, desc):
         for n, s, _ in CATS if s != slug
     )
     cards = design_cards(name, slug, idx, count=12)
-    html = head(name) + nav_bar("&larr; Design Gallery", "index.html") + f"""
+    html = head(name) + nav_bar("&larr; The Collection", "index.html") + f"""
 <section class="cat-hero-banner">
   <div class="cat-hero-content">
     <p class="eyebrow">Design Gallery</p>
@@ -340,7 +340,7 @@ def make_cat(idx, name, slug, desc):
     print(f"✓ {slug}.html")
 
 def make_customize():
-    html = head("Customize This Design") + nav_bar("&larr; Design Gallery", "index.html") + """
+    html = head("Customize This Design") + nav_bar("&larr; The Collection", "index.html") + """
 <section class="cust-hero">
   <p class="eyebrow">Custom Order Request</p>
   <h1>Customize This Design</h1>
