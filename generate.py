@@ -427,6 +427,9 @@ REAL_DESIGNS = {
         {"name": "Walk for the Kids — Alpha Phi", "image": "philanthropy-walk-kids-alpha-phi.jpg"},
         {"name": "Walk for the Kids — Sigma Chi", "image": "philanthropy-walk-kids-sigma-chi.jpg"},
         {"name": "Walk for the Kids — Kappa Delta", "image": "philanthropy-walk-kids-kappa-delta.jpg"},
+        {"name": "Kappa Delta — Shamrock 5K Run/Walk Green", "image": "shamrock-kd-5k-green.jpg"},
+        {"name": "Kappa Delta — Shamrock 5K Run/Walk Blue", "image": "shamrock-kd-5k-blue.jpg"},
+        {"name": "Kappa Delta — Shamrock 5K Run/Walk Pink", "image": "shamrock-kd-5k-pink.jpg"},
     ],
     "Shamrock": [
         {"name": "Kappa Delta — Shamrock 5K Run/Walk Green", "image": "shamrock-kd-5k-green.jpg"},
