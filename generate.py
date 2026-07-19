@@ -403,6 +403,9 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Fall Rush 2025 Cowboy", "image": "western-dg-fall-rush-2025-cowboy.jpg"},
         {"name": "Kappa Alpha Theta — Fall Rush 2025 Cowboy", "image": "western-kat-fall-rush-2025-cowboy.jpg"},
         {"name": "Sigma Chi — Fall Rush 2025 Cowboy", "image": "western-sigma-chi-fall-rush-2025-cowboy.jpg"},
+        {"name": "Delta Gamma Chi — UFO Rush Austin 2024", "image": "rush-dg-chi-ufo-austin-2024.jpg"},
+        {"name": "Kappa Sigma Chi — UFO Rush Phoenix 2024", "image": "rush-kappa-sigma-chi-ufo-phoenix-2024.jpg"},
+        {"name": "Sigma Chi Omega — UFO Rush Dallas 2024", "image": "rush-sigma-chi-omega-ufo-dallas-2024.jpg"},
     ],
     "Rush": [
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
@@ -411,6 +414,9 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Fall Rush 2025 Cowboy", "image": "western-dg-fall-rush-2025-cowboy.jpg"},
         {"name": "Kappa Alpha Theta — Fall Rush 2025 Cowboy", "image": "western-kat-fall-rush-2025-cowboy.jpg"},
         {"name": "Sigma Chi — Fall Rush 2025 Cowboy", "image": "western-sigma-chi-fall-rush-2025-cowboy.jpg"},
+        {"name": "Delta Gamma Chi — UFO Rush Austin 2024", "image": "rush-dg-chi-ufo-austin-2024.jpg"},
+        {"name": "Kappa Sigma Chi — UFO Rush Phoenix 2024", "image": "rush-kappa-sigma-chi-ufo-phoenix-2024.jpg"},
+        {"name": "Sigma Chi Omega — UFO Rush Dallas 2024", "image": "rush-sigma-chi-omega-ufo-dallas-2024.jpg"},
     ],
 }
 
