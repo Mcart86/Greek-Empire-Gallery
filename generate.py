@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os
 
-DIR = "/home/claude/greek-empire-gallery"
+DIR = "/home/claude/Greek-Empire-Gallery"
 
 CATS = [
     ("Spring Break",       "spring-break",       "Your organization's spring break run needs a shirt that keeps up."),
@@ -515,6 +515,8 @@ REAL_DESIGNS = {
         {"name": "Alpha Phi — Beach Surfboards Big Little Reveal", "image": "big-little-alpha-phi-beach-surf.jpg"},
         {"name": "Alpha Phi — Picnic Meadow Big Little Reveal", "image": "big-little-alpha-phi-picnic-meadow.jpg"},
         {"name": "Alpha Phi — Paris Bikes Big Little Reveal", "image": "big-little-alpha-phi-paris-bikes.jpg"},
+        {"name": "Delta Delta Delta — Lemon Floral Big Little Reveal", "image": "big-little-tri-delta-lemon-reveal.jpg"},
+        {"name": "Delta Delta Delta — Hydrangea Stripe Big Little Reveal", "image": "big-little-tri-delta-hydrangea-reveal.jpg"},
     ],
 }
 
