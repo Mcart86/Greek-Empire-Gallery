@@ -130,6 +130,19 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .submit-row{display:flex;justify-content:flex-end;margin-top:16px;}
 .submit-btn{width:auto;padding:16px 34px;background:var(--gold);color:#FFFFFF;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;transition:background .2s;}
 .submit-btn:hover{background:var(--gold-lt);}
+.form-step.hidden{display:none;}
+.step-title{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#1A1A1A;margin-bottom:28px;}
+.name-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.name-sub-label{font-size:11px;color:#8A8378;margin-top:6px;}
+.recaptcha-box{border:1px solid rgba(0,0,0,0.14);background:#FAFAF8;padding:20px 22px;display:flex;align-items:center;gap:16px;max-width:360px;}
+.recaptcha-checkbox{width:24px;height:24px;border:1px solid rgba(0,0,0,0.3);background:#FFFFFF;flex-shrink:0;cursor:pointer;position:relative;}
+.recaptcha-checkbox.checked{background:var(--gold);border-color:var(--gold);}
+.recaptcha-checkbox.checked::after{content:'\\2713';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#FFFFFF;font-size:15px;}
+.recaptcha-label{font-size:14px;color:#3C3C3C;}
+.recaptcha-note{font-size:10px;color:#9A958C;margin-top:4px;}
+.step-nav-row{display:flex;justify-content:space-between;align-items:center;margin-top:16px;}
+.prev-btn{padding:16px 30px;background:transparent;border:1px solid #1A1A1A;color:#1A1A1A;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s;}
+.prev-btn:hover{background:#1A1A1A;color:#FFFFFF;}
 .success-box{display:none;text-align:center;padding:56px 24px;}
 .success-box.show{display:block;}
 .success-box h3{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:#1A1A1A;margin-bottom:14px;}
@@ -308,96 +321,154 @@ def make_customize():
   <div class="cust-form-col">
   <form id="customizeForm">
 
-    <div class="field-group">
-      <label class="field-label">Organization / Student Group Name<span class="required-mark">*</span></label>
-      <input type="text" class="field-input" id="orgName" placeholder="e.g. Kappa Alpha Theta &mdash; University of Georgia" required>
+    <div class="form-step" id="stepDesign">
+
+      <div class="field-group">
+        <label class="field-label">Number of Shirts<span class="required-mark">*</span></label>
+        <input type="text" class="field-input" id="quantity" placeholder="e.g. 60" required>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Garment<span class="required-mark">*</span></label>
+        <select class="field-select" id="garmentType" required>
+          <option value="">Select a Garment&hellip;</option>
+          <option>T-Shirt</option>
+          <option>Hoodie</option>
+          <option>Hat</option>
+          <option>Tank Top</option>
+          <option>Drinkware</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Color<span class="required-mark">*</span></label>
+        <select class="field-select" id="colorSelect" required>
+          <option value="">Select a Color&hellip;</option>
+          <option>Black</option>
+          <option>White</option>
+          <option>Cream</option>
+          <option>Gold</option>
+          <option>Navy</option>
+          <option>Charcoal</option>
+          <option>Heather Grey</option>
+          <option>Maroon</option>
+          <option>Forest Green</option>
+          <option>Light Blue</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Would You Like to Make Any Changes?</label>
+        <textarea class="field-textarea" id="customizeNotes" placeholder="Ex. I&rsquo;d like to change the design&rsquo;s wording from &lsquo;Alpha Phi&rsquo; to &lsquo;Beta Chi&rsquo;"></textarea>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Reference Images, Logos, etc. (Optional)</label>
+
+        <div style="margin-bottom:18px;">
+          <p style="font-size:13px;color:#4A453D;margin-bottom:8px;">Image 1</p>
+          <div class="file-field">
+            <div class="file-btn-wrap">
+              <span class="file-btn">Choose File</span>
+              <input type="file" class="file-input-hidden" id="refImage1" accept="image/*,.pdf" onchange="updateFileName('refImage1','fileName1')">
+            </div>
+            <span class="file-name" id="fileName1">No file chosen</span>
+          </div>
+          <p class="field-hint">Accepted file types: jpg, png, pdf. Max file size: 20 MB.</p>
+        </div>
+
+        <div>
+          <p style="font-size:13px;color:#4A453D;margin-bottom:8px;">Image 2</p>
+          <div class="file-field">
+            <div class="file-btn-wrap">
+              <span class="file-btn">Choose File</span>
+              <input type="file" class="file-input-hidden" id="refImage2" accept="image/*,.pdf" onchange="updateFileName('refImage2','fileName2')">
+            </div>
+            <span class="file-name" id="fileName2">No file chosen</span>
+          </div>
+          <p class="field-hint">Accepted file types: jpg, png, pdf. Max file size: 20 MB.</p>
+        </div>
+      </div>
+
+      <div class="submit-row">
+        <button type="button" class="submit-btn" onclick="goToStep2()">Next Step &rarr;</button>
+      </div>
+
     </div>
 
-    <div class="field-row">
+    <div class="form-step hidden" id="stepInfo">
+
+      <h2 class="step-title">Your Information</h2>
+
       <div class="field-group">
         <label class="field-label">Your Name<span class="required-mark">*</span></label>
-        <input type="text" class="field-input" id="contactName" placeholder="Full name" required>
+        <div class="name-row">
+          <div>
+            <input type="text" class="field-input" id="firstName" placeholder="First" required>
+            <p class="name-sub-label">First</p>
+          </div>
+          <div>
+            <input type="text" class="field-input" id="lastName" placeholder="Last" required>
+            <p class="name-sub-label">Last</p>
+          </div>
+        </div>
       </div>
+
       <div class="field-group">
-        <label class="field-label">Email<span class="required-mark">*</span></label>
+        <label class="field-label">Email Address<span class="required-mark">*</span></label>
         <input type="email" class="field-input" id="contactEmail" placeholder="you@school.edu" required>
       </div>
-    </div>
 
-    <div class="field-group">
-      <label class="field-label">Phone (Optional)</label>
-      <input type="tel" class="field-input" id="contactPhone" placeholder="(555) 555-5555">
-    </div>
-
-    <div class="field-group">
-      <label class="field-label">Number of Shirts<span class="required-mark">*</span></label>
-      <input type="text" class="field-input" id="quantity" placeholder="e.g. 60" required>
-    </div>
-
-    <div class="field-group">
-      <label class="field-label">Garment<span class="required-mark">*</span></label>
-      <select class="field-select" id="garmentType" required>
-        <option value="">Select a Garment&hellip;</option>
-        <option>T-Shirt</option>
-        <option>Hoodie</option>
-        <option>Hat</option>
-        <option>Tank Top</option>
-        <option>Drinkware</option>
-      </select>
-    </div>
-
-    <div class="field-group">
-      <label class="field-label">Color<span class="required-mark">*</span></label>
-      <select class="field-select" id="colorSelect" required>
-        <option value="">Select a Color&hellip;</option>
-        <option>Black</option>
-        <option>White</option>
-        <option>Cream</option>
-        <option>Gold</option>
-        <option>Navy</option>
-        <option>Charcoal</option>
-        <option>Heather Grey</option>
-        <option>Maroon</option>
-        <option>Forest Green</option>
-        <option>Light Blue</option>
-      </select>
-    </div>
-
-    <div class="field-group">
-      <label class="field-label">Would You Like to Make Any Changes?</label>
-      <textarea class="field-textarea" id="customizeNotes" placeholder="Ex. I&rsquo;d like to change the design&rsquo;s wording from &lsquo;Alpha Phi&rsquo; to &lsquo;Beta Chi&rsquo;"></textarea>
-    </div>
-
-    <div class="field-group">
-      <label class="field-label">Reference Images, Logos, etc. (Optional)</label>
-
-      <div style="margin-bottom:18px;">
-        <p style="font-size:13px;color:#4A453D;margin-bottom:8px;">Image 1</p>
-        <div class="file-field">
-          <div class="file-btn-wrap">
-            <span class="file-btn">Choose File</span>
-            <input type="file" class="file-input-hidden" id="refImage1" accept="image/*,.pdf" onchange="updateFileName('refImage1','fileName1')">
-          </div>
-          <span class="file-name" id="fileName1">No file chosen</span>
-        </div>
-        <p class="field-hint">Accepted file types: jpg, png, pdf. Max file size: 20 MB.</p>
+      <div class="field-group">
+        <label class="field-label">Phone Number<span class="required-mark">*</span></label>
+        <input type="tel" class="field-input" id="contactPhone" placeholder="(555) 555-5555" required>
       </div>
 
-      <div>
-        <p style="font-size:13px;color:#4A453D;margin-bottom:8px;">Image 2</p>
-        <div class="file-field">
-          <div class="file-btn-wrap">
-            <span class="file-btn">Choose File</span>
-            <input type="file" class="file-input-hidden" id="refImage2" accept="image/*,.pdf" onchange="updateFileName('refImage2','fileName2')">
-          </div>
-          <span class="file-name" id="fileName2">No file chosen</span>
-        </div>
-        <p class="field-hint">Accepted file types: jpg, png, pdf. Max file size: 20 MB.</p>
+      <div class="field-group">
+        <label class="field-label">Organization<span class="required-mark">*</span></label>
+        <input type="text" class="field-input" id="orgName" placeholder="e.g. Kappa Alpha Theta" required>
       </div>
-    </div>
 
-    <div class="submit-row">
-      <button type="submit" class="submit-btn">Submit Customization Request &rarr;</button>
+      <div class="field-group">
+        <label class="field-label">School<span class="required-mark">*</span></label>
+        <input type="text" class="field-input" id="schoolName" placeholder="e.g. University of Georgia" required>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">State or Province<span class="required-mark">*</span></label>
+        <select class="field-select" id="stateProvince" required>
+          <option value="">&mdash; Select State &mdash;</option>
+          <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option>
+          <option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option>
+          <option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option>
+          <option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option>
+          <option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option>
+          <option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option>
+          <option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option>
+          <option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option>
+          <option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option>
+          <option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option>
+          <option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option>
+          <option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option>
+          <option>Wisconsin</option><option>Wyoming</option><option>District of Columbia</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <div class="recaptcha-box">
+          <div class="recaptcha-checkbox" id="recaptchaCheck" onclick="this.classList.toggle('checked')"></div>
+          <div>
+            <span class="recaptcha-label">I&rsquo;m not a robot</span>
+            <p class="recaptcha-note">Verification will be enabled at checkout.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-nav-row">
+        <button type="button" class="prev-btn" onclick="goToStep1()">&larr; Previous</button>
+        <button type="submit" class="submit-btn">Send Request</button>
+      </div>
+
     </div>
 
   </form>
@@ -427,6 +498,26 @@ def make_customize():
     label.textContent = (input.files && input.files.length > 0) ? input.files[0].name : 'No file chosen';
   }
 
+  function goToStep2() {
+    const step1 = document.getElementById('stepDesign');
+    const requiredFields = step1.querySelectorAll('[required]');
+    for (const field of requiredFields) {
+      if (!field.checkValidity()) {
+        field.reportValidity();
+        return;
+      }
+    }
+    document.getElementById('stepDesign').classList.add('hidden');
+    document.getElementById('stepInfo').classList.remove('hidden');
+    window.scrollTo({top: document.getElementById('customizeForm').offsetTop - 100, behavior: 'smooth'});
+  }
+
+  function goToStep1() {
+    document.getElementById('stepInfo').classList.add('hidden');
+    document.getElementById('stepDesign').classList.remove('hidden');
+    window.scrollTo({top: document.getElementById('customizeForm').offsetTop - 100, behavior: 'smooth'});
+  }
+
   document.getElementById('customizeForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -436,16 +527,19 @@ def make_customize():
       design: design,
       category: category,
       designNumber: num,
-      organization: document.getElementById('orgName').value,
-      contactName: document.getElementById('contactName').value,
-      contactEmail: document.getElementById('contactEmail').value,
-      contactPhone: document.getElementById('contactPhone').value,
       quantity: document.getElementById('quantity').value,
       garment: document.getElementById('garmentType').value,
       color: document.getElementById('colorSelect').value,
       notes: document.getElementById('customizeNotes').value,
       referenceImage1: (document.getElementById('refImage1').files[0] || {}).name || null,
-      referenceImage2: (document.getElementById('refImage2').files[0] || {}).name || null
+      referenceImage2: (document.getElementById('refImage2').files[0] || {}).name || null,
+      firstName: document.getElementById('firstName').value,
+      lastName: document.getElementById('lastName').value,
+      contactEmail: document.getElementById('contactEmail').value,
+      contactPhone: document.getElementById('contactPhone').value,
+      organization: document.getElementById('orgName').value,
+      school: document.getElementById('schoolName').value,
+      state: document.getElementById('stateProvince').value
     };
     console.log('Customize request (not yet emailed):', submission);
 
