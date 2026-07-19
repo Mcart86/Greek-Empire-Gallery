@@ -88,7 +88,7 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .cat-hero-banner{position:relative;padding:120px 60px 88px;text-align:center;background:#FFFFFF;overflow:hidden;border-bottom:1px solid var(--border);}
 .cat-hero-content{position:relative;z-index:1;}
 .cat-hero-banner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:600;font-style:italic;line-height:0.9;margin-bottom:0;background:linear-gradient(90deg,#7A5010 0%,#C4881A 20%,#F5D77A 35%,#FFF6D8 45%,#F0C840 55%,#C4901C 70%,#8B6212 100%);background-size:250% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmerGold 4s linear infinite;}
-.cat-hero-banner .eyebrow{color:var(--gold);margin-bottom:20px;}
+.cat-hero-banner .eyebrow{font-family:'Bebas Neue',sans-serif;color:#1A1A1A;margin-bottom:20px;letter-spacing:0.2em;}
 .cat-desc{font-size:15px;font-weight:300;color:#6B6459;max-width:520px;margin:0 auto 40px;line-height:1.8;}
 .designs-section{padding:56px 60px 72px;max-width:1320px;margin:0 auto;}
 .designs-label{font-size:11px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
