@@ -18,6 +18,8 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:14px 6
 .subnav{display:flex;justify-content:center;gap:48px;padding:15px 24px;background:#0A0A0A;border-bottom:1px solid var(--border);flex-wrap:wrap;}
 .subnav a{color:var(--cream);font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap;}
 .subnav a:hover{color:var(--gold);}
+.subnav a.active{color:var(--gold);position:relative;}
+.subnav a.active::after{content:'';position:absolute;left:0;right:0;bottom:-15px;height:2px;background:var(--gold);}
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
 .rule{width:48px;height:2px;background:var(--gold);margin:22px auto;}
 .hero{text-align:center;padding:0;border-bottom:1px solid var(--border);position:relative;background-image:url('hero.jpg');background-size:cover;background-position:center;background-color:#0A0A0A;overflow:hidden;}
@@ -178,11 +180,11 @@ footer{flex-direction:column;gap:8px;text-align:center;}
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="Greek Empire"></a>
   <a href="https://greekempire.swagflo.com/" class="nav-back">&larr; Back to Site</a>
 </nav><div class="subnav">
-  <a href="https://greekempire.swagflo.com/">Design Your Own</a>
-  <a href="index.html">Design Gallery</a>
-  <a href="index.html">Shop by Sorority</a>
-  <a href="index.html">Shop by Fraternity</a>
-  <a href="https://greek-empire-ambassador-sign-up.vercel.app">Campus Ambassador</a>
+  <a href="https://greekempire.swagflo.com/design-your-own">Design Your Own</a>
+  <a href="index.html" class="active">Design Gallery</a>
+  <a href="https://greekempire.swagflo.com/sororities">Shop by Sorority</a>
+  <a href="https://greekempire.swagflo.com/fraternities">Shop by Fraternity</a>
+  <a href="https://greekempire.swagflo.com/ambassador">Campus Ambassador</a>
 </div>
 <section class="hero">
   <div class="hero-inner">
