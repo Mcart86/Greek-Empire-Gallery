@@ -102,6 +102,16 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .cust-hero{text-align:center;padding:88px 60px 56px;border-bottom:1px solid var(--border);}
 .cust-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,60px);font-weight:600;color:var(--cream);}
 .cust-hero p{font-size:14px;color:var(--muted);max-width:460px;margin:18px auto 0;line-height:1.7;}
+.progress-bar{display:flex;background:#0A0A0A;}
+.progress-step{flex:1;display:flex;align-items:center;gap:14px;padding:20px 24px 20px 44px;background:#1A1A1A;color:#8A8378;position:relative;}
+.progress-step:first-child{clip-path:polygon(0 0,calc(100% - 24px) 0,100% 50%,calc(100% - 24px) 100%,0 100%);padding-left:32px;z-index:3;}
+.progress-step:nth-child(2){clip-path:polygon(0 0,calc(100% - 24px) 0,100% 50%,calc(100% - 24px) 100%,0 100%,24px 50%);margin-left:-24px;z-index:2;}
+.progress-step:last-child{clip-path:polygon(0 0,100% 0,100% 100%,0 100%,24px 50%);margin-left:-24px;z-index:1;}
+.progress-step.active{background:var(--gold);color:var(--obsidian);}
+.progress-num{width:32px;height:32px;border:2px solid currentColor;display:flex;align-items:center;justify-content:center;font-family:'DM Sans',sans-serif;font-weight:600;font-size:14px;flex-shrink:0;}
+.progress-text{display:flex;flex-direction:column;}
+.progress-title{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;line-height:1.3;}
+.progress-sub{font-size:11px;opacity:0.75;margin-top:2px;line-height:1.3;}
 .cust-bg{background:#FFFFFF;}
 .cust-wrap{max-width:1080px;margin:0 auto;padding:64px 60px 96px;}
 .cust-grid{display:grid;grid-template-columns:320px 1fr;gap:56px;align-items:start;}
@@ -175,6 +185,9 @@ nav,footer{padding-left:20px;padding-right:20px;}
 .field-row{grid-template-columns:1fr;}
 .cust-grid{grid-template-columns:1fr;gap:32px;}
 .cust-preview{position:static;max-width:280px;margin:0 auto;}
+.progress-bar{flex-direction:column;}
+.progress-step,.progress-step:first-child,.progress-step:nth-child(2),.progress-step:last-child{clip-path:none;margin-left:0;padding:16px 20px;}
+.progress-sub{display:none;}
 footer{flex-direction:column;gap:8px;text-align:center;}
 }
 """
@@ -302,6 +315,31 @@ def make_customize():
   <h1>Customize This Design</h1>
   <p>Tell us the product, colors, and any changes you want &mdash; our art team will follow up with a proof.</p>
 </section>
+
+<div class="progress-bar" id="progressBar">
+  <div class="progress-step active" id="progStep1">
+    <div class="progress-num">1</div>
+    <div class="progress-text">
+      <span class="progress-title">Customize Your Design</span>
+      <span class="progress-sub">Make this design your own</span>
+    </div>
+  </div>
+  <div class="progress-step" id="progStep2">
+    <div class="progress-num">2</div>
+    <div class="progress-text">
+      <span class="progress-title">Your Information</span>
+      <span class="progress-sub">Contact information</span>
+    </div>
+  </div>
+  <div class="progress-step" id="progStep3">
+    <div class="progress-num">3</div>
+    <div class="progress-text">
+      <span class="progress-title">Confirmation</span>
+      <span class="progress-sub">That&rsquo;s it. You&rsquo;re done.</span>
+    </div>
+  </div>
+</div>
+
 <div class="cust-bg">
 <div class="cust-wrap">
 <div class="cust-grid">
@@ -474,8 +512,11 @@ def make_customize():
   </form>
 
   <div class="success-box" id="successBox">
-    <h3>Request Received</h3>
-    <p>Thanks &mdash; your customization request has been submitted. Our art team will follow up with a proof shortly.</p>
+    <p class="eyebrow" style="margin-bottom:16px;">Confirmation</p>
+    <h3>You&rsquo;re All Set!</h3>
+    <p>We have received your request and will be reaching out with an art proof soon.</p>
+    <p style="margin-top:14px;">Thank you for the opportunity to bring your design to life.</p>
+    <a href="index.html" class="cta-link" style="margin-top:32px;display:inline-block;">Return Home</a>
   </div>
 
   </div>
@@ -498,6 +539,12 @@ def make_customize():
     label.textContent = (input.files && input.files.length > 0) ? input.files[0].name : 'No file chosen';
   }
 
+  function setProgress(stepNum) {
+    document.getElementById('progStep1').classList.toggle('active', stepNum === 1);
+    document.getElementById('progStep2').classList.toggle('active', stepNum === 2);
+    document.getElementById('progStep3').classList.toggle('active', stepNum === 3);
+  }
+
   function goToStep2() {
     const step1 = document.getElementById('stepDesign');
     const requiredFields = step1.querySelectorAll('[required]');
@@ -509,12 +556,14 @@ def make_customize():
     }
     document.getElementById('stepDesign').classList.add('hidden');
     document.getElementById('stepInfo').classList.remove('hidden');
+    setProgress(2);
     window.scrollTo({top: document.getElementById('customizeForm').offsetTop - 100, behavior: 'smooth'});
   }
 
   function goToStep1() {
     document.getElementById('stepInfo').classList.add('hidden');
     document.getElementById('stepDesign').classList.remove('hidden');
+    setProgress(1);
     window.scrollTo({top: document.getElementById('customizeForm').offsetTop - 100, behavior: 'smooth'});
   }
 
@@ -545,6 +594,7 @@ def make_customize():
 
     document.getElementById('customizeForm').style.display = 'none';
     document.getElementById('successBox').classList.add('show');
+    setProgress(3);
   });
 </script>""" + foot()
     with open(f"{DIR}/customize.html", "w") as f:
