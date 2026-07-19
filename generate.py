@@ -114,13 +114,21 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .cust-summary-num{font-size:12px;color:#7A756C;}
 .field-group{margin-bottom:26px;}
 .field-label{display:block;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#9A7420;margin-bottom:10px;}
+.required-mark{color:#B8341C;margin-left:2px;}
 .field-input,.field-select,.field-textarea{width:100%;background:#FAF8F4;border:1px solid rgba(0,0,0,0.14);color:#1A1A1A;font-family:'DM Sans',sans-serif;font-size:14px;padding:13px 16px;transition:border-color .2s;}
 .field-input::placeholder,.field-textarea::placeholder{color:#A8A198;}
 .field-input:focus,.field-select:focus,.field-textarea:focus{outline:none;border-color:var(--gold);}
 .field-textarea{resize:vertical;min-height:130px;line-height:1.6;}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 .field-hint{font-size:11px;color:#8A8378;margin-top:8px;font-style:italic;}
-.submit-btn{width:100%;padding:17px;background:var(--gold);color:#FFFFFF;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:8px;}
+.file-field{display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.file-btn-wrap{position:relative;overflow:hidden;display:inline-block;}
+.file-btn{padding:12px 22px;border:1px solid #1A1A1A;background:#FFFFFF;color:#1A1A1A;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s;}
+.file-btn-wrap:hover .file-btn{background:#1A1A1A;color:#FFFFFF;}
+.file-input-hidden{position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;cursor:pointer;}
+.file-name{font-size:13px;color:#7A756C;}
+.submit-row{display:flex;justify-content:flex-end;margin-top:16px;}
+.submit-btn{width:auto;padding:16px 34px;background:var(--gold);color:#FFFFFF;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;cursor:pointer;transition:background .2s;}
 .submit-btn:hover{background:var(--gold-lt);}
 .success-box{display:none;text-align:center;padding:56px 24px;}
 .success-box.show{display:block;}
@@ -301,17 +309,17 @@ def make_customize():
   <form id="customizeForm">
 
     <div class="field-group">
-      <label class="field-label">Organization / Chapter Name</label>
+      <label class="field-label">Organization / Student Group Name<span class="required-mark">*</span></label>
       <input type="text" class="field-input" id="orgName" placeholder="e.g. Kappa Alpha Theta &mdash; University of Georgia" required>
     </div>
 
     <div class="field-row">
       <div class="field-group">
-        <label class="field-label">Your Name</label>
+        <label class="field-label">Your Name<span class="required-mark">*</span></label>
         <input type="text" class="field-input" id="contactName" placeholder="Full name" required>
       </div>
       <div class="field-group">
-        <label class="field-label">Email</label>
+        <label class="field-label">Email<span class="required-mark">*</span></label>
         <input type="email" class="field-input" id="contactEmail" placeholder="you@school.edu" required>
       </div>
     </div>
@@ -321,36 +329,76 @@ def make_customize():
       <input type="tel" class="field-input" id="contactPhone" placeholder="(555) 555-5555">
     </div>
 
-    <div class="field-row">
-      <div class="field-group">
-        <label class="field-label">Product</label>
-        <select class="field-select" id="productType" required>
-          <option value="">Select a product&hellip;</option>
-          <option>T-Shirt</option>
-          <option>Hoodie</option>
-          <option>Hat</option>
-          <option>Tank Top</option>
-          <option>Drinkware</option>
-        </select>
-      </div>
-      <div class="field-group">
-        <label class="field-label">Estimated Quantity</label>
-        <input type="text" class="field-input" id="quantity" placeholder="e.g. 60">
-      </div>
+    <div class="field-group">
+      <label class="field-label">Number of Shirts<span class="required-mark">*</span></label>
+      <input type="text" class="field-input" id="quantity" placeholder="e.g. 60" required>
     </div>
 
     <div class="field-group">
-      <label class="field-label">Preferred Color(s)</label>
-      <input type="text" class="field-input" id="colors" placeholder="e.g. Black body, gold ink, cream text">
-      <p class="field-hint">Be as specific as you&rsquo;d like &mdash; garment color, ink color, accent colors.</p>
+      <label class="field-label">Garment<span class="required-mark">*</span></label>
+      <select class="field-select" id="garmentType" required>
+        <option value="">Select a Garment&hellip;</option>
+        <option>T-Shirt</option>
+        <option>Hoodie</option>
+        <option>Hat</option>
+        <option>Tank Top</option>
+        <option>Drinkware</option>
+      </select>
     </div>
 
     <div class="field-group">
-      <label class="field-label">Tell Us How to Customize This For You</label>
-      <textarea class="field-textarea" id="customizeNotes" placeholder="Chapter letters, dates, event names, wording changes, size run, deadline &mdash; anything our art team should know." required></textarea>
+      <label class="field-label">Color<span class="required-mark">*</span></label>
+      <select class="field-select" id="colorSelect" required>
+        <option value="">Select a Color&hellip;</option>
+        <option>Black</option>
+        <option>White</option>
+        <option>Cream</option>
+        <option>Gold</option>
+        <option>Navy</option>
+        <option>Charcoal</option>
+        <option>Heather Grey</option>
+        <option>Maroon</option>
+        <option>Forest Green</option>
+        <option>Light Blue</option>
+      </select>
     </div>
 
-    <button type="submit" class="submit-btn">Submit Customization Request</button>
+    <div class="field-group">
+      <label class="field-label">Would You Like to Make Any Changes?</label>
+      <textarea class="field-textarea" id="customizeNotes" placeholder="Ex. I&rsquo;d like to change the design&rsquo;s wording from &lsquo;Alpha Phi&rsquo; to &lsquo;Beta Chi&rsquo;"></textarea>
+    </div>
+
+    <div class="field-group">
+      <label class="field-label">Reference Images, Logos, etc. (Optional)</label>
+
+      <div style="margin-bottom:18px;">
+        <p style="font-size:13px;color:#4A453D;margin-bottom:8px;">Image 1</p>
+        <div class="file-field">
+          <div class="file-btn-wrap">
+            <span class="file-btn">Choose File</span>
+            <input type="file" class="file-input-hidden" id="refImage1" accept="image/*,.pdf" onchange="updateFileName('refImage1','fileName1')">
+          </div>
+          <span class="file-name" id="fileName1">No file chosen</span>
+        </div>
+        <p class="field-hint">Accepted file types: jpg, png, pdf. Max file size: 20 MB.</p>
+      </div>
+
+      <div>
+        <p style="font-size:13px;color:#4A453D;margin-bottom:8px;">Image 2</p>
+        <div class="file-field">
+          <div class="file-btn-wrap">
+            <span class="file-btn">Choose File</span>
+            <input type="file" class="file-input-hidden" id="refImage2" accept="image/*,.pdf" onchange="updateFileName('refImage2','fileName2')">
+          </div>
+          <span class="file-name" id="fileName2">No file chosen</span>
+        </div>
+        <p class="field-hint">Accepted file types: jpg, png, pdf. Max file size: 20 MB.</p>
+      </div>
+    </div>
+
+    <div class="submit-row">
+      <button type="submit" class="submit-btn">Submit Customization Request &rarr;</button>
+    </div>
 
   </form>
 
@@ -373,6 +421,12 @@ def make_customize():
   document.getElementById('summaryName').textContent = design;
   document.getElementById('summaryNum').textContent = num ? ('#' + num) : '';
 
+  function updateFileName(inputId, labelId) {
+    const input = document.getElementById(inputId);
+    const label = document.getElementById(labelId);
+    label.textContent = (input.files && input.files.length > 0) ? input.files[0].name : 'No file chosen';
+  }
+
   document.getElementById('customizeForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -386,10 +440,12 @@ def make_customize():
       contactName: document.getElementById('contactName').value,
       contactEmail: document.getElementById('contactEmail').value,
       contactPhone: document.getElementById('contactPhone').value,
-      product: document.getElementById('productType').value,
       quantity: document.getElementById('quantity').value,
-      colors: document.getElementById('colors').value,
-      notes: document.getElementById('customizeNotes').value
+      garment: document.getElementById('garmentType').value,
+      color: document.getElementById('colorSelect').value,
+      notes: document.getElementById('customizeNotes').value,
+      referenceImage1: (document.getElementById('refImage1').files[0] || {}).name || null,
+      referenceImage2: (document.getElementById('refImage2').files[0] || {}).name || null
     };
     console.log('Customize request (not yet emailed):', submission);
 
