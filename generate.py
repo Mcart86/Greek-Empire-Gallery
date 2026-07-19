@@ -306,16 +306,43 @@ def foot():
 </body>
 </html>"""
 
+# Real uploaded designs — overrides the first N placeholder slots per category.
+REAL_DESIGNS = {
+    "Bid Day": [
+        {"name": "Alpha Phi — Bid Day 24 Yeehaw", "image": "bid-day-alpha-phi.jpg"},
+        {"name": "Delta Gamma — Bid Day 2024 Dream Big", "image": "bid-day-delta-gamma.jpg"},
+        {"name": "Kappa Delta — Bid Day 24 Choose Joy", "image": "bid-day-kappa-delta.jpg"},
+    ],
+}
+
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
     import urllib.parse
     cards = ""
     base_num = 1000 + (cat_idx * 50)
+    real_list = REAL_DESIGNS.get(cat_name, [])
     for i in range(count):
-        label = DESIGN_LABELS[i % len(DESIGN_LABELS)]
         num = base_num + (i + 1)
-        design_full_name = f"{cat_name} — {label}"
-        q = urllib.parse.urlencode({"design": design_full_name, "category": cat_name, "num": num})
-        cards += f"""    <div class="design-card reveal">
+        if i < len(real_list):
+            design_full_name = real_list[i]["name"]
+            q = urllib.parse.urlencode({"design": design_full_name, "category": cat_name, "num": num})
+            cards += f"""    <div class="design-card reveal">
+      <div class="design-img">
+        <img src="{real_list[i]['image']}" alt="{design_full_name}" style="width:100%;height:100%;object-fit:cover;">
+        <div class="design-overlay">
+          <a href="customize.html?{q}" class="customize-btn">Customize This Design</a>
+        </div>
+      </div>
+      <div class="design-info">
+        <span class="design-name">{design_full_name}</span>
+        <span class="design-num">#{num}</span>
+      </div>
+    </div>
+"""
+        else:
+            label = DESIGN_LABELS[i % len(DESIGN_LABELS)]
+            design_full_name = f"{cat_name} — {label}"
+            q = urllib.parse.urlencode({"design": design_full_name, "category": cat_name, "num": num})
+            cards += f"""    <div class="design-card reveal">
       <div class="design-img">
         {COL_SVG_DARK}
         <span class="design-ph-label">Image Coming Soon</span>
