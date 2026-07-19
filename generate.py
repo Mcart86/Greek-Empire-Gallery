@@ -431,6 +431,14 @@ REAL_DESIGNS = {
         {"name": "Rush Sigma Chi — Puppy in Boots Spring 2021", "image": "rush-sigma-chi-puppy-boots-spring-2021.jpg"},
         {"name": "Rush Kappa Sigma — Puppy in Boots Fall 2022", "image": "rush-kappa-sigma-puppy-boots-fall-2022.jpg"},
         {"name": "Rush Delta Tau Delta — Puppy in Sneakers Spring 2023", "image": "rush-delta-tau-delta-puppy-sneakers-spring-2023.jpg"},
+        {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
+        {"name": "Kappa Kappa Gamma — Lake Dog Recruitment Fall 2024", "image": "recruitment-kkg-lake-dog-fall-2024.jpg"},
+        {"name": "Delta Gamma — Coastal Dog Recruitment Fall 2024", "image": "recruitment-dg-coastal-dog-fall-2024.jpg"},
+    ],
+    "Recruitment": [
+        {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
+        {"name": "Kappa Kappa Gamma — Lake Dog Recruitment Fall 2024", "image": "recruitment-kkg-lake-dog-fall-2024.jpg"},
+        {"name": "Delta Gamma — Coastal Dog Recruitment Fall 2024", "image": "recruitment-dg-coastal-dog-fall-2024.jpg"},
     ],
     "5K Run": [
         {"name": "Run The Yard 5K — Arkansas–Fort Smith", "image": "5k-run-the-yard-arkansas-fort-smith.jpg"},
