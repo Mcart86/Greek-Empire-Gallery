@@ -430,6 +430,10 @@ REAL_DESIGNS = {
         {"name": "Kappa Delta — Shamrock 5K Run/Walk Blue", "image": "shamrock-kd-5k-blue.jpg"},
         {"name": "Kappa Delta — Shamrock 5K Run/Walk Pink", "image": "shamrock-kd-5k-pink.jpg"},
     ],
+    "Philanthropy": [
+        {"name": "Shoes Speak Louder — Prevent Child Abuse 2020", "image": "philanthropy-shoes-speak-louder-2020.jpg"},
+        {"name": "Strides for Stronger Tomorrows — Prevent Child Abuse 2020", "image": "philanthropy-strides-stronger-tomorrows-2020.jpg"},
+    ],
 }
 
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
