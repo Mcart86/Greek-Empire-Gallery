@@ -324,7 +324,7 @@ def design_cards(cat_name, cat_slug, cat_idx, count=12):
         num = base_num + (i + 1)
         if i < len(real_list):
             design_full_name = real_list[i]["name"]
-            q = urllib.parse.urlencode({"design": design_full_name, "category": cat_name, "num": num})
+            q = urllib.parse.urlencode({"design": design_full_name, "category": cat_name, "num": num, "image": real_list[i]["image"]})
             cards += f"""    <div class="design-card reveal">
       <div class="design-img">
         <img src="{real_list[i]['image']}" alt="{design_full_name}" style="width:100%;height:100%;object-fit:cover;">
@@ -457,7 +457,7 @@ def make_customize():
 <div class="cust-grid">
 
   <div class="cust-preview">
-    <div class="preview-img">
+    <div class="preview-img" id="previewImgBox">
       """ + COL_SVG_DARK + """
       <span class="design-ph-label">Image Coming Soon</span>
     </div>
@@ -650,9 +650,15 @@ def make_customize():
   const design = params.get('design') || 'Custom Design';
   const category = params.get('category') || '';
   const num = params.get('num') || '';
+  const image = params.get('image') || '';
 
   document.getElementById('summaryName').textContent = design;
   document.getElementById('summaryNum').textContent = num ? ('#' + num) : '';
+
+  if (image) {
+    document.getElementById('previewImgBox').innerHTML =
+      '<img src="' + image + '" alt="' + design + '" style="width:100%;height:100%;object-fit:cover;">';
+  }
 
   function renderRelatedDesigns() {
     const grid = document.getElementById('relatedDesigns');
@@ -669,11 +675,15 @@ def make_customize():
       return;
     }
     grid.innerHTML = related.map(function(d) {
-      const q = new URLSearchParams({design: d.name, category: category, num: d.num}).toString();
+      const qParams = {design: d.name, category: category, num: d.num};
+      if (d.image) qParams.image = d.image;
+      const q = new URLSearchParams(qParams).toString();
+      const imgBlock = d.image
+        ? '<img src="' + d.image + '" alt="' + d.name + '" style="width:100%;height:100%;object-fit:cover;">'
+        : '<svg width="32" height="32" viewBox="0 0 44 44" fill="none" style="opacity:0.18"><rect x="6" y="38" width="32" height="3" fill="#3D2A0A"/><rect x="10" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="20" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="30" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="6" y="6" width="32" height="4" fill="#3D2A0A"/><rect x="4" y="3" width="36" height="3" fill="#3D2A0A"/></svg><span class="design-ph-label">Image Coming Soon</span>';
       return '<div class="design-card reveal revealed">' +
         '<div class="design-img">' +
-          '<svg width="32" height="32" viewBox="0 0 44 44" fill="none" style="opacity:0.18"><rect x="6" y="38" width="32" height="3" fill="#3D2A0A"/><rect x="10" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="20" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="30" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="6" y="6" width="32" height="4" fill="#3D2A0A"/><rect x="4" y="3" width="36" height="3" fill="#3D2A0A"/></svg>' +
-          '<span class="design-ph-label">Image Coming Soon</span>' +
+          imgBlock +
           '<div class="design-overlay"><a href="customize.html?' + q + '" class="customize-btn">Customize This Design</a></div>' +
         '</div>' +
         '<a href="customize.html?' + q + '" class="design-info" style="text-decoration:none;display:block;">' +
@@ -754,10 +764,15 @@ def make_customize():
     all_designs = {}
     for idx, (cname, cslug, cdesc) in enumerate(CATS):
         base_num = 1000 + (idx * 50)
+        real_list = REAL_DESIGNS.get(cname, [])
         designs = []
         for i in range(12):
-            label = DESIGN_LABELS[i % len(DESIGN_LABELS)]
-            designs.append({"name": f"{cname} — {label}", "num": base_num + (i + 1)})
+            num = base_num + (i + 1)
+            if i < len(real_list):
+                designs.append({"name": real_list[i]["name"], "num": num, "image": real_list[i]["image"]})
+            else:
+                label = DESIGN_LABELS[i % len(DESIGN_LABELS)]
+                designs.append({"name": f"{cname} — {label}", "num": num, "image": None})
         all_designs[cname] = designs
     html = html.replace("ALL_DESIGNS_JSON_PLACEHOLDER", json.dumps(all_designs))
 
