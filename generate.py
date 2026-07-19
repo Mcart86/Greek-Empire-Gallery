@@ -312,6 +312,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Phi — Bid Day 24 Yeehaw", "image": "bid-day-alpha-phi.jpg"},
         {"name": "Delta Gamma — Bid Day 2024 Dream Big", "image": "bid-day-delta-gamma.jpg"},
         {"name": "Kappa Delta — Bid Day 24 Choose Joy", "image": "bid-day-kappa-delta.jpg"},
+        {"name": "Delta Zeta — Ready, Set, Bid! Golf Cart", "image": "bid-day-delta-zeta.jpg"},
+        {"name": "Good Things Are Ahead — Bid Day 2025", "image": "bid-day-good-things.jpg"},
+        {"name": "Game On, Go Greek! — Bid Day 2025", "image": "bid-day-game-on.jpg"},
     ],
 }
 
