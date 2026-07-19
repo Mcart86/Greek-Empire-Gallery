@@ -46,11 +46,11 @@ CSS = """
 :root{--obsidian:#0A0A0A;--gold:#B8963E;--gold-lt:#D4AF60;--cream:#F0EBE0;--muted:#5C5750;--border:rgba(184,150,62,0.2);--card:#111111;}
 body{background:var(--obsidian);color:var(--cream);font-family:'DM Sans',sans-serif;min-height:100vh;}
 .meander{width:100%;height:12px;background-image:url('""" + MEANDER_URL + """');background-repeat:repeat-x;}
-nav{display:flex;justify-content:space-between;align-items:center;padding:14px 60px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);z-index:100;}
+nav{display:flex;justify-content:space-between;align-items:center;padding:14px 60px;border-bottom:1px solid rgba(0,0,0,0.08);position:sticky;top:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(10px);z-index:100;}
 .nav-logo{display:flex;align-items:center;text-decoration:none;}
 .nav-logo img{height:52px;width:auto;}
-.nav-back{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
-.nav-back:hover{color:var(--cream);}
+.nav-back{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:#6B6459;text-decoration:none;transition:color .2s;}
+.nav-back:hover{color:var(--gold);}
 .subnav{display:flex;justify-content:center;gap:48px;padding:15px 24px;background:#0A0A0A;border-bottom:1px solid var(--border);flex-wrap:wrap;}
 .subnav a{color:var(--cream);font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap;}
 .subnav a:hover{color:var(--gold);}
@@ -225,11 +225,12 @@ def head(title):
 </head>
 <body>"""
 
-def nav_bar(back_text, back_href):
+def nav_bar(back_text=None, back_href=None):
+    back_link_html = f'<a href="{back_href}" class="nav-back">{back_text}</a>' if back_text else ''
     return f"""<div class="meander"></div>
 <nav>
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="Greek Empire"></a>
-  <a href="{back_href}" class="nav-back">{back_text}</a>
+  {back_link_html}
 </nav>"""
 
 def subnav():
@@ -285,7 +286,7 @@ def design_cards(cat_name, cat_slug, cat_idx, count=12):
 
 def make_index():
     items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
-    html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greekempire.swagflo.com/") + subnav() + f"""
+    html = head("Design Gallery") + nav_bar() + subnav() + f"""
 <section class="hero">
   <div class="hero-inner">
     <h1>Design Gallery</h1>
