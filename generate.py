@@ -418,6 +418,11 @@ REAL_DESIGNS = {
         {"name": "Kappa Sigma Chi — UFO Rush Phoenix 2024", "image": "rush-kappa-sigma-chi-ufo-phoenix-2024.jpg"},
         {"name": "Sigma Chi Omega — UFO Rush Dallas 2024", "image": "rush-sigma-chi-omega-ufo-dallas-2024.jpg"},
     ],
+    "5K Run": [
+        {"name": "Run The Yard 5K — Arkansas–Fort Smith", "image": "5k-run-the-yard-arkansas-fort-smith.jpg"},
+        {"name": "Lace Up Lead On 5K — Arkansas–Fort Smith", "image": "5k-lace-up-lead-on-arkansas-fort-smith.jpg"},
+        {"name": "Spread The Legacy 5K — Arkansas–Fort Smith", "image": "5k-spread-the-legacy-arkansas-fort-smith.jpg"},
+    ],
 }
 
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
