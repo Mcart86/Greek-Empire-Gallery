@@ -509,6 +509,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Delta Pi — Disco Ornaments Big Little Reveal", "image": "big-little-adpi-disco-ornaments.jpg"},
         {"name": "Gamma Phi Beta — Cowboy Boots Big Little Reveal", "image": "big-little-gamma-phi-beta-boots.jpg"},
         {"name": "Zeta Tau Alpha — Bottle Tumbler Big Little Reveal", "image": "big-little-zta-bottle-tumbler.jpg"},
+        {"name": "Alpha Phi — Beach Surfboards Big Little Reveal", "image": "big-little-alpha-phi-beach-surf.jpg"},
+        {"name": "Alpha Phi — Picnic Meadow Big Little Reveal", "image": "big-little-alpha-phi-picnic-meadow.jpg"},
+        {"name": "Alpha Phi — Paris Bikes Big Little Reveal", "image": "big-little-alpha-phi-paris-bikes.jpg"},
     ],
 }
 
