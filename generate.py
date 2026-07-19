@@ -502,6 +502,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
         {"name": "Delta Zeta — Boots Better Together Reveal", "image": "big-little-dz-boots-better-together.jpg"},
         {"name": "Kappa Delta — Skates Good Times Ahead Reveal", "image": "big-little-kd-skates-good-times-ahead.jpg"},
+        {"name": "Delta Zeta — Vintage Car Reveal 2022 Rollins College", "image": "big-little-dz-car-rollins-2022.jpg"},
+        {"name": "Alpha Omicron Pi — Picnic Reveal 2023 Tennessee", "image": "big-little-aopi-picnic-tennessee-2023.jpg"},
+        {"name": "Kappa Delta — Bicycle Reveal 2024 Georgia", "image": "big-little-kd-bicycle-georgia-2024.jpg"},
     ],
 }
 
