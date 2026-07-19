@@ -400,11 +400,17 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
         {"name": "Kappa Alpha Theta — Fall Rush 2025 Western", "image": "western-kat-fall-rush-2025.jpg"},
         {"name": "Sigma Chi — Fall Rush 2025 Western", "image": "western-sigma-chi-fall-rush-2025.jpg"},
+        {"name": "Delta Gamma — Fall Rush 2025 Cowboy", "image": "western-dg-fall-rush-2025-cowboy.jpg"},
+        {"name": "Kappa Alpha Theta — Fall Rush 2025 Cowboy", "image": "western-kat-fall-rush-2025-cowboy.jpg"},
+        {"name": "Sigma Chi — Fall Rush 2025 Cowboy", "image": "western-sigma-chi-fall-rush-2025-cowboy.jpg"},
     ],
     "Rush": [
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
         {"name": "Kappa Alpha Theta — Fall Rush 2025 Western", "image": "western-kat-fall-rush-2025.jpg"},
         {"name": "Sigma Chi — Fall Rush 2025 Western", "image": "western-sigma-chi-fall-rush-2025.jpg"},
+        {"name": "Delta Gamma — Fall Rush 2025 Cowboy", "image": "western-dg-fall-rush-2025-cowboy.jpg"},
+        {"name": "Kappa Alpha Theta — Fall Rush 2025 Cowboy", "image": "western-kat-fall-rush-2025-cowboy.jpg"},
+        {"name": "Sigma Chi — Fall Rush 2025 Cowboy", "image": "western-sigma-chi-fall-rush-2025-cowboy.jpg"},
     ],
 }
 
