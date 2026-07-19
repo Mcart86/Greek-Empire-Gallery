@@ -571,7 +571,16 @@ def make_customize():
 </div>
 </div>
 
+<div class="cat-bg">
+<section class="designs-section" id="relatedSection">
+  <p class="designs-label">You May Also Like</p>
+  <div class="designs-grid" id="relatedDesigns"></div>
+</section>
+</div>
+
 <script>
+  const allDesignsData = ALL_DESIGNS_JSON_PLACEHOLDER;
+
   const params = new URLSearchParams(window.location.search);
   const design = params.get('design') || 'Custom Design';
   const category = params.get('category') || '';
@@ -579,6 +588,37 @@ def make_customize():
 
   document.getElementById('summaryName').textContent = design;
   document.getElementById('summaryNum').textContent = num ? ('#' + num) : '';
+
+  function renderRelatedDesigns() {
+    const grid = document.getElementById('relatedDesigns');
+    const section = document.getElementById('relatedSection');
+    const list = allDesignsData[category];
+    if (!list) {
+      section.style.display = 'none';
+      return;
+    }
+    const currentNum = parseInt(num, 10);
+    const related = list.filter(function(d) { return d.num !== currentNum; }).slice(0, 4);
+    if (related.length === 0) {
+      section.style.display = 'none';
+      return;
+    }
+    grid.innerHTML = related.map(function(d) {
+      const q = new URLSearchParams({design: d.name, category: category, num: d.num}).toString();
+      return '<div class="design-card">' +
+        '<div class="design-img">' +
+          '<svg width="32" height="32" viewBox="0 0 44 44" fill="none" style="opacity:0.18"><rect x="6" y="38" width="32" height="3" fill="#3D2A0A"/><rect x="10" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="20" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="30" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="6" y="6" width="32" height="4" fill="#3D2A0A"/><rect x="4" y="3" width="36" height="3" fill="#3D2A0A"/></svg>' +
+          '<span class="design-ph-label">Image Coming Soon</span>' +
+          '<div class="design-overlay"><a href="customize.html?' + q + '" class="customize-btn">Customize This Design</a></div>' +
+        '</div>' +
+        '<a href="customize.html?' + q + '" class="design-info" style="text-decoration:none;display:block;">' +
+          '<span class="design-name">' + d.name + '</span>' +
+          '<span class="design-num">#' + d.num + '</span>' +
+        '</a>' +
+      '</div>';
+    }).join('');
+  }
+  renderRelatedDesigns();
 
   function updateFileName(inputId, labelId) {
     const input = document.getElementById(inputId);
@@ -644,6 +684,18 @@ def make_customize():
     setProgress(3);
   });
 </script>""" + foot()
+
+    import json
+    all_designs = {}
+    for idx, (cname, cslug, cdesc) in enumerate(CATS):
+        base_num = 1000 + (idx * 50)
+        designs = []
+        for i in range(12):
+            label = DESIGN_LABELS[i % len(DESIGN_LABELS)]
+            designs.append({"name": f"{cname} — {label}", "num": base_num + (i + 1)})
+        all_designs[cname] = designs
+    html = html.replace("ALL_DESIGNS_JSON_PLACEHOLDER", json.dumps(all_designs))
+
     with open(f"{DIR}/customize.html", "w") as f:
         f.write(html)
     print("✓ customize.html")
