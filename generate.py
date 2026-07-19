@@ -281,9 +281,9 @@ def make_index():
   </div>
 </section></div>
 <section class="cta">
-  <h2>Don&rsquo;t See What You Need?</h2>
-  <p>We design for any event, any theme, any chapter.</p>
-  <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
+  <h2>New Designs Drop First on the Feed.</h2>
+  <p>Follow us.</p>
+  <a href="https://www.instagram.com/_greekempire_" target="_blank" rel="noopener" class="cta-link">Follow Us</a>
 </section>""" + foot()
     with open(f"{DIR}/index.html", "w") as f:
         f.write(html)
