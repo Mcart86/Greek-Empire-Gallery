@@ -99,6 +99,13 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .browse-grid{display:grid;grid-template-columns:repeat(4,1fr);}
 .browse-item{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;color:var(--muted);text-decoration:none;padding:13px 12px 13px 0;border-bottom:1px solid rgba(184,150,62,0.1);display:block;transition:color .2s;}
 .browse-item:hover{color:var(--cream);}
+.cat-bg .design-card{background:#FFFFFF;border:1px solid rgba(0,0,0,0.1);box-shadow:0 4px 18px rgba(0,0,0,0.08);}
+.cat-bg .design-card:hover{border-color:var(--gold);box-shadow:0 12px 30px rgba(0,0,0,0.12),0 0 0 1px rgba(184,150,62,0.25);}
+.cat-bg .design-info{border-top:1px solid rgba(0,0,0,0.08);}
+.cat-bg .design-name{color:#1A1A1A;}
+.cat-bg .design-num{color:#7A756C;}
+.cat-bg .browse-item{color:#5C5750;border-bottom:1px solid rgba(0,0,0,0.08);}
+.cat-bg .browse-item:hover{color:#1A1A1A;}
 .cust-hero{text-align:center;padding:88px 60px 56px;border-bottom:1px solid var(--border);}
 .cust-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,60px);font-weight:600;color:var(--cream);}
 .cust-hero p{font-size:14px;color:var(--muted);max-width:460px;margin:18px auto 0;line-height:1.7;}
@@ -287,23 +294,27 @@ def make_cat(idx, name, slug, desc):
     <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
   </div>
 </section>
+<div class="cat-bg">
 <section class="designs-section">
   <p class="designs-label">Browse Designs</p>
   <div class="designs-grid">
 {cards}
   </div>
 </section>
+</div>
 <section class="cta">
   <h2>Ready to Place Your Order?</h2>
   <p>Custom {name.lower()} apparel designed for your chapter.</p>
   <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
 </section>
+<div class="cat-bg">
 <section class="browse-section">
   <p class="browse-label">Browse Other Categories</p>
   <div class="browse-grid">
 {others}
   </div>
-</section>""" + foot()
+</section>
+</div>""" + foot()
     with open(f"{DIR}/{slug}.html", "w") as f:
         f.write(html)
     print(f"✓ {slug}.html")
