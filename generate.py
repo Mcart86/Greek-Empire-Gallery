@@ -85,6 +85,9 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .foot-social-link{color:var(--gold);display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;transition:color .2s,border-color .2s,background .2s,transform .2s;}
 .foot-social-link:hover{color:var(--obsidian);background:var(--gold);border-color:var(--gold);transform:translateY(-2px);}
 .cta-social{display:flex;justify-content:center;gap:18px;}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,.8,.24,1),transform .7s cubic-bezier(.16,.8,.24,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
 .cat-hero-banner{position:relative;padding:48px 60px 32px;text-align:center;background:#FFFFFF;border-bottom:1px solid var(--border);}
 .cat-hero-content{position:relative;z-index:1;}
 .cat-hero-banner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:600;font-style:italic;line-height:1.25;padding-top:0.15em;margin-bottom:0;background:linear-gradient(90deg,#7A5010 0%,#C4881A 20%,#F5D77A 35%,#FFF6D8 45%,#F0C840 55%,#C4901C 70%,#8B6212 100%);background-size:250% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmerGold 4s linear infinite;}
@@ -256,6 +259,30 @@ def foot():
     </a>
   </div>
 </footer>
+<script>
+  (function() {
+    var els = document.querySelectorAll('.reveal:not(.revealed)');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function(el) { el.classList.add('revealed'); });
+      return;
+    }
+    var counters = new Map();
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var parent = el.parentElement;
+          var idx = counters.get(parent) || 0;
+          el.style.transitionDelay = Math.min(idx * 60, 360) + 'ms';
+          counters.set(parent, idx + 1);
+          el.classList.add('revealed');
+          io.unobserve(el);
+        }
+      });
+    }, {threshold: 0.15, rootMargin: '0px 0px -40px 0px'});
+    els.forEach(function(el) { io.observe(el); });
+  })();
+</script>
 </body>
 </html>"""
 
@@ -268,7 +295,7 @@ def design_cards(cat_name, cat_slug, cat_idx, count=12):
         num = base_num + (i + 1)
         design_full_name = f"{cat_name} — {label}"
         q = urllib.parse.urlencode({"design": design_full_name, "category": cat_name, "num": num})
-        cards += f"""    <div class="design-card">
+        cards += f"""    <div class="design-card reveal">
       <div class="design-img">
         {COL_SVG_DARK}
         <span class="design-ph-label">Image Coming Soon</span>
@@ -285,7 +312,7 @@ def design_cards(cat_name, cat_slug, cat_idx, count=12):
     return cards
 
 def make_index():
-    items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
+    items = "\n".join(f'    <a href="{slug}.html" class="cat-item reveal">{name}</a>' for name, slug, _ in CATS)
     html = head("Design Gallery") + nav_bar() + subnav() + f"""
 <section class="hero">
   <div class="hero-inner">
@@ -605,7 +632,7 @@ def make_customize():
     }
     grid.innerHTML = related.map(function(d) {
       const q = new URLSearchParams({design: d.name, category: category, num: d.num}).toString();
-      return '<div class="design-card">' +
+      return '<div class="design-card reveal revealed">' +
         '<div class="design-img">' +
           '<svg width="32" height="32" viewBox="0 0 44 44" fill="none" style="opacity:0.18"><rect x="6" y="38" width="32" height="3" fill="#3D2A0A"/><rect x="10" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="20" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="30" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="6" y="6" width="32" height="4" fill="#3D2A0A"/><rect x="4" y="3" width="36" height="3" fill="#3D2A0A"/></svg>' +
           '<span class="design-ph-label">Image Coming Soon</span>' +

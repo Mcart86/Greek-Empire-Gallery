@@ -49,6 +49,9 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .foot-social-link{color:var(--gold);display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;transition:color .2s,border-color .2s,background .2s,transform .2s;}
 .foot-social-link:hover{color:var(--obsidian);background:var(--gold);border-color:var(--gold);transform:translateY(-2px);}
 .cta-social{display:flex;justify-content:center;gap:18px;}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,.8,.24,1),transform .7s cubic-bezier(.16,.8,.24,1);}
+.reveal.revealed{opacity:1;transform:translateY(0);}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
 .cat-hero-banner{position:relative;padding:48px 60px 32px;text-align:center;background:#FFFFFF;border-bottom:1px solid var(--border);}
 .cat-hero-content{position:relative;z-index:1;}
 .cat-hero-banner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:600;font-style:italic;line-height:1.25;padding-top:0.15em;margin-bottom:0;background:linear-gradient(90deg,#7A5010 0%,#C4881A 20%,#F5D77A 35%,#FFF6D8 45%,#F0C840 55%,#C4901C 70%,#8B6212 100%);background-size:250% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmerGold 4s linear infinite;}
@@ -195,30 +198,30 @@ footer{flex-direction:column;gap:8px;text-align:center;}
 </section>
 <div class="cat-bg"><section class="cat-section">
   <div class="cat-grid">
-    <a href="spring-break.html" class="cat-item">Spring Break</a>
-    <a href="winter.html" class="cat-item">Winter</a>
-    <a href="western.html" class="cat-item">Western</a>
-    <a href="sixties.html" class="cat-item">Sixties</a>
-    <a href="halloween.html" class="cat-item">Halloween</a>
-    <a href="formal.html" class="cat-item">Formal</a>
-    <a href="dog-and-puppy.html" class="cat-item">Dog & Puppy</a>
-    <a href="christmas.html" class="cat-item">Christmas</a>
-    <a href="5k-run.html" class="cat-item">5K Run</a>
-    <a href="rush.html" class="cat-item">Rush</a>
-    <a href="sports.html" class="cat-item">Sports</a>
-    <a href="fraternity.html" class="cat-item">Fraternity</a>
-    <a href="sisterhood-retreat.html" class="cat-item">Sisterhood Retreat</a>
-    <a href="cowgirl.html" class="cat-item">Cowgirl</a>
-    <a href="bid-day.html" class="cat-item">Bid Day</a>
-    <a href="recruitment.html" class="cat-item">Recruitment</a>
-    <a href="panhellenic.html" class="cat-item">Panhellenic</a>
-    <a href="philanthropy.html" class="cat-item">Philanthropy</a>
-    <a href="big-little.html" class="cat-item">Big Little</a>
-    <a href="beach.html" class="cat-item">Beach</a>
-    <a href="shamrock.html" class="cat-item">Shamrock</a>
-    <a href="mixers.html" class="cat-item">Mixers</a>
-    <a href="moms-day.html" class="cat-item">Mom's Day</a>
-    <a href="weekend-getaway.html" class="cat-item">Weekend Getaway</a>
+    <a href="spring-break.html" class="cat-item reveal">Spring Break</a>
+    <a href="winter.html" class="cat-item reveal">Winter</a>
+    <a href="western.html" class="cat-item reveal">Western</a>
+    <a href="sixties.html" class="cat-item reveal">Sixties</a>
+    <a href="halloween.html" class="cat-item reveal">Halloween</a>
+    <a href="formal.html" class="cat-item reveal">Formal</a>
+    <a href="dog-and-puppy.html" class="cat-item reveal">Dog & Puppy</a>
+    <a href="christmas.html" class="cat-item reveal">Christmas</a>
+    <a href="5k-run.html" class="cat-item reveal">5K Run</a>
+    <a href="rush.html" class="cat-item reveal">Rush</a>
+    <a href="sports.html" class="cat-item reveal">Sports</a>
+    <a href="fraternity.html" class="cat-item reveal">Fraternity</a>
+    <a href="sisterhood-retreat.html" class="cat-item reveal">Sisterhood Retreat</a>
+    <a href="cowgirl.html" class="cat-item reveal">Cowgirl</a>
+    <a href="bid-day.html" class="cat-item reveal">Bid Day</a>
+    <a href="recruitment.html" class="cat-item reveal">Recruitment</a>
+    <a href="panhellenic.html" class="cat-item reveal">Panhellenic</a>
+    <a href="philanthropy.html" class="cat-item reveal">Philanthropy</a>
+    <a href="big-little.html" class="cat-item reveal">Big Little</a>
+    <a href="beach.html" class="cat-item reveal">Beach</a>
+    <a href="shamrock.html" class="cat-item reveal">Shamrock</a>
+    <a href="mixers.html" class="cat-item reveal">Mixers</a>
+    <a href="moms-day.html" class="cat-item reveal">Mom's Day</a>
+    <a href="weekend-getaway.html" class="cat-item reveal">Weekend Getaway</a>
   </div>
 </section></div>
 <section class="cta">
@@ -245,5 +248,29 @@ footer{flex-direction:column;gap:8px;text-align:center;}
     </a>
   </div>
 </footer>
+<script>
+  (function() {
+    var els = document.querySelectorAll('.reveal:not(.revealed)');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function(el) { el.classList.add('revealed'); });
+      return;
+    }
+    var counters = new Map();
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var el = entry.target;
+          var parent = el.parentElement;
+          var idx = counters.get(parent) || 0;
+          el.style.transitionDelay = Math.min(idx * 60, 360) + 'ms';
+          counters.set(parent, idx + 1);
+          el.classList.add('revealed');
+          io.unobserve(el);
+        }
+      });
+    }, {threshold: 0.15, rootMargin: '0px 0px -40px 0px'});
+    els.forEach(function(el) { io.observe(el); });
+  })();
+</script>
 </body>
 </html>
