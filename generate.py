@@ -51,6 +51,9 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:14px 6
 .nav-logo img{height:52px;width:auto;}
 .nav-back{font-size:12px;font-weight:400;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;}
 .nav-back:hover{color:var(--cream);}
+.subnav{display:flex;justify-content:center;gap:48px;padding:15px 24px;background:#0A0A0A;border-bottom:1px solid var(--border);flex-wrap:wrap;}
+.subnav a{color:var(--cream);font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:color .2s;white-space:nowrap;}
+.subnav a:hover{color:var(--gold);}
 .eyebrow{font-size:11px;font-weight:500;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
 .rule{width:48px;height:2px;background:var(--gold);margin:22px auto;}
 .hero{text-align:center;padding:0;border-bottom:1px solid var(--border);position:relative;background-image:url('hero.jpg');background-size:cover;background-position:center;background-color:#0A0A0A;overflow:hidden;}
@@ -184,6 +187,8 @@ nav,footer{padding-left:32px;padding-right:32px;}
 }
 @media(max-width:640px){
 nav,footer{padding-left:20px;padding-right:20px;}
+.subnav{gap:22px;padding:13px 16px;justify-content:flex-start;overflow-x:auto;}
+.subnav a{font-size:11px;}
 .hero-inner,.cat-hero-banner{padding-left:20px;padding-right:20px;}
 .hero-inner{padding-top:64px;padding-bottom:48px;}
 .cat-hero-banner{padding-top:64px;padding-bottom:48px;}
@@ -224,6 +229,14 @@ def nav_bar(back_text, back_href):
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="Greek Empire"></a>
   <a href="{back_href}" class="nav-back">{back_text}</a>
 </nav>"""
+
+def subnav():
+    return """<div class="subnav">
+  <a href="https://greekempire.swagflo.com/">Design Your Own</a>
+  <a href="index.html">Design Gallery</a>
+  <a href="index.html">Shop By Organization</a>
+  <a href="https://greek-empire-ambassador-sign-up.vercel.app">Campus Ambassador</a>
+</div>"""
 
 def foot():
     return """<div class="meander"></div>
@@ -269,7 +282,7 @@ def design_cards(cat_name, cat_slug, cat_idx, count=12):
 
 def make_index():
     items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
-    html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greekempire.swagflo.com/") + f"""
+    html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greekempire.swagflo.com/") + subnav() + f"""
 <section class="hero">
   <div class="hero-inner">
     <h1>Design Gallery</h1>
@@ -304,7 +317,7 @@ def make_cat(idx, name, slug, desc):
         for n, s, _ in CATS if s != slug
     )
     cards = design_cards(name, slug, idx, count=12)
-    html = head(name) + nav_bar("&larr; The Collection", "index.html") + f"""
+    html = head(name) + nav_bar("&larr; The Collection", "index.html") + subnav() + f"""
 <section class="cat-hero-banner">
   <div class="cat-hero-content">
     <p class="eyebrow">Design Gallery</p>
@@ -340,7 +353,7 @@ def make_cat(idx, name, slug, desc):
     print(f"✓ {slug}.html")
 
 def make_customize():
-    html = head("Customize This Design") + nav_bar("&larr; The Collection", "index.html") + """
+    html = head("Customize This Design") + nav_bar("&larr; The Collection", "index.html") + subnav() + """
 <section class="cust-hero">
   <p class="eyebrow">Custom Order Request</p>
   <h1>Customize This Design</h1>
