@@ -364,6 +364,9 @@ REAL_DESIGNS = {
         {"name": "Pi Kappa Phi — Spring Formal Santa Barbara", "image": "formal-pkp-spring-santa-barbara.jpg"},
         {"name": "Pi Kappa Phi — Spring Formal San Antonio", "image": "formal-pkp-spring-san-antonio.jpg"},
         {"name": "Pi Kappa Phi — Spring Formal Orlando", "image": "formal-pkp-spring-orlando.jpg"},
+        {"name": "Alpha Chi Omega — Atlantic City Semi-Formal", "image": "formal-axo-atlantic-city-semiformal.jpg"},
+        {"name": "Delta Gamma — Nashville Semi-Formal", "image": "formal-dg-nashville-semiformal.jpg"},
+        {"name": "Kappa Kappa Gamma — New Orleans Semi-Formal", "image": "formal-kkg-new-orleans-semiformal.jpg"},
     ],
 }
 
