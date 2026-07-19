@@ -367,6 +367,10 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Atlantic City Semi-Formal", "image": "formal-axo-atlantic-city-semiformal.jpg"},
         {"name": "Delta Gamma — Nashville Semi-Formal", "image": "formal-dg-nashville-semiformal.jpg"},
         {"name": "Kappa Kappa Gamma — New Orleans Semi-Formal", "image": "formal-kkg-new-orleans-semiformal.jpg"},
+        {"name": "Alpha Chi Omega — Spring Formal 2024 San Diego", "image": "formal-axo-spring-san-diego-2024.jpg"},
+        {"name": "Delta Gamma — Spring Formal 2025 Denver", "image": "formal-dg-spring-denver-2025.jpg"},
+        {"name": "Pi Beta Phi — Spring Formal 2026 Chicago", "image": "formal-pbp-spring-chicago-2026.jpg"},
+        {"name": "Gamma Phi Beta — Spring Formal 2027 Philadelphia", "image": "formal-gpb-spring-philadelphia-2027.jpg"},
     ],
 }
 
