@@ -386,6 +386,14 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Fall Formal 2026 Dallas", "image": "western-dg-fall-formal-2026-dallas.jpg"},
         {"name": "Kappa Alpha Theta — Fall Formal 2026 Phoenix", "image": "western-kat-fall-formal-2026-phoenix.jpg"},
         {"name": "Alpha Omicron Pi — Fall Formal 2026 Lake Travis", "image": "western-aopi-fall-formal-2026-lake-travis.jpg"},
+        {"name": "Alpha Chi Omega — Jeep Dogs Spring Formal 2020", "image": "formal-axo-jeep-dogs-spring-2020.jpg"},
+        {"name": "Sigma Phi Epsilon — Jeep Dogs Spring Formal 2021", "image": "formal-sigep-jeep-dogs-spring-2021.jpg"},
+        {"name": "Kappa Alpha Theta — Jeep Dogs Spring Formal 2022", "image": "formal-kat-jeep-dogs-spring-2022.jpg"},
+    ],
+    "Dog & Puppy": [
+        {"name": "Alpha Chi Omega — Jeep Dogs Spring Formal 2020", "image": "formal-axo-jeep-dogs-spring-2020.jpg"},
+        {"name": "Sigma Phi Epsilon — Jeep Dogs Spring Formal 2021", "image": "formal-sigep-jeep-dogs-spring-2021.jpg"},
+        {"name": "Kappa Alpha Theta — Jeep Dogs Spring Formal 2022", "image": "formal-kat-jeep-dogs-spring-2022.jpg"},
     ],
     "Western": [
         {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
