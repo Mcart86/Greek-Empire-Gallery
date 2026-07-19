@@ -394,6 +394,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Jeep Dogs Spring Formal 2020", "image": "formal-axo-jeep-dogs-spring-2020.jpg"},
         {"name": "Sigma Phi Epsilon — Jeep Dogs Spring Formal 2021", "image": "formal-sigep-jeep-dogs-spring-2021.jpg"},
         {"name": "Kappa Alpha Theta — Jeep Dogs Spring Formal 2022", "image": "formal-kat-jeep-dogs-spring-2022.jpg"},
+        {"name": "Rush Sigma Chi — Puppy in Boots Spring 2021", "image": "rush-sigma-chi-puppy-boots-spring-2021.jpg"},
+        {"name": "Rush Kappa Sigma — Puppy in Boots Fall 2022", "image": "rush-kappa-sigma-puppy-boots-fall-2022.jpg"},
+        {"name": "Rush Delta Tau Delta — Puppy in Sneakers Spring 2023", "image": "rush-delta-tau-delta-puppy-sneakers-spring-2023.jpg"},
     ],
     "Western": [
         {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
@@ -425,6 +428,9 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma Chi — UFO Rush Austin 2024", "image": "rush-dg-chi-ufo-austin-2024.jpg"},
         {"name": "Kappa Sigma Chi — UFO Rush Phoenix 2024", "image": "rush-kappa-sigma-chi-ufo-phoenix-2024.jpg"},
         {"name": "Sigma Chi Omega — UFO Rush Dallas 2024", "image": "rush-sigma-chi-omega-ufo-dallas-2024.jpg"},
+        {"name": "Rush Sigma Chi — Puppy in Boots Spring 2021", "image": "rush-sigma-chi-puppy-boots-spring-2021.jpg"},
+        {"name": "Rush Kappa Sigma — Puppy in Boots Fall 2022", "image": "rush-kappa-sigma-puppy-boots-fall-2022.jpg"},
+        {"name": "Rush Delta Tau Delta — Puppy in Sneakers Spring 2023", "image": "rush-delta-tau-delta-puppy-sneakers-spring-2023.jpg"},
     ],
     "5K Run": [
         {"name": "Run The Yard 5K — Arkansas–Fort Smith", "image": "5k-run-the-yard-arkansas-fort-smith.jpg"},
