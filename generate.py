@@ -357,6 +357,11 @@ REAL_DESIGNS = {
         {"name": "Sigma Alpha Epsilon — Pumpkin Harvest 2023", "image": "halloween-sae-pumpkin-harvest.jpg"},
         {"name": "Alpha Delta Pi — Pumpkin Season 2022", "image": "halloween-adpi-pumpkin-season.jpg"},
     ],
+    "Formal": [
+        {"name": "Alpha Delta Pi — Twilight Tropics Fall Formal 2025", "image": "formal-adpi-twilight-tropics-2025.jpg"},
+        {"name": "Zeta Tau Alpha — Twilight Tropics Fall Formal 2026", "image": "formal-zta-twilight-tropics-2026.jpg"},
+        {"name": "Kappa Kappa Gamma — Twilight Tropics Fall Formal 2028", "image": "formal-kkg-twilight-tropics-2028.jpg"},
+    ],
 }
 
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
