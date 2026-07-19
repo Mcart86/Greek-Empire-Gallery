@@ -61,6 +61,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:14px 6
 .hero{text-align:center;padding:0;border-bottom:1px solid var(--border);position:relative;background:#FFFFFF;overflow:hidden;}
 .hero-inner{padding:100px 60px 80px;position:relative;z-index:1;}
 .hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,80px);font-weight:700;line-height:1;background:linear-gradient(135deg,#7A5010 0%,#C4881A 25%,#F0C840 50%,#C4901C 75%,#8B6212 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.hero h1 .bebas-line{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:0.02em;}
 .hero-sub{font-size:14px;font-weight:300;color:#6B6459;font-style:italic;}
 .cat-bg{background:#FFFFFF;}
 .cat-section{padding:80px 60px 96px;max-width:1280px;margin:0 auto;}
@@ -83,12 +84,11 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .foot-social-link{color:var(--gold);display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--border);border-radius:50%;transition:color .2s,border-color .2s,background .2s,transform .2s;}
 .foot-social-link:hover{color:var(--obsidian);background:var(--gold);border-color:var(--gold);transform:translateY(-2px);}
 .cta-social{display:flex;justify-content:center;gap:18px;}
-.cat-hero-banner{position:relative;padding:120px 60px 88px;text-align:center;background:linear-gradient(160deg,#070707 0%,#100E04 100%);overflow:hidden;border-bottom:1px solid var(--border);}
-.cat-hero-banner::before{content:'';position:absolute;inset:0;background-image:url('""" + MEANDER_DARK_URL + """');background-repeat:repeat;background-size:40px 12px;pointer-events:none;}
+.cat-hero-banner{position:relative;padding:120px 60px 88px;text-align:center;background:#FFFFFF;overflow:hidden;border-bottom:1px solid var(--border);}
 .cat-hero-content{position:relative;z-index:1;}
-.cat-hero-banner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:600;line-height:0.9;color:var(--cream);margin-bottom:0;}
+.cat-hero-banner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:600;line-height:0.9;color:#1A1A1A;margin-bottom:0;}
 .cat-hero-banner .eyebrow{color:var(--gold);margin-bottom:20px;}
-.cat-desc{font-size:15px;font-weight:300;color:var(--muted);max-width:520px;margin:0 auto 40px;line-height:1.8;}
+.cat-desc{font-size:15px;font-weight:300;color:#6B6459;max-width:520px;margin:0 auto 40px;line-height:1.8;}
 .designs-section{padding:56px 60px 72px;max-width:1320px;margin:0 auto;}
 .designs-label{font-size:11px;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;}
 .designs-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
@@ -115,9 +115,9 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .cat-bg .design-num{color:#7A756C;}
 .cat-bg .browse-item{color:#5C5750;border-bottom:1px solid rgba(0,0,0,0.08);}
 .cat-bg .browse-item:hover{color:#1A1A1A;}
-.cust-hero{text-align:center;padding:88px 60px 56px;border-bottom:1px solid var(--border);}
-.cust-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,60px);font-weight:600;color:var(--cream);}
-.cust-hero p{font-size:14px;color:var(--muted);max-width:460px;margin:18px auto 0;line-height:1.7;}
+.cust-hero{text-align:center;padding:88px 60px 56px;border-bottom:1px solid var(--border);background:#FFFFFF;}
+.cust-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,60px);font-weight:600;color:#1A1A1A;}
+.cust-hero p{font-size:14px;color:#6B6459;max-width:460px;margin:18px auto 0;line-height:1.7;}
 .progress-bar{display:flex;background:#0A0A0A;}
 .progress-step{flex:1;display:flex;align-items:center;gap:14px;padding:20px 24px 20px 44px;background:#1A1A1A;color:#8A8378;position:relative;}
 .progress-step:first-child{clip-path:polygon(0 0,calc(100% - 24px) 0,100% 50%,calc(100% - 24px) 100%,0 100%);padding-left:32px;z-index:3;}
@@ -210,7 +210,7 @@ footer{flex-direction:column;gap:8px;text-align:center;}
 }
 """
 
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">'
+FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">'
 
 def head(title):
     return f"""<!DOCTYPE html>
@@ -288,7 +288,7 @@ def make_index():
     html = head("Design Gallery") + nav_bar() + subnav() + f"""
 <section class="hero">
   <div class="hero-inner">
-    <h1>Hundreds of Collections.<br>Every Occasion.</h1>
+    <h1><span class="bebas-line">Hundreds of Collections.</span><br>Every Occasion.</h1>
     <div class="rule"></div>
     <p class="hero-sub">Start with a design built for the moment &mdash; then make it yours.</p>
   </div>
