@@ -452,6 +452,8 @@ REAL_DESIGNS = {
         {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
         {"name": "Alpha Gamma Delta — Ski Spring Rush 2026", "image": "winter-agd-ski-spring-rush-2026.jpg"},
         {"name": "Delta Delta Delta — Ski Spring Rush 2026", "image": "winter-tri-delta-ski-spring-rush-2026.jpg"},
+        {"name": "Kappa Alpha Order — Winter Rush 2026 Breckenridge", "image": "winter-ka-winter-rush-2026-breckenridge.jpg"},
+        {"name": "Kappa Alpha Order — Spring Rush 2026 Park City", "image": "winter-ka-spring-rush-2026-park-city.jpg"},
     ],
     "Winter": [
         {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
@@ -463,6 +465,8 @@ REAL_DESIGNS = {
         {"name": "Pi Kappa Phi — Winter Formal 2026 Alpha Gamma Chapter", "image": "winter-pkp-winter-formal-2026-alpha-gamma.jpg"},
         {"name": "Pi Kappa Phi — Winter Weekend 2026 Beta Beta Chapter", "image": "winter-pkp-winter-weekend-2026-beta-beta.jpg"},
         {"name": "Pi Kappa Phi — Snow Bash 2026 Delta Delta Chapter", "image": "winter-pkp-snow-bash-2026-delta-delta.jpg"},
+        {"name": "Kappa Alpha Order — Winter Rush 2026 Breckenridge", "image": "winter-ka-winter-rush-2026-breckenridge.jpg"},
+        {"name": "Kappa Alpha Order — Spring Rush 2026 Park City", "image": "winter-ka-spring-rush-2026-park-city.jpg"},
     ],
     "Recruitment": [
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
