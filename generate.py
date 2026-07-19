@@ -350,6 +350,9 @@ REAL_DESIGNS = {
         {"name": "Phi Kappa Psi — Halloween Affair 2023", "image": "halloween-pkp-affair.jpg"},
         {"name": "Delta Gamma — Halloween Night 2023", "image": "halloween-dg-night.jpg"},
         {"name": "Alpha Sigma Phi — Haunted House 2023", "image": "halloween-asp-haunted-house.jpg"},
+        {"name": "Sigma Alpha Epsilon — Halloween Bash 2022", "image": "halloween-sae-bash-2022.jpg"},
+        {"name": "Alpha Tau Omega — Halloween Bash 2021", "image": "halloween-ato-bash-2021.jpg"},
+        {"name": "Kappa Kappa Gamma — Halloween Bash 2023", "image": "halloween-kkg-bash-2023.jpg"},
     ],
 }
 
