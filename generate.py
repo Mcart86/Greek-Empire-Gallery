@@ -102,24 +102,26 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .cust-hero{text-align:center;padding:88px 60px 56px;border-bottom:1px solid var(--border);}
 .cust-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,5vw,60px);font-weight:600;color:var(--cream);}
 .cust-hero p{font-size:14px;color:var(--muted);max-width:460px;margin:18px auto 0;line-height:1.7;}
-.cust-wrap{max-width:640px;margin:0 auto;padding:56px 60px 96px;}
-.cust-summary{background:var(--card);border:1px solid var(--border);padding:20px 24px;margin-bottom:40px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
-.cust-summary-label{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:6px;}
-.cust-summary-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:var(--cream);}
-.cust-summary-num{font-size:12px;color:var(--muted);}
+.cust-bg{background:#FFFFFF;}
+.cust-wrap{max-width:640px;margin:0 auto;padding:64px 60px 96px;}
+.cust-summary{background:#F7F4EC;border:1px solid rgba(184,150,62,0.35);padding:20px 24px;margin-bottom:40px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;}
+.cust-summary-label{font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:#9A7420;display:block;margin-bottom:6px;}
+.cust-summary-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;color:#1A1A1A;}
+.cust-summary-num{font-size:12px;color:#7A756C;}
 .field-group{margin-bottom:26px;}
-.field-label{display:block;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;}
-.field-input,.field-select,.field-textarea{width:100%;background:var(--card);border:1px solid var(--border);color:var(--cream);font-family:'DM Sans',sans-serif;font-size:14px;padding:13px 16px;transition:border-color .2s;}
+.field-label{display:block;font-size:11px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;color:#9A7420;margin-bottom:10px;}
+.field-input,.field-select,.field-textarea{width:100%;background:#FAF8F4;border:1px solid rgba(0,0,0,0.14);color:#1A1A1A;font-family:'DM Sans',sans-serif;font-size:14px;padding:13px 16px;transition:border-color .2s;}
+.field-input::placeholder,.field-textarea::placeholder{color:#A8A198;}
 .field-input:focus,.field-select:focus,.field-textarea:focus{outline:none;border-color:var(--gold);}
 .field-textarea{resize:vertical;min-height:130px;line-height:1.6;}
 .field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.field-hint{font-size:11px;color:var(--muted);margin-top:8px;font-style:italic;}
-.submit-btn{width:100%;padding:17px;background:var(--gold);color:var(--obsidian);border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:8px;}
+.field-hint{font-size:11px;color:#8A8378;margin-top:8px;font-style:italic;}
+.submit-btn{width:100%;padding:17px;background:var(--gold);color:#FFFFFF;border:none;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;cursor:pointer;transition:background .2s;margin-top:8px;}
 .submit-btn:hover{background:var(--gold-lt);}
 .success-box{display:none;text-align:center;padding:56px 24px;}
 .success-box.show{display:block;}
-.success-box h3{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:var(--cream);margin-bottom:14px;}
-.success-box p{font-size:14px;color:var(--muted);line-height:1.7;max-width:400px;margin:0 auto;}
+.success-box h3{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:600;color:#1A1A1A;margin-bottom:14px;}
+.success-box p{font-size:14px;color:#6B6459;line-height:1.7;max-width:400px;margin:0 auto;}
 .color-swatches{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;}
 .swatch-input{display:none;}
 .swatch-label{width:34px;height:34px;border-radius:50%;border:2px solid var(--border);cursor:pointer;display:block;transition:border-color .2s,transform .2s;}
@@ -273,6 +275,7 @@ def make_customize():
   <h1>Customize This Design</h1>
   <p>Tell us the product, colors, and any changes you want &mdash; our art team will follow up with a proof.</p>
 </section>
+<div class="cust-bg">
 <div class="cust-wrap">
 
   <div class="cust-summary" id="custSummary">
@@ -344,6 +347,7 @@ def make_customize():
     <p>Thanks &mdash; your customization request has been submitted. Our art team will follow up with a proof shortly.</p>
   </div>
 
+</div>
 </div>
 
 <script>
