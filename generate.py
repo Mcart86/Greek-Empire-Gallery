@@ -425,6 +425,11 @@ REAL_DESIGNS = {
         {"name": "Baylor 5K — Alpha Xi Delta 2020", "image": "5k-baylor-alpha-xi-delta-2020.jpg"},
         {"name": "Auburn 5K — Delta Gamma 2020", "image": "5k-auburn-delta-gamma-2020.jpg"},
     ],
+    "Shamrock": [
+        {"name": "Kappa Delta — Shamrock 5K Run/Walk Green", "image": "shamrock-kd-5k-green.jpg"},
+        {"name": "Kappa Delta — Shamrock 5K Run/Walk Blue", "image": "shamrock-kd-5k-blue.jpg"},
+        {"name": "Kappa Delta — Shamrock 5K Run/Walk Pink", "image": "shamrock-kd-5k-pink.jpg"},
+    ],
 }
 
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
