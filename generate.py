@@ -361,6 +361,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Delta Pi — Twilight Tropics Fall Formal 2025", "image": "formal-adpi-twilight-tropics-2025.jpg"},
         {"name": "Zeta Tau Alpha — Twilight Tropics Fall Formal 2026", "image": "formal-zta-twilight-tropics-2026.jpg"},
         {"name": "Kappa Kappa Gamma — Twilight Tropics Fall Formal 2028", "image": "formal-kkg-twilight-tropics-2028.jpg"},
+        {"name": "Pi Kappa Phi — Spring Formal Santa Barbara", "image": "formal-pkp-spring-santa-barbara.jpg"},
+        {"name": "Pi Kappa Phi — Spring Formal San Antonio", "image": "formal-pkp-spring-san-antonio.jpg"},
+        {"name": "Pi Kappa Phi — Spring Formal Orlando", "image": "formal-pkp-spring-orlando.jpg"},
     ],
 }
 
