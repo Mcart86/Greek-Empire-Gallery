@@ -400,6 +400,9 @@ REAL_DESIGNS = {
         {"name": "Phi Delta Theta — Puppies in Cooler Fall Rush 2024", "image": "rush-phi-delta-theta-puppies-cooler-2024.jpg"},
         {"name": "Phi Delta Theta — Puppies in Wagon Fall Rush 2025", "image": "rush-phi-delta-theta-puppies-wagon-2025.jpg"},
         {"name": "Phi Delta Theta — Puppies Camping Fall Rush 2026", "image": "rush-phi-delta-theta-puppies-camping-2026.jpg"},
+        {"name": "Alpha Chi Omega — Jeep Dog Fall Rush 2025 Boulder", "image": "rush-axo-jeep-dog-boulder-2025.jpg"},
+        {"name": "Kappa Kappa Gamma — Jeep Dog Fall Rush 2025 Tuscaloosa", "image": "rush-kkg-jeep-dog-tuscaloosa-2025.jpg"},
+        {"name": "Zeta Tau Alpha — Jeep Dog Fall Rush 2025 Knoxville", "image": "rush-zta-jeep-dog-knoxville-2025.jpg"},
     ],
     "Western": [
         {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
@@ -440,6 +443,9 @@ REAL_DESIGNS = {
         {"name": "Phi Delta Theta — Puppies in Cooler Fall Rush 2024", "image": "rush-phi-delta-theta-puppies-cooler-2024.jpg"},
         {"name": "Phi Delta Theta — Puppies in Wagon Fall Rush 2025", "image": "rush-phi-delta-theta-puppies-wagon-2025.jpg"},
         {"name": "Phi Delta Theta — Puppies Camping Fall Rush 2026", "image": "rush-phi-delta-theta-puppies-camping-2026.jpg"},
+        {"name": "Alpha Chi Omega — Jeep Dog Fall Rush 2025 Boulder", "image": "rush-axo-jeep-dog-boulder-2025.jpg"},
+        {"name": "Kappa Kappa Gamma — Jeep Dog Fall Rush 2025 Tuscaloosa", "image": "rush-kkg-jeep-dog-tuscaloosa-2025.jpg"},
+        {"name": "Zeta Tau Alpha — Jeep Dog Fall Rush 2025 Knoxville", "image": "rush-zta-jeep-dog-knoxville-2025.jpg"},
     ],
     "Recruitment": [
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
