@@ -342,7 +342,6 @@ def make_index():
 </section></div>
 <section class="cta">
   <h2 class="shimmer-h2">New Designs Drop First on the Feed.</h2>
-  <p class="follow-us-text">Follow us.</p>
 </section>""" + foot()
     with open(f"{DIR}/index.html", "w") as f:
         f.write(html)
