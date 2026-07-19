@@ -326,6 +326,11 @@ REAL_DESIGNS = {
         {"name": "Chi Omega — Bid Day 2026 Citrus", "image": "bid-day-chi-omega.jpg"},
         {"name": "Alpha Gamma Delta — Bid Day 2026 Denim Patch", "image": "bid-day-alpha-gam.jpg"},
     ],
+    "Spring Break": [
+        {"name": "Pi Kappa Alpha — Spring Break Miami Beach", "image": "spring-break-pika.jpg"},
+        {"name": "Alpha Omicron Pi — Spring Break Hermosa Beach", "image": "spring-break-aopi.jpg"},
+        {"name": "Sigma Chi — Spring Break Santa Barbara", "image": "spring-break-sigma-chi.jpg"},
+    ],
 }
 
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
