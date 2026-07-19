@@ -337,6 +337,11 @@ REAL_DESIGNS = {
         {"name": "Sigma Kappa — Beach Weekend 2025 Clearwater", "image": "spring-break-sigma-kappa.jpg"},
         {"name": "Alpha Omicron Pi — Spring Rush 2024 Cocoa Beach", "image": "spring-break-aopi-rush.jpg"},
     ],
+    "Halloween": [
+        {"name": "Phi Kappa Psi — Halloween 2023", "image": "halloween-phi-kappa-psi.jpg"},
+        {"name": "Delta Gamma — Halloween 2023", "image": "halloween-delta-gamma.jpg"},
+        {"name": "Alpha Sigma Phi — Halloween 2023", "image": "halloween-alpha-sigma-phi.jpg"},
+    ],
 }
 
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
