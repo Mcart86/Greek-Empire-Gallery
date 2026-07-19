@@ -330,6 +330,9 @@ REAL_DESIGNS = {
         {"name": "Pi Kappa Alpha — Spring Break Miami Beach", "image": "spring-break-pika.jpg"},
         {"name": "Alpha Omicron Pi — Spring Break Hermosa Beach", "image": "spring-break-aopi.jpg"},
         {"name": "Sigma Chi — Spring Break Santa Barbara", "image": "spring-break-sigma-chi.jpg"},
+        {"name": "Delta Chi — Spring Break South Padre Island", "image": "spring-break-delta-chi-south-padre.jpg"},
+        {"name": "Delta Chi — Coastal Retreat Gulf Shores", "image": "spring-break-delta-chi-gulf-shores.jpg"},
+        {"name": "Delta Chi — Summer Escape Huntington Beach", "image": "spring-break-delta-chi-huntington.jpg"},
     ],
 }
 
