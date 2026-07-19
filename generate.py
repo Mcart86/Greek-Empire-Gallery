@@ -328,7 +328,6 @@ def make_cat(idx, name, slug, desc):
     <h1>{name}</h1>
     <div class="rule"></div>
     <p class="cat-desc">{desc}</p>
-    <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
   </div>
 </section>
 <div class="cat-bg">
