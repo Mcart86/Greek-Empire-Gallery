@@ -328,6 +328,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
         {"name": "Alpha Xi Delta — Bid Day 2020 Boho", "image": "western-axd-bid-day-2020.jpg"},
         {"name": "Alpha Xi Delta — Bid Day 2021 Boho", "image": "western-axd-bid-day-2021.jpg"},
+        {"name": "Delta Gamma — Bid Day 2026 Western", "image": "western-dg-bid-day-2026.jpg"},
+        {"name": "Kappa Alpha Theta — Bid Day 2026 Western", "image": "western-kat-bid-day-2026.jpg"},
+        {"name": "Sigma Chi — Bid Day 2026 Western", "image": "western-sigma-chi-bid-day-2026.jpg"},
     ],
     "Spring Break": [
         {"name": "Pi Kappa Alpha — Spring Break Miami Beach", "image": "spring-break-pika.jpg"},
@@ -391,6 +394,9 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Fall Formal 2026 Dallas", "image": "western-dg-fall-formal-2026-dallas.jpg"},
         {"name": "Kappa Alpha Theta — Fall Formal 2026 Phoenix", "image": "western-kat-fall-formal-2026-phoenix.jpg"},
         {"name": "Alpha Omicron Pi — Fall Formal 2026 Lake Travis", "image": "western-aopi-fall-formal-2026-lake-travis.jpg"},
+        {"name": "Delta Gamma — Bid Day 2026 Western", "image": "western-dg-bid-day-2026.jpg"},
+        {"name": "Kappa Alpha Theta — Bid Day 2026 Western", "image": "western-kat-bid-day-2026.jpg"},
+        {"name": "Sigma Chi — Bid Day 2026 Western", "image": "western-sigma-chi-bid-day-2026.jpg"},
     ],
 }
 
