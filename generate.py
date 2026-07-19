@@ -325,6 +325,9 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Bid Day 2024 Daisy Smiley", "image": "bid-day-delta-gamma-daisy.jpg"},
         {"name": "Chi Omega — Bid Day 2026 Citrus", "image": "bid-day-chi-omega.jpg"},
         {"name": "Alpha Gamma Delta — Bid Day 2026 Denim Patch", "image": "bid-day-alpha-gam.jpg"},
+        {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
+        {"name": "Alpha Xi Delta — Bid Day 2020 Boho", "image": "western-axd-bid-day-2020.jpg"},
+        {"name": "Alpha Xi Delta — Bid Day 2021 Boho", "image": "western-axd-bid-day-2021.jpg"},
     ],
     "Spring Break": [
         {"name": "Pi Kappa Alpha — Spring Break Miami Beach", "image": "spring-break-pika.jpg"},
@@ -377,6 +380,11 @@ REAL_DESIGNS = {
         {"name": "Pi Beta Phi — Barn Dance 2024 Stillwater", "image": "formal-pbp-barn-dance-2024.jpg"},
         {"name": "Alpha Delta Pi — Barn Dance 2023 Fayetteville", "image": "formal-adpi-barn-dance-2023.jpg"},
         {"name": "Kappa Kappa Gamma — Barn Dance 2025 College Station", "image": "formal-kkg-barn-dance-2025.jpg"},
+    ],
+    "Western": [
+        {"name": "Alpha Xi Delta — Bid Day 2019 Boho", "image": "western-axd-bid-day-2019.jpg"},
+        {"name": "Alpha Xi Delta — Bid Day 2020 Boho", "image": "western-axd-bid-day-2020.jpg"},
+        {"name": "Alpha Xi Delta — Bid Day 2021 Boho", "image": "western-axd-bid-day-2021.jpg"},
     ],
 }
 
