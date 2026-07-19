@@ -1,51 +1,15 @@
-#!/usr/bin/env python3
-import os
-
-DIR = "/home/claude/greek-empire-gallery"
-
-CATS = [
-    ("Spring Break",       "spring-break",       "Your chapter's spring break run needs a shirt that keeps up."),
-    ("Winter",             "winter",              "Cold weather, warm chapter. Custom winter apparel built for the season."),
-    ("Western",            "western",             "Your letters. Their hats. Custom western theme shirts done right."),
-    ("Sixties",            "sixties",             "Groovy chapter, iconic shirts. The sixties theme, elevated."),
-    ("Halloween",          "halloween",           "The annual costume party deserves a design that haunts them all semester."),
-    ("Formal",             "formal",              "Chapter formals done right — from the bid to the bow tie."),
-    ("Dog & Puppy",        "dog-and-puppy",       "Philanthropy events, big little reveals, and every excuse to put a dog on a shirt."),
-    ("Christmas",          "christmas",           "Holiday chapter events. Custom apparel that actually looks good."),
-    ("5K Run",             "5k-run",              "Philanthropy runs, campus 5Ks, and everything in between."),
-    ("Rush",               "rush",                "First impressions are everything. Make yours last four years."),
-    ("Sports",             "sports",              "From intramurals to watch parties — custom sports apparel for your chapter."),
-    ("Fraternity",         "fraternity",          "Chapter gear that represents who you are — not just where you're from."),
-    ("Sisterhood Retreat", "sisterhood-retreat",  "The weekend that brings chapters together. Custom apparel for every retreat."),
-    ("Cowgirl",            "cowgirl",             "Boots up. Custom cowgirl theme shirts built for your chapter's biggest events."),
-    ("Bid Day",            "bid-day",             "The best day of the year deserves a shirt to prove it."),
-    ("Recruitment",        "recruitment",         "Your chapter's first impression. Make it count."),
-    ("Panhellenic",        "panhellenic",         "Custom apparel for Panhellenic events, councils, and community."),
-    ("Philanthropy",       "philanthropy",        "Do good. Look good. Give back in custom apparel that means something."),
-    ("Big Little",         "big-little",          "The reveal. The gift. The shirt they'll keep forever."),
-    ("Beach",              "beach",               "Sun, sand, and your letters. Beach theme shirts built for the culture."),
-    ("Shamrock",           "shamrock",            "St. Patrick's Day chapter events deserve a shirt actually worth keeping."),
-    ("Mixers",             "mixers",              "Social events, mixer nights, and the shirts everyone talks about the next day."),
-    ("Mom's Day",          "moms-day",            "Your mom's weekend deserves custom apparel she'll actually wear home."),
-    ("Weekend Getaway",    "weekend-getaway",     "Chapter retreats and road trips deserve merch to match the memory."),
-]
-
-DESIGN_LABELS = [
-    "Classic Design","Letters Edition","Vintage Print","Bold Script",
-    "Modern Design","Premium Edition","Heritage Print","Signature Edition",
-    "Arch Design","Block Letter Print","Crest Edition","Script Design",
-]
-
-MEANDER_URL = "data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.18)'/%3E%3C/svg%3E"
-MEANDER_DARK_URL = "data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.06)'/%3E%3C/svg%3E"
-
-COL_SVG_DARK = '<svg width="32" height="32" viewBox="0 0 44 44" fill="none" style="opacity:0.18"><rect x="6" y="38" width="32" height="3" fill="#3D2A0A"/><rect x="10" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="20" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="30" y="10" width="4" height="28" fill="#3D2A0A"/><rect x="6" y="6" width="32" height="4" fill="#3D2A0A"/><rect x="4" y="3" width="36" height="3" fill="#3D2A0A"/></svg>'
-
-CSS = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customize This Design — Greek Empire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{--obsidian:#0A0A0A;--gold:#B8963E;--gold-lt:#D4AF60;--cream:#F0EBE0;--muted:#5C5750;--border:rgba(184,150,62,0.2);--card:#111111;}
 body{background:var(--obsidian);color:var(--cream);font-family:'DM Sans',sans-serif;min-height:100vh;}
-.meander{width:100%;height:12px;background-image:url('""" + MEANDER_URL + """');background-repeat:repeat-x;}
+.meander{width:100%;height:12px;background-image:url('data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.18)'/%3E%3C/svg%3E');background-repeat:repeat-x;}
 nav{display:flex;justify-content:space-between;align-items:center;padding:14px 60px;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,10,0.97);backdrop-filter:blur(10px);z-index:100;}
 .nav-logo{display:flex;align-items:center;text-decoration:none;}
 .nav-logo img{height:52px;width:auto;}
@@ -75,7 +39,7 @@ footer{padding:28px 60px;border-top:1px solid var(--border);display:flex;justify
 .foot-brand{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--muted);}
 .foot-tag{font-size:12px;color:var(--muted);font-style:italic;}
 .cat-hero-banner{position:relative;padding:120px 60px 88px;text-align:center;background:linear-gradient(160deg,#070707 0%,#100E04 100%);overflow:hidden;border-bottom:1px solid var(--border);}
-.cat-hero-banner::before{content:'';position:absolute;inset:0;background-image:url('""" + MEANDER_DARK_URL + """');background-repeat:repeat;background-size:40px 12px;pointer-events:none;}
+.cat-hero-banner::before{content:'';position:absolute;inset:0;background-image:url('data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6h6V0h8v6h2V0h8v8h-6v4h-2v-4h-8v6H0z' fill='rgba(184,150,62,0.06)'/%3E%3C/svg%3E');background-repeat:repeat;background-size:40px 12px;pointer-events:none;}
 .cat-hero-content{position:relative;z-index:1;}
 .cat-hero-banner h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,7vw,96px);font-weight:600;line-height:0.9;color:var(--cream);margin-bottom:0;}
 .cat-hero-banner .eyebrow{color:var(--gold);margin-bottom:20px;}
@@ -148,126 +112,13 @@ nav,footer{padding-left:20px;padding-right:20px;}
 .field-row{grid-template-columns:1fr;}
 footer{flex-direction:column;gap:8px;text-align:center;}
 }
-"""
-
-FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">'
-
-def head(title):
-    return f"""<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{title} — Greek Empire</title>
-{FONTS}
-<style>{CSS}</style>
+</style>
 </head>
-<body>"""
-
-def nav_bar(back_text, back_href):
-    return f"""<div class="meander"></div>
+<body><div class="meander"></div>
 <nav>
   <a href="index.html" class="nav-logo"><img src="logo.png" alt="Greek Empire"></a>
-  <a href="{back_href}" class="nav-back">{back_text}</a>
-</nav>"""
-
-def foot():
-    return """<div class="meander"></div>
-<footer>
-  <span class="foot-brand">Greek Empire</span>
-  <span class="foot-tag">College Branded Merchandise for the Best Years of Your Life</span>
-</footer>
-</body>
-</html>"""
-
-def design_cards(cat_name, cat_slug, cat_idx, count=12):
-    import urllib.parse
-    cards = ""
-    base_num = 1000 + (cat_idx * 50)
-    for i in range(count):
-        label = DESIGN_LABELS[i % len(DESIGN_LABELS)]
-        num = base_num + (i + 1)
-        design_full_name = f"{cat_name} — {label}"
-        q = urllib.parse.urlencode({"design": design_full_name, "category": cat_name, "num": num})
-        cards += f"""    <div class="design-card">
-      <div class="design-img">
-        {COL_SVG_DARK}
-        <span class="design-ph-label">Image Coming Soon</span>
-        <div class="design-overlay">
-          <a href="customize.html?{q}" class="customize-btn">Customize This Design</a>
-        </div>
-      </div>
-      <div class="design-info">
-        <span class="design-name">{cat_name} — {label}</span>
-        <span class="design-num">#{num}</span>
-      </div>
-    </div>
-"""
-    return cards
-
-def make_index():
-    items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
-    html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greek-empire.vercel.app") + f"""
-<section class="hero">
-  <div class="hero-inner">
-    <h1>Design Gallery</h1>
-    <div class="rule"></div>
-    <p class="hero-sub">Designed for the moments that define your college years.</p>
-  </div>
-</section>
-<div class="cat-bg"><section class="cat-section">
-  <div class="cat-grid">
-{items}
-  </div>
-</section></div>
-<section class="cta">
-  <h2>Don&rsquo;t See What You Need?</h2>
-  <p>We design for any event, any theme, any chapter.</p>
-  <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
-</section>""" + foot()
-    with open(f"{DIR}/index.html", "w") as f:
-        f.write(html)
-    print("✓ index.html")
-
-def make_cat(idx, name, slug, desc):
-    others = "\n".join(
-        f'    <a href="{s}.html" class="browse-item">{n}</a>'
-        for n, s, _ in CATS if s != slug
-    )
-    cards = design_cards(name, slug, idx, count=12)
-    html = head(name) + nav_bar("&larr; Design Gallery", "index.html") + f"""
-<section class="cat-hero-banner">
-  <div class="cat-hero-content">
-    <p class="eyebrow">Design Gallery</p>
-    <h1>{name}</h1>
-    <div class="rule"></div>
-    <p class="cat-desc">{desc}</p>
-    <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
-  </div>
-</section>
-<section class="designs-section">
-  <p class="designs-label">Browse Designs</p>
-  <div class="designs-grid">
-{cards}
-  </div>
-</section>
-<section class="cta">
-  <h2>Ready to Place Your Order?</h2>
-  <p>Custom {name.lower()} apparel designed for your chapter.</p>
-  <a href="https://greek-empire.vercel.app" class="cta-link">Start Your Order</a>
-</section>
-<section class="browse-section">
-  <p class="browse-label">Browse Other Categories</p>
-  <div class="browse-grid">
-{others}
-  </div>
-</section>""" + foot()
-    with open(f"{DIR}/{slug}.html", "w") as f:
-        f.write(html)
-    print(f"✓ {slug}.html")
-
-def make_customize():
-    html = head("Customize This Design") + nav_bar("&larr; Design Gallery", "index.html") + """
+  <a href="index.html" class="nav-back">&larr; Design Gallery</a>
+</nav>
 <section class="cust-hero">
   <p class="eyebrow">Custom Order Request</p>
   <h1>Customize This Design</h1>
@@ -379,14 +230,10 @@ def make_customize():
     document.getElementById('custSummary').style.display = 'none';
     document.getElementById('successBox').classList.add('show');
   });
-</script>""" + foot()
-    with open(f"{DIR}/customize.html", "w") as f:
-        f.write(html)
-    print("✓ customize.html")
-
-make_index()
-for idx, (name, slug, desc) in enumerate(CATS):
-    make_cat(idx, name, slug, desc)
-make_customize()
-
-print(f"\nDone — {len(CATS) + 1} pages generated.")
+</script><div class="meander"></div>
+<footer>
+  <span class="foot-brand">Greek Empire</span>
+  <span class="foot-tag">College Branded Merchandise for the Best Years of Your Life</span>
+</footer>
+</body>
+</html>
