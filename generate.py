@@ -389,6 +389,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Jeep Dogs Spring Formal 2020", "image": "formal-axo-jeep-dogs-spring-2020.jpg"},
         {"name": "Sigma Phi Epsilon — Jeep Dogs Spring Formal 2021", "image": "formal-sigep-jeep-dogs-spring-2021.jpg"},
         {"name": "Kappa Alpha Theta — Jeep Dogs Spring Formal 2022", "image": "formal-kat-jeep-dogs-spring-2022.jpg"},
+        {"name": "Pi Kappa Phi — Winter Formal 2026 Alpha Gamma Chapter", "image": "winter-pkp-winter-formal-2026-alpha-gamma.jpg"},
+        {"name": "Pi Kappa Phi — Winter Weekend 2026 Beta Beta Chapter", "image": "winter-pkp-winter-weekend-2026-beta-beta.jpg"},
+        {"name": "Pi Kappa Phi — Snow Bash 2026 Delta Delta Chapter", "image": "winter-pkp-snow-bash-2026-delta-delta.jpg"},
     ],
     "Dog & Puppy": [
         {"name": "Alpha Chi Omega — Jeep Dogs Spring Formal 2020", "image": "formal-axo-jeep-dogs-spring-2020.jpg"},
@@ -457,6 +460,9 @@ REAL_DESIGNS = {
         {"name": "Kappa Alpha Psi — Bear Mountain Retreat", "image": "winter-kappa-alpha-psi-bear-mountain-retreat.jpg"},
         {"name": "Phi Beta Sigma — Bear Mountain Retreat", "image": "winter-phi-beta-sigma-bear-mountain-retreat.jpg"},
         {"name": "Alpha Phi Alpha — Bear Mountain Retreat", "image": "winter-alpha-phi-alpha-bear-mountain-retreat.jpg"},
+        {"name": "Pi Kappa Phi — Winter Formal 2026 Alpha Gamma Chapter", "image": "winter-pkp-winter-formal-2026-alpha-gamma.jpg"},
+        {"name": "Pi Kappa Phi — Winter Weekend 2026 Beta Beta Chapter", "image": "winter-pkp-winter-weekend-2026-beta-beta.jpg"},
+        {"name": "Pi Kappa Phi — Snow Bash 2026 Delta Delta Chapter", "image": "winter-pkp-snow-bash-2026-delta-delta.jpg"},
     ],
     "Recruitment": [
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
