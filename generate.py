@@ -235,7 +235,7 @@ def head(title):
 <link rel="icon" type="image/png" href="favicon.png">
 <meta property="og:title" content="{title} — Greek Empire">
 <meta property="og:description" content="College branded merchandise for the best years of your life.">
-<meta property="og:image" content="shield-logo.png">
+<meta property="og:image" content="https://greek-empire-gallery.vercel.app/shield-logo.png">
 <meta property="og:type" content="website">
 {FONTS}
 <style>{CSS}</style>
