@@ -256,7 +256,7 @@ def design_cards(cat_name, cat_slug, cat_idx, count=12):
 
 def make_index():
     items = "\n".join(f'    <a href="{slug}.html" class="cat-item">{name}</a>' for name, slug, _ in CATS)
-    html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greek-empire.vercel.app") + f"""
+    html = head("Design Gallery") + nav_bar("&larr; Back to Site", "https://greekempire.swagflo.com/") + f"""
 <section class="hero">
   <div class="hero-inner">
     <h1>Design Gallery</h1>
