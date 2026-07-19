@@ -397,6 +397,14 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Bid Day 2026 Western", "image": "western-dg-bid-day-2026.jpg"},
         {"name": "Kappa Alpha Theta — Bid Day 2026 Western", "image": "western-kat-bid-day-2026.jpg"},
         {"name": "Sigma Chi — Bid Day 2026 Western", "image": "western-sigma-chi-bid-day-2026.jpg"},
+        {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
+        {"name": "Kappa Alpha Theta — Fall Rush 2025 Western", "image": "western-kat-fall-rush-2025.jpg"},
+        {"name": "Sigma Chi — Fall Rush 2025 Western", "image": "western-sigma-chi-fall-rush-2025.jpg"},
+    ],
+    "Rush": [
+        {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
+        {"name": "Kappa Alpha Theta — Fall Rush 2025 Western", "image": "western-kat-fall-rush-2025.jpg"},
+        {"name": "Sigma Chi — Fall Rush 2025 Western", "image": "western-sigma-chi-fall-rush-2025.jpg"},
     ],
 }
 
