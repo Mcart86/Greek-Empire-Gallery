@@ -347,6 +347,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Spooky Season 2025", "image": "halloween-axo-spooky-season.jpg"},
         {"name": "Kappa Alpha Theta — Haunted Nights 2025", "image": "halloween-kat-haunted-nights.jpg"},
         {"name": "Delta Gamma — Trick or Treat 2025", "image": "halloween-dg-trick-or-treat.jpg"},
+        {"name": "Phi Kappa Psi — Halloween Affair 2023", "image": "halloween-pkp-affair.jpg"},
+        {"name": "Delta Gamma — Halloween Night 2023", "image": "halloween-dg-night.jpg"},
+        {"name": "Alpha Sigma Phi — Haunted House 2023", "image": "halloween-asp-haunted-house.jpg"},
     ],
 }
 
