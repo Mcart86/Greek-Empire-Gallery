@@ -469,6 +469,7 @@ REAL_DESIGNS = {
         {"name": "Kappa Alpha Order — Spring Rush 2026 Park City", "image": "winter-ka-spring-rush-2026-park-city.jpg"},
         {"name": "Kappa Delta — Golf Spring Rush 2026", "image": "sports-kd-golf-spring-rush-2026.jpg"},
         {"name": "Phi Kappa Psi — A Lifetime of Brothers Fall Rush 2026", "image": "rush-phi-kappa-psi-lifetime-brothers-fall-2026.jpg"},
+        {"name": "Kappa Sigma — Cards Skeleton Rush 2026 Est. 1869", "image": "rush-kappa-sigma-cards-skeleton-2026.jpg"},
     ],
     "Winter": [
         {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
