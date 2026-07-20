@@ -566,6 +566,7 @@ REAL_DESIGNS = {
         {"name": "Zeta Tau Alpha — Courage Kindness & Confidence", "image": "western-zta-courage-kindness-confidence.jpg"},
         {"name": "Zeta Tau Alpha — Seek The Noblest", "image": "western-zta-seek-the-noblest.jpg"},
         {"name": "Alpha Sigma Tau — Built On Sisterhood", "image": "sorority-ast-built-on-sisterhood.jpg"},
+        {"name": "Theta Phi Alpha — Sisters Friends Memories Est. 1912", "image": "beach-tpa-sisters-friends-memories.jpg"},
     ],
     "Sports": [
         {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
@@ -609,6 +610,7 @@ REAL_DESIGNS = {
         {"name": "Pi Sigma Epsilon — Good Waves Good Times San Diego 2025", "image": "beach-pse-san-diego-2025.jpg"},
         {"name": "Sigma Alpha Epsilon — Lifeguard Est. 1856", "image": "beach-sae-lifeguard-est-1856.jpg"},
         {"name": "Zeta Beta Tau — Est. 1898", "image": "beach-zbt-est-1898.jpg"},
+        {"name": "Theta Phi Alpha — Sisters Friends Memories Est. 1912", "image": "beach-tpa-sisters-friends-memories.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
