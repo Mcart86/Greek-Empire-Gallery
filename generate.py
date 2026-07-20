@@ -312,16 +312,13 @@ def foot():
 REAL_DESIGNS = {
     "Bid Day": [
         {"name": "Alpha Phi — Bid Day 24 Yeehaw", "image": "bid-day-alpha-phi.jpg"},
-        {"name": "Delta Gamma — Bid Day 2024 Dream Big", "image": "bid-day-delta-gamma.jpg"},
         {"name": "Kappa Delta — Bid Day 24 Choose Joy", "image": "bid-day-kappa-delta.jpg"},
         {"name": "Delta Zeta — Ready, Set, Bid! Golf Cart", "image": "bid-day-delta-zeta.jpg"},
-        {"name": "Good Things Are Ahead — Bid Day 2025", "image": "bid-day-good-things.jpg"},
         {"name": "Alpha Chi — Bid Day RSVP Postcard", "image": "bid-day-alpha-chi.jpg"},
         {"name": "Delta Gamma — Bid Day 2026", "image": "bid-day-delta-gamma-2026.jpg"},
         {"name": "Pi Beta Phi — Bid Day Thank You Note", "image": "bid-day-pi-phi.jpg"},
         {"name": "Kappa Kappa Gamma — Bid Day Vinyl Record", "image": "bid-day-kkg.jpg"},
         {"name": "Sigma Kappa — Bid Day Racing", "image": "bid-day-sigma-kappa.jpg"},
-        {"name": "Kappa Sigma — Bid Day 2022", "image": "bid-day-kappa-sigma.jpg"},
         {"name": "Theta Chi — Bid Day 2023", "image": "bid-day-theta-chi.jpg"},
         {"name": "Delta Gamma — Bid Day 2024 Daisy Smiley", "image": "bid-day-delta-gamma-daisy.jpg"},
         {"name": "Chi Omega — Bid Day 2026 Citrus", "image": "bid-day-chi-omega.jpg"},
