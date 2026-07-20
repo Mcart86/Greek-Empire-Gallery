@@ -516,6 +516,8 @@ REAL_DESIGNS = {
         {"name": "Zeta Tau Alpha — Holiday Party Beach", "image": "christmas-zta-holiday-party-beach.jpg"},
         {"name": "Alpha Chi Omega — Holiday Party Honolulu 2026", "image": "christmas-axo-holiday-party-honolulu-2026.jpg"},
         {"name": "Pi Beta Phi — Holiday Bash Nashville 2026", "image": "christmas-pi-beta-phi-holiday-bash-nashville-2026.jpg"},
+        {"name": "Sigma Chi — Holiday Party Fort Collins Colorado State", "image": "christmas-sigma-chi-holiday-party-fort-collins.jpg"},
+        {"name": "Theta Chi — Holiday Party Boise State", "image": "christmas-theta-chi-holiday-party-boise.jpg"},
     ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
