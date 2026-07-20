@@ -547,6 +547,8 @@ REAL_DESIGNS = {
         {"name": "Phi Mu — Disco Est. 1852", "image": "sorority-phi-mu-disco-est-1852.jpg"},
         {"name": "Sigma Delta Tau — Tampa License Plate Est. 1917", "image": "sorority-sigma-delta-tau-tampa-license-1917.jpg"},
         {"name": "Zeta Tau Alpha — ZTA Desert Western", "image": "western-zta-desert-scene.jpg"},
+        {"name": "Zeta Tau Alpha — Courage Kindness & Confidence", "image": "western-zta-courage-kindness-confidence.jpg"},
+        {"name": "Zeta Tau Alpha — Seek The Noblest", "image": "western-zta-seek-the-noblest.jpg"},
     ],
     "Sports": [
         {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
