@@ -524,6 +524,10 @@ REAL_DESIGNS = {
         {"name": "Theta Phi Alpha — Rooted In Sisterhood Built On Memories", "image": "cowgirl-tpa-rooted-in-sisterhood.jpg"},
         {"name": "Theta Phi Alpha — Sisters For Life", "image": "cowgirl-tpa-sisters-for-life.jpg"},
         {"name": "Theta Phi Alpha — True Friends Wild Hearts", "image": "cowgirl-tpa-true-friends-wild-hearts.jpg"},
+        {"name": "Sigma Psi Zeta — Building Our Legacy", "image": "cowgirl-spz-building-our-legacy.jpg"},
+        {"name": "Sigma Psi Zeta — One Sisterhood One Heart", "image": "cowgirl-spz-one-sisterhood-one-heart.jpg"},
+        {"name": "Sigma Psi Zeta — Sisters Strength Heart", "image": "cowgirl-spz-sisters-strength-heart.jpg"},
+        {"name": "Sigma Psi Zeta — Forever & Always Stronger Together", "image": "cowgirl-spz-forever-and-always.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
