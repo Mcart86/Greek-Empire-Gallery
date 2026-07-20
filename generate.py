@@ -514,6 +514,8 @@ REAL_DESIGNS = {
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
         {"name": "Zeta Tau Alpha — Holiday Party Beach", "image": "christmas-zta-holiday-party-beach.jpg"},
+        {"name": "Alpha Chi Omega — Holiday Party Honolulu 2026", "image": "christmas-axo-holiday-party-honolulu-2026.jpg"},
+        {"name": "Pi Beta Phi — Holiday Bash Nashville 2026", "image": "christmas-pi-beta-phi-holiday-bash-nashville-2026.jpg"},
     ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
