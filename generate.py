@@ -417,6 +417,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Sigma — Brotherhood Character Purpose", "image": "western-axs-brotherhood-character-purpose.jpg"},
         {"name": "Alpha Chi Sigma — Rush Hard Bond Strong", "image": "western-axs-rush-hard-bond-strong.jpg"},
         {"name": "Alpha Chi Sigma — Brothers Today Cowboys Forever", "image": "western-axs-brothers-today-cowboys-forever.jpg"},
+        {"name": "Alpha Chi Sigma — Ride Hard Study Harder", "image": "western-axs-ride-hard-study-harder.jpg"},
     ],
     "Rush": [
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
@@ -508,6 +509,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Sigma — Brotherhood Character Purpose", "image": "western-axs-brotherhood-character-purpose.jpg"},
         {"name": "Alpha Chi Sigma — Rush Hard Bond Strong", "image": "western-axs-rush-hard-bond-strong.jpg"},
         {"name": "Alpha Chi Sigma — Brothers Today Cowboys Forever", "image": "western-axs-brothers-today-cowboys-forever.jpg"},
+        {"name": "Alpha Chi Sigma — Ride Hard Study Harder", "image": "western-axs-ride-hard-study-harder.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
