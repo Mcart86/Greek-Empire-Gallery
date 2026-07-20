@@ -574,6 +574,11 @@ REAL_DESIGNS = {
         {"name": "Film Club — Lights Camera Friends Repeat", "image": "club-film-club-lights-camera.jpg"},
         {"name": "Gaming Club — Play Together Win Together", "image": "club-gaming-club-play-together.jpg"},
         {"name": "Debate Club — Think Critically Lead Boldly", "image": "club-debate-club-lead-boldly.jpg"},
+        {"name": "Book Club — Chapters Change Lives", "image": "club-book-club-chapters-change-lives.jpg"},
+        {"name": "Pickleball Club — Dink Smash Repeat", "image": "club-pickleball-club-dink-smash-repeat.jpg"},
+        {"name": "Soccer Club — Passion Teamwork Legacy", "image": "club-soccer-club-passion-teamwork-legacy.jpg"},
+        {"name": "Chess Club — Every Move Matters", "image": "club-chess-club-every-move-matters.jpg"},
+        {"name": "Hiking Club — Adventure Is Calling", "image": "club-hiking-club-adventure-is-calling.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
