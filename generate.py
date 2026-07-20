@@ -385,6 +385,8 @@ REAL_DESIGNS = {
         {"name": "Pi Kappa Phi — Winter Formal 2026 Alpha Gamma Chapter", "image": "winter-pkp-winter-formal-2026-alpha-gamma.jpg"},
         {"name": "Pi Kappa Phi — Winter Weekend 2026 Beta Beta Chapter", "image": "winter-pkp-winter-weekend-2026-beta-beta.jpg"},
         {"name": "Delta Zeta — Vogue Formal 2026 Art of Style", "image": "formal-dz-vogue-art-of-style-2026.jpg"},
+        {"name": "Gamma Phi Beta — Totally Rad Semi Formal 2026", "image": "formal-gpb-totally-rad-2026.jpg"},
+        {"name": "Gamma Phi Beta — Snowed In With Sisters Semi Formal 2026", "image": "formal-gpb-snowed-in-sisters-2026.jpg"},
     ],
     "Dog & Puppy": [
         {"name": "Alpha Chi Omega — Jeep Dogs Spring Formal 2020", "image": "formal-axo-jeep-dogs-spring-2020.jpg"},
