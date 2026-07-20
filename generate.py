@@ -437,6 +437,8 @@ REAL_DESIGNS = {
         {"name": "Kappa Sigma Chi — UFO Rush Phoenix 2024", "image": "rush-kappa-sigma-chi-ufo-phoenix-2024.jpg"},
         {"name": "Sigma Chi Omega — UFO Rush Dallas 2024", "image": "rush-sigma-chi-omega-ufo-dallas-2024.jpg"},
         {"name": "Gamma Phi Beta — Cowboy Boots Big Little Reveal", "image": "big-little-gamma-phi-beta-boots.jpg"},
+        {"name": "Pi Beta Phi — Rounding Up the Best Since 1867 Pink", "image": "western-pi-beta-phi-rounding-up-pink.jpg"},
+        {"name": "Pi Beta Phi — Rounding Up the Best Since 1867 Tan", "image": "western-pi-beta-phi-rounding-up-tan.jpg"},
     ],
     "Rush": [
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
@@ -525,6 +527,8 @@ REAL_DESIGNS = {
         {"name": "Chi Omega — Sisterhood Always 2026", "image": "sorority-chi-omega-sisterhood-always-2026.jpg"},
         {"name": "Kappa Kappa Gamma — Together We Can Do More 2026", "image": "sorority-kappa-kappa-gamma-together-2026.jpg"},
         {"name": "Delta Zeta — Do Good Be Kind 2026", "image": "sorority-delta-zeta-do-good-be-kind-2026.jpg"},
+        {"name": "Pi Beta Phi — Rounding Up the Best Since 1867 Pink", "image": "western-pi-beta-phi-rounding-up-pink.jpg"},
+        {"name": "Pi Beta Phi — Rounding Up the Best Since 1867 Tan", "image": "western-pi-beta-phi-rounding-up-tan.jpg"},
     ],
     "Sports": [
         {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
