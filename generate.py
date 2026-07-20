@@ -548,6 +548,9 @@ REAL_DESIGNS = {
         {"name": "Kappa Delta — Golf Tournament 2026 Green Mountain", "image": "sports-kd-golf-tournament-2026-green-mountain.jpg"},
         {"name": "Birdie Society — Est. 2026", "image": "sports-birdie-society-est-2026.jpg"},
         {"name": "Phi Delta Theta — A Tradition Unlike Any Other Est. 1848", "image": "sports-phi-delt-masters-tradition-1848.jpg"},
+        {"name": "Sigma Chi — Open 5th Annual Golf Tournament", "image": "sports-sigma-chi-open-5th-annual.jpg"},
+        {"name": "Beta Sigma Beta — Open 6th Annual Golf Tournament 2026", "image": "sports-beta-sigma-beta-open-6th-2026.jpg"},
+        {"name": "Delta Tau Delta — Open 3rd Annual Golf Tournament", "image": "sports-delta-tau-delta-open-3rd-annual.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
