@@ -503,6 +503,7 @@ REAL_DESIGNS = {
         {"name": "Delta Tau Delta — Flag Arrows Est. 1858", "image": "fraternity-delta-tau-delta-flag-arrows-1858.jpg"},
         {"name": "Alpha Tau Omega — Flag Lacrosse Est. 1865", "image": "fraternity-ato-flag-lacrosse-1865.jpg"},
         {"name": "Sigma Sigma — Brewed for the Few", "image": "fraternity-sigma-sigma-brewed-for-the-few.jpg"},
+        {"name": "Beta Sigma Beta — Brotherhood Beyond Limits", "image": "fraternity-bsb-brotherhood-beyond-limits.jpg"},
     ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
