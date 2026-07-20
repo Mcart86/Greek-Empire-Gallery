@@ -522,6 +522,9 @@ REAL_DESIGNS = {
     ],
     "Fraternity": [
         {"name": "Sigma Chi — GTA In Hoc", "image": "fraternity-sigma-chi-gta-in-hoc.jpg"},
+        {"name": "Sigma Chi — Flag Baseball Bats Est. 1855", "image": "fraternity-sigma-chi-flag-bats-1855.jpg"},
+        {"name": "Beta Sigma Beta — Flag Paddles Est. 1975", "image": "fraternity-beta-sigma-beta-flag-paddles-1975.jpg"},
+        {"name": "Delta Tau Delta — Flag Arrows Est. 1858", "image": "fraternity-delta-tau-delta-flag-arrows-1858.jpg"},
     ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
