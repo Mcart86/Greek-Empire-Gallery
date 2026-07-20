@@ -530,6 +530,7 @@ REAL_DESIGNS = {
         {"name": "Sigma Psi Zeta — Forever & Always Stronger Together", "image": "cowgirl-spz-forever-and-always.jpg"},
         {"name": "Sigma Sigma Sigma — Rope Lasso Western", "image": "cowgirl-sss-rope-lasso.jpg"},
         {"name": "Sigma Sigma Sigma — Good Girls Raise Hell Together", "image": "cowgirl-sss-neon-good-girls.jpg"},
+        {"name": "Sigma Sigma Sigma — Rooted In Values Stronger Together", "image": "cowgirl-sss-rooted-values-stronger-together.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
