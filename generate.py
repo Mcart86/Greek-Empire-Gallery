@@ -366,6 +366,7 @@ REAL_DESIGNS = {
         {"name": "Sigma Sigma Sigma — Spooky Season Sisterhood Forever", "image": "halloween-sss-spooky-season-sisterhood-forever.jpg"},
         {"name": "Sigma Sigma Sigma — Bad & Boojee Since 1898", "image": "halloween-sss-bad-and-boojee.jpg"},
         {"name": "Sigma Sigma Sigma — Witches Support Sisters", "image": "halloween-sss-witches-support-sisters.jpg"},
+        {"name": "Sigma Pi — Halloween Affair Brotherhood Tradition Legacy", "image": "halloween-sigma-pi-halloween-affair.jpg"},
     ],
     "Formal": [
         {"name": "Alpha Delta Pi — Twilight Tropics Fall Formal 2025", "image": "formal-adpi-twilight-tropics-2025.jpg"},
