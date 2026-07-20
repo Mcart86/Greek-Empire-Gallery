@@ -502,6 +502,7 @@ REAL_DESIGNS = {
         {"name": "Sigma Sigma — Brewed for the Few", "image": "fraternity-sigma-sigma-brewed-for-the-few.jpg"},
         {"name": "Beta Sigma Beta — Brotherhood Beyond Limits", "image": "fraternity-bsb-brotherhood-beyond-limits.jpg"},
         {"name": "Beta Sigma Beta — WKND The Classic Pair", "image": "fraternity-bsb-wknd-classic-pair.jpg"},
+        {"name": "Beta Sigma Beta — Brotherhood & Tradition Penn State", "image": "fraternity-bsb-brotherhood-tradition-penn-state.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
