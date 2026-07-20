@@ -572,6 +572,8 @@ REAL_DESIGNS = {
         {"name": "Art Club — Create Inspire Express", "image": "club-art-club-create-inspire.jpg"},
         {"name": "Music Club — Good Music Good Vibes Good Times", "image": "club-music-club-good-vibes.jpg"},
         {"name": "Film Club — Lights Camera Friends Repeat", "image": "club-film-club-lights-camera.jpg"},
+        {"name": "Gaming Club — Play Together Win Together", "image": "club-gaming-club-play-together.jpg"},
+        {"name": "Debate Club — Think Critically Lead Boldly", "image": "club-debate-club-lead-boldly.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
