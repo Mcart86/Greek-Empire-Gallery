@@ -502,6 +502,10 @@ REAL_DESIGNS = {
         {"name": "Walk for the Kids — Alpha Phi", "image": "philanthropy-walk-kids-alpha-phi.jpg"},
         {"name": "Walk for the Kids — Sigma Chi", "image": "philanthropy-walk-kids-sigma-chi.jpg"},
         {"name": "Walk for the Kids — Kappa Delta", "image": "philanthropy-walk-kids-kappa-delta.jpg"},
+        {"name": "Chi Mu — Children's Miracle Network", "image": "philanthropy-chi-mu-cmn.jpg"},
+        {"name": "Phi Sigma — Children's Miracle Network Making Miracles Happen", "image": "philanthropy-phi-sigma-cmn.jpg"},
+        {"name": "Alpha Chi — Children's Miracle Network", "image": "philanthropy-alpha-chi-cmn.jpg"},
+        {"name": "Theta Phi — Children's Miracle Network Est. 2025", "image": "philanthropy-theta-phi-cmn.jpg"},
     ],
     "Sports": [
         {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
