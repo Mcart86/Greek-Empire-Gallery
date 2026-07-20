@@ -511,6 +511,10 @@ REAL_DESIGNS = {
         {"name": "Sigma Sigma — Brewed for the Few", "image": "fraternity-sigma-sigma-brewed-for-the-few.jpg"},
         {"name": "Beta Sigma Beta — Brotherhood Beyond Limits", "image": "fraternity-bsb-brotherhood-beyond-limits.jpg"},
     ],
+    "Christmas": [
+        {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
+        {"name": "Zeta Tau Alpha — Holiday Party Beach", "image": "christmas-zta-holiday-party-beach.jpg"},
+    ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
     ],
