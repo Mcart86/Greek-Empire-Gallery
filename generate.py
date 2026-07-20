@@ -414,6 +414,7 @@ REAL_DESIGNS = {
         {"name": "Zeta Tau Alpha — ZTA Desert Western", "image": "western-zta-desert-scene.jpg"},
         {"name": "Zeta Tau Alpha — Courage Kindness & Confidence", "image": "western-zta-courage-kindness-confidence.jpg"},
         {"name": "Zeta Tau Alpha — Seek The Noblest", "image": "western-zta-seek-the-noblest.jpg"},
+        {"name": "Alpha Chi Sigma — Brotherhood Character Purpose", "image": "western-axs-brotherhood-character-purpose.jpg"},
     ],
     "Rush": [
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
@@ -502,6 +503,7 @@ REAL_DESIGNS = {
         {"name": "Beta Sigma Beta — Brotherhood Beyond Limits", "image": "fraternity-bsb-brotherhood-beyond-limits.jpg"},
         {"name": "Beta Sigma Beta — WKND The Classic Pair", "image": "fraternity-bsb-wknd-classic-pair.jpg"},
         {"name": "Beta Sigma Beta — Brotherhood & Tradition Penn State", "image": "fraternity-bsb-brotherhood-tradition-penn-state.jpg"},
+        {"name": "Alpha Chi Sigma — Brotherhood Character Purpose", "image": "western-axs-brotherhood-character-purpose.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
