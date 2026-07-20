@@ -335,6 +335,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Phi — Bid Day 2024 Checkered Daisy", "image": "bid-day-alpha-phi-checkered-daisy-2024.jpg"},
         {"name": "Alpha Phi — Bid Day 2024 Retro Rainbow", "image": "bid-day-alpha-phi-retro-rainbow-2024.jpg"},
         {"name": "Alpha Phi — Bid Day 2024 Heart Flower", "image": "bid-day-alpha-phi-heart-flower-2024.jpg"},
+        {"name": "Alpha Delta Pi — Bid Day 2024 Disco Daisy", "image": "bid-day-adpi-disco-daisy-2024.jpg"},
+        {"name": "Alpha Chi Omega — Bid Day 2024 Beach Wave", "image": "bid-day-axo-beach-wave-2024.jpg"},
+        {"name": "Alpha Gamma Delta — Bid Day 2024 Candy", "image": "bid-day-agd-candy-2024.jpg"},
     ],
     "Spring Break": [
         {"name": "Pi Kappa Alpha — Spring Break Miami Beach", "image": "spring-break-pika.jpg"},
