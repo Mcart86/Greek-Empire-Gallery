@@ -350,7 +350,6 @@ REAL_DESIGNS = {
         {"name": "Zeta Psi — Spring Break Beach Life Brotherhood Memories", "image": "spring-break-zeta-psi-beach-life.jpg"},
     ],
     "Halloween": [
-        {"name": "Phi Kappa Psi — Halloween 2023", "image": "halloween-phi-kappa-psi.jpg"},
         {"name": "Delta Gamma — Halloween 2023", "image": "halloween-delta-gamma.jpg"},
         {"name": "Phi Kappa Psi — Halloween Bash 2023", "image": "halloween-phi-kappa-psi-bash.jpg"},
         {"name": "Alpha Sigma Phi — Halloween Social 2023", "image": "halloween-alpha-sigma-phi-social.jpg"},
