@@ -569,6 +569,9 @@ REAL_DESIGNS = {
         {"name": "Pickleball Club — Play Hard Dink Often", "image": "sports-pickleball-club-play-hard.jpg"},
         {"name": "Soccer Club — One Team One Goal No Limits", "image": "sports-soccer-club-one-team.jpg"},
         {"name": "Pickleball Club — Dink Rally Repeat", "image": "sports-pickleball-club-dink-rally.jpg"},
+        {"name": "Art Club — Create Inspire Express", "image": "club-art-club-create-inspire.jpg"},
+        {"name": "Music Club — Good Music Good Vibes Good Times", "image": "club-music-club-good-vibes.jpg"},
+        {"name": "Film Club — Lights Camera Friends Repeat", "image": "club-film-club-lights-camera.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
