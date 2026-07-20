@@ -347,6 +347,7 @@ REAL_DESIGNS = {
         {"name": "Sigma Kappa — Beach Weekend 2025 Clearwater", "image": "spring-break-sigma-kappa.jpg"},
         {"name": "Alpha Omicron Pi — Spring Rush 2024 Cocoa Beach", "image": "spring-break-aopi-rush.jpg"},
         {"name": "Sigma Kappa — Flip Flops Spring Break 2024 Gulf Shores", "image": "spring-break-sigma-kappa-flip-flops-gulf-shores-2024.jpg"},
+        {"name": "Zeta Psi — Spring Break Beach Life Brotherhood Memories", "image": "spring-break-zeta-psi-beach-life.jpg"},
     ],
     "Halloween": [
         {"name": "Phi Kappa Psi — Halloween 2023", "image": "halloween-phi-kappa-psi.jpg"},
