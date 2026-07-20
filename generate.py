@@ -28,6 +28,7 @@ CATS = [
     ("Shamrock",           "shamrock",            "St. Patrick's Day organization events deserve a shirt actually worth keeping."),
     ("Mixers",             "mixers",              "Social events, mixer nights, and the shirts everyone talks about the next day."),
     ("Mom's Day",          "moms-day",            "Your mom's weekend deserves custom apparel she'll actually wear home."),
+    ("Parents Weekend",    "parents-weekend",     "Custom apparel for the weekend your family shows up. Make it worth the trip."),
     ("Weekend Getaway",    "weekend-getaway",     "Organization retreats and road trips deserve merch to match the memory."),
 ]
 
