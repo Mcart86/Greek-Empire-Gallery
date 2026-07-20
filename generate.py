@@ -342,6 +342,7 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Sweet Life Bid Day Candy", "image": "bid-day-dg-sweet-life-candy.jpg"},
         {"name": "Sigma Kappa — Is My Sugar Bid Day 2024", "image": "bid-day-sigma-kappa-sugar-2024.jpg"},
         {"name": "Kappa Alpha Theta — Sweet Era Bid Day 2024", "image": "bid-day-theta-sweet-era-2024.jpg"},
+        {"name": "Delta Zeta — Flip Flops Bid Day 2024 Panama City Beach", "image": "bid-day-dz-flip-flops-panama-city-2024.jpg"},
     ],
     "Spring Break": [
         {"name": "Pi Kappa Alpha — Spring Break Miami Beach", "image": "spring-break-pika.jpg"},
@@ -353,6 +354,7 @@ REAL_DESIGNS = {
         {"name": "Gamma Phi Beta — Spring 2024 Destin", "image": "spring-break-gamma-phi-beta.jpg"},
         {"name": "Sigma Kappa — Beach Weekend 2025 Clearwater", "image": "spring-break-sigma-kappa.jpg"},
         {"name": "Alpha Omicron Pi — Spring Rush 2024 Cocoa Beach", "image": "spring-break-aopi-rush.jpg"},
+        {"name": "Sigma Kappa — Flip Flops Spring Break 2024 Gulf Shores", "image": "spring-break-sigma-kappa-flip-flops-gulf-shores-2024.jpg"},
     ],
     "Halloween": [
         {"name": "Phi Kappa Psi — Halloween 2023", "image": "halloween-phi-kappa-psi.jpg"},
