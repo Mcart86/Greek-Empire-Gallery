@@ -580,6 +580,7 @@ REAL_DESIGNS = {
         {"name": "Chess Club — Every Move Matters", "image": "club-chess-club-every-move-matters.jpg"},
         {"name": "Hiking Club — Adventure Is Calling", "image": "club-hiking-club-adventure-is-calling.jpg"},
         {"name": "Book Club — One More Chapter Is Never Enough", "image": "club-book-club-one-more-chapter.jpg"},
+        {"name": "Photography Club — Capture The Moments", "image": "club-photography-club-capture-moments.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
