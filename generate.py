@@ -533,6 +533,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Gamma Delta — Happy Mother's Day Athens Georgia", "image": "moms-day-agd-athens-georgia.jpg"},
         {"name": "Sigma Delta — Not All Superheroes Wear Capes", "image": "moms-day-sd-not-all-superheroes.jpg"},
         {"name": "Lambda Pi Chi — Not All Superheroes Wear Capes", "image": "moms-day-lpc-not-all-superheroes.jpg"},
+        {"name": "Alpha Sigma Alpha — Mom Era", "image": "moms-day-asa-mom-era.jpg"},
     ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
