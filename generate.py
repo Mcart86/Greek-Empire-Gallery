@@ -445,6 +445,7 @@ REAL_DESIGNS = {
         {"name": "Kappa Delta — Golf Spring Rush 2026", "image": "sports-kd-golf-spring-rush-2026.jpg"},
         {"name": "Phi Kappa Psi — A Lifetime of Brothers Fall Rush 2026", "image": "rush-phi-kappa-psi-lifetime-brothers-fall-2026.jpg"},
         {"name": "Kappa Sigma — Cards Skeleton Rush 2026 Est. 1869", "image": "rush-kappa-sigma-cards-skeleton-2026.jpg"},
+        {"name": "Beta Sigma Beta — Full Throttle Rush 2026", "image": "rush-beta-sigma-beta-full-throttle-2026.jpg"},
     ],
     "Winter": [
         {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
