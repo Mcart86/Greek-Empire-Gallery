@@ -531,6 +531,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Rho — Parents Weekend Tuition & Tolerance", "image": "parents-weekend-axp-tuition-tolerance.jpg"},
         {"name": "Alpha Delta Phi — Parents Weekend The Only Time We Clean Our Room", "image": "parents-weekend-adp-clean-our-room.jpg"},
         {"name": "Gamma Sigma Sigma — Parents Weekend Parent Patrol", "image": "parents-weekend-gss-parent-patrol.jpg"},
+        {"name": "Kappa Beta Gamma — Parents Weekend We've Got This", "image": "parents-weekend-kbg-weve-got-this.jpg"},
     ],
     "Mom's Day": [
         {"name": "Alpha Gamma Delta — Happy Mother's Day Athens Georgia", "image": "moms-day-agd-athens-georgia.jpg"},
