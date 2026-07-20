@@ -420,6 +420,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Sigma — Ride Hard Study Harder", "image": "western-axs-ride-hard-study-harder.jpg"},
         {"name": "Delta Epsilon Psi — Brotherhood Excellence Purpose", "image": "fraternity-dep-brotherhood-excellence-purpose.jpg"},
         {"name": "Phi Sigma Kappa — Graffiti", "image": "fraternity-psk-graffiti.jpg"},
+        {"name": "Phi Sigma Kappa — Graffiti White", "image": "fraternity-psk-graffiti-white.jpg"},
     ],
     "Rush": [
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
