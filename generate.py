@@ -15,6 +15,7 @@ CATS = [
     ("5K Run",             "5k-run",              "Philanthropy runs, campus 5Ks, and everything in between."),
     ("Rush",               "rush",                "First impressions are everything. Make yours last four years."),
     ("Sports",             "sports",              "From intramurals to watch parties — custom sports apparel for your organization."),
+    ("Club",               "club",                "Campus clubs, intramural leagues, and student organizations. Custom apparel for every team."),
     ("Fraternity",         "fraternity",          "General fraternity designs built for any org, any event, any chapter."),
     ("Sorority",           "sorority",            "General sorority designs built for any org, any event, any chapter."),
     ("Sisterhood Retreat", "sisterhood-retreat",  "The weekend that brings organizations together. Custom apparel for every retreat."),
@@ -562,6 +563,8 @@ REAL_DESIGNS = {
         {"name": "Sigma Chi — Open 5th Annual Golf Tournament", "image": "sports-sigma-chi-open-5th-annual.jpg"},
         {"name": "Beta Sigma Beta — Open 6th Annual Golf Tournament 2026", "image": "sports-beta-sigma-beta-open-6th-2026.jpg"},
         {"name": "Delta Tau Delta — Open 3rd Annual Golf Tournament", "image": "sports-delta-tau-delta-open-3rd-annual.jpg"},
+    ],
+    "Club": [
         {"name": "Volleyball Club — Good Vibes Great Spikes", "image": "sports-volleyball-club-good-vibes.jpg"},
         {"name": "Pickleball Club — Play Hard Dink Often", "image": "sports-pickleball-club-play-hard.jpg"},
         {"name": "Soccer Club — One Team One Goal No Limits", "image": "sports-soccer-club-one-team.jpg"},
