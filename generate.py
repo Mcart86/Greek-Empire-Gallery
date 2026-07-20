@@ -513,6 +513,7 @@ REAL_DESIGNS = {
         {"name": "Delta Epsilon Psi — Brotherhood Excellence Purpose", "image": "fraternity-dep-brotherhood-excellence-purpose.jpg"},
         {"name": "Phi Sigma Kappa — Graffiti", "image": "fraternity-psk-graffiti.jpg"},
         {"name": "Phi Sigma Kappa — Graffiti White", "image": "fraternity-psk-graffiti-white.jpg"},
+        {"name": "Zeta Beta Tau — Est. 1898", "image": "beach-zbt-est-1898.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
@@ -606,6 +607,7 @@ REAL_DESIGNS = {
         {"name": "Phi Sigma Pi — Tropical Vibes", "image": "beach-psp-tropical-vibes.jpg"},
         {"name": "Pi Sigma Epsilon — Good Waves Good Times San Diego 2025", "image": "beach-pse-san-diego-2025.jpg"},
         {"name": "Sigma Alpha Epsilon — Lifeguard Est. 1856", "image": "beach-sae-lifeguard-est-1856.jpg"},
+        {"name": "Zeta Beta Tau — Est. 1898", "image": "beach-zbt-est-1898.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
