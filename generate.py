@@ -353,7 +353,6 @@ REAL_DESIGNS = {
     "Halloween": [
         {"name": "Phi Kappa Psi — Halloween 2023", "image": "halloween-phi-kappa-psi.jpg"},
         {"name": "Delta Gamma — Halloween 2023", "image": "halloween-delta-gamma.jpg"},
-        {"name": "Alpha Sigma Phi — Halloween 2023", "image": "halloween-alpha-sigma-phi.jpg"},
         {"name": "Phi Kappa Psi — Halloween Bash 2023", "image": "halloween-phi-kappa-psi-bash.jpg"},
         {"name": "Alpha Sigma Phi — Halloween Social 2023", "image": "halloween-alpha-sigma-phi-social.jpg"},
         {"name": "Kappa Kappa Gamma — Halloween Party 2023", "image": "halloween-kkg-party.jpg"},
@@ -361,14 +360,10 @@ REAL_DESIGNS = {
         {"name": "Kappa Alpha Theta — Haunted Nights 2025", "image": "halloween-kat-haunted-nights.jpg"},
         {"name": "Delta Gamma — Trick or Treat 2025", "image": "halloween-dg-trick-or-treat.jpg"},
         {"name": "Phi Kappa Psi — Halloween Affair 2023", "image": "halloween-pkp-affair.jpg"},
-        {"name": "Delta Gamma — Halloween Night 2023", "image": "halloween-dg-night.jpg"},
         {"name": "Alpha Sigma Phi — Haunted House 2023", "image": "halloween-asp-haunted-house.jpg"},
         {"name": "Sigma Alpha Epsilon — Halloween Bash 2022", "image": "halloween-sae-bash-2022.jpg"},
         {"name": "Alpha Tau Omega — Halloween Bash 2021", "image": "halloween-ato-bash-2021.jpg"},
         {"name": "Kappa Kappa Gamma — Halloween Bash 2023", "image": "halloween-kkg-bash-2023.jpg"},
-        {"name": "Alpha Sigma Phi — Pumpkin Festival 2023", "image": "halloween-asp-pumpkin-festival.jpg"},
-        {"name": "Sigma Alpha Epsilon — Pumpkin Harvest 2023", "image": "halloween-sae-pumpkin-harvest.jpg"},
-        {"name": "Alpha Delta Pi — Pumpkin Season 2022", "image": "halloween-adpi-pumpkin-season.jpg"},
     ],
     "Formal": [
         {"name": "Alpha Delta Pi — Twilight Tropics Fall Formal 2025", "image": "formal-adpi-twilight-tropics-2025.jpg"},
