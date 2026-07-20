@@ -530,7 +530,6 @@ REAL_DESIGNS = {
     ],
     "Mom's Day": [
         {"name": "Alpha Gamma Delta — Happy Mother's Day Athens Georgia", "image": "moms-day-agd-athens-georgia.jpg"},
-        {"name": "Delta Psi Delta — The Heart of DPD Happy Mother's Day", "image": "moms-day-dpd-heart-of-dpd.jpg"},
         {"name": "Sigma Delta — Not All Superheroes Wear Capes", "image": "moms-day-sd-not-all-superheroes.jpg"},
     ],
     "Weekend Getaway": [
