@@ -528,6 +528,7 @@ REAL_DESIGNS = {
     ],
     "Parents Weekend": [
         {"name": "Sigma Delta Tau — Parents Weekend", "image": "parents-weekend-sdt-70.jpg"},
+        {"name": "Alpha Chi Rho — Parents Weekend Tuition & Tolerance", "image": "parents-weekend-axp-tuition-tolerance.jpg"},
     ],
     "Mom's Day": [
         {"name": "Alpha Gamma Delta — Happy Mother's Day Athens Georgia", "image": "moms-day-agd-athens-georgia.jpg"},
