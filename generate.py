@@ -455,6 +455,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Sailor Dog Recruitment Fall 2024", "image": "recruitment-axo-sailor-dog-fall-2024.jpg"},
         {"name": "Kappa Kappa Gamma — Lake Dog Recruitment Fall 2024", "image": "recruitment-kkg-lake-dog-fall-2024.jpg"},
         {"name": "Delta Gamma — Coastal Dog Recruitment Fall 2024", "image": "recruitment-dg-coastal-dog-fall-2024.jpg"},
+        {"name": "Kappa — Is Calling Fall Recruitment 2026", "image": "recruitment-kappa-is-calling-2026.jpg"},
     ],
     "5K Run": [
         {"name": "Run The Yard 5K — Arkansas–Fort Smith", "image": "5k-run-the-yard-arkansas-fort-smith.jpg"},
