@@ -514,6 +514,9 @@ REAL_DESIGNS = {
         {"name": "Kappa Kappa Gamma — Delta Nu Christmas Party 2026", "image": "christmas-kkg-delta-nu-christmas-party-2026.jpg"},
         {"name": "Alpha Omicron Pi — Beta Epsilon Christmas Party 2026", "image": "christmas-aopi-beta-epsilon-christmas-party-2026.jpg"},
     ],
+    "Parents Weekend": [
+        {"name": "Sigma Delta Tau — Parents Weekend", "image": "parents-weekend-sdt-70.jpg"},
+    ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
     ],
