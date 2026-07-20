@@ -605,6 +605,7 @@ REAL_DESIGNS = {
         {"name": "Phi Alpha Delta — No Shoes No Stress Just Paradise", "image": "beach-pad-no-shoes-no-stress.jpg"},
         {"name": "Phi Sigma Pi — Tropical Vibes", "image": "beach-psp-tropical-vibes.jpg"},
         {"name": "Pi Sigma Epsilon — Good Waves Good Times San Diego 2025", "image": "beach-pse-san-diego-2025.jpg"},
+        {"name": "Sigma Alpha Epsilon — Lifeguard Est. 1856", "image": "beach-sae-lifeguard-est-1856.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
