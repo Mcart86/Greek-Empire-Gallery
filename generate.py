@@ -513,6 +513,10 @@ REAL_DESIGNS = {
         {"name": "Chi Omega — Strong Hearts Stronger Together 2025", "image": "sorority-chi-omega-strong-hearts-2025.jpg"},
         {"name": "Kappa Kappa Gamma — Together We Can Do More 2025", "image": "sorority-kappa-kappa-gamma-together-2025.jpg"},
         {"name": "Delta Zeta — Do Good Be Kind 2025", "image": "sorority-delta-zeta-do-good-be-kind-2025.jpg"},
+        {"name": "Alpha Phi — Love Lead Loyal 2026", "image": "sorority-alpha-phi-love-lead-loyal-2026.jpg"},
+        {"name": "Chi Omega — Sisterhood Always 2026", "image": "sorority-chi-omega-sisterhood-always-2026.jpg"},
+        {"name": "Kappa Kappa Gamma — Together We Can Do More 2026", "image": "sorority-kappa-kappa-gamma-together-2026.jpg"},
+        {"name": "Delta Zeta — Do Good Be Kind 2026", "image": "sorority-delta-zeta-do-good-be-kind-2026.jpg"},
     ],
     "Sports": [
         {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
