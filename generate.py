@@ -518,6 +518,9 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi — Children's Miracle Network", "image": "philanthropy-alpha-chi-cmn.jpg"},
         {"name": "Theta Phi — Children's Miracle Network Est. 2025", "image": "philanthropy-theta-phi-cmn.jpg"},
     ],
+    "Weekend Getaway": [
+        {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
+    ],
     "Sorority": [
         {"name": "Alpha Phi — Leading with Kindness 2025", "image": "sorority-alpha-phi-leading-kindness-2025.jpg"},
         {"name": "Chi Omega — Strong Hearts Stronger Together 2025", "image": "sorority-chi-omega-strong-hearts-2025.jpg"},
