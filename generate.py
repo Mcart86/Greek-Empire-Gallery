@@ -608,6 +608,7 @@ REAL_DESIGNS = {
         {"name": "Beta Sigma Beta — Open 6th Annual Golf Tournament 2026", "image": "sports-beta-sigma-beta-open-6th-2026.jpg"},
         {"name": "Delta Tau Delta — Open 3rd Annual Golf Tournament", "image": "sports-delta-tau-delta-open-3rd-annual.jpg"},
         {"name": "Pi Kappa Phi — Golf Fall Rush 2023 Men of Honor", "image": "rush-pi-kapp-phi-golf-fall-rush-2023.jpg"},
+        {"name": "Pi Kappa Phi — Go For The Gold Birthplace of Champions", "image": "sports-pi-kapp-phi-go-for-the-gold.jpg"},
     ],
     "Club": [
         {"name": "Volleyball Club — Good Vibes Great Spikes", "image": "sports-volleyball-club-good-vibes.jpg"},
