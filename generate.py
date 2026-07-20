@@ -529,6 +529,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Chi Omega — Together We Can Move Mountains Est. 1885", "image": "sorority-axo-move-mountains-1885.jpg"},
         {"name": "Alpha Chi Omega — Together is Our Favorite Place Est. 1885", "image": "sorority-axo-favorite-place-1885.jpg"},
         {"name": "Sigma Delta Tau — Stars and Lips", "image": "sorority-sigma-delta-tau-stars-lips.jpg"},
+        {"name": "Phi Mu — Disco Est. 1852", "image": "sorority-phi-mu-disco-est-1852.jpg"},
     ],
     "Sports": [
         {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
