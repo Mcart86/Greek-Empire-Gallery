@@ -519,6 +519,9 @@ REAL_DESIGNS = {
     "Parents Weekend": [
         {"name": "Sigma Delta Tau — Parents Weekend", "image": "parents-weekend-sdt-70.jpg"},
     ],
+    "Mom's Day": [
+        {"name": "Alpha Gamma Delta — Happy Mother's Day Athens Georgia", "image": "moms-day-agd-athens-georgia.jpg"},
+    ],
     "Weekend Getaway": [
         {"name": "Alpha Epsilon Phi — Sisterhood Retreat 2025", "image": "weekend-getaway-aephi-sisterhood-retreat-2025.jpg"},
     ],
