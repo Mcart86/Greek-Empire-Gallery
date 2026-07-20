@@ -517,6 +517,10 @@ REAL_DESIGNS = {
         {"name": "Phi Sigma Kappa — Graffiti White", "image": "fraternity-psk-graffiti-white.jpg"},
         {"name": "Zeta Beta Tau — Est. 1898", "image": "beach-zbt-est-1898.jpg"},
     ],
+    "Cowgirl": [
+        {"name": "Theta Phi Alpha — Ride With Your People", "image": "cowgirl-tpa-ride-with-your-people.jpg"},
+        {"name": "Theta Phi Alpha — Good Times Wild Hearts", "image": "cowgirl-tpa-good-times-wild-hearts.jpg"},
+    ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
         {"name": "Zeta Tau Alpha — Holiday Party Beach", "image": "christmas-zta-holiday-party-beach.jpg"},
