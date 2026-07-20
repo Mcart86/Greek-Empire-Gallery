@@ -562,6 +562,10 @@ REAL_DESIGNS = {
         {"name": "Sigma Chi — Open 5th Annual Golf Tournament", "image": "sports-sigma-chi-open-5th-annual.jpg"},
         {"name": "Beta Sigma Beta — Open 6th Annual Golf Tournament 2026", "image": "sports-beta-sigma-beta-open-6th-2026.jpg"},
         {"name": "Delta Tau Delta — Open 3rd Annual Golf Tournament", "image": "sports-delta-tau-delta-open-3rd-annual.jpg"},
+        {"name": "Volleyball Club — Good Vibes Great Spikes", "image": "sports-volleyball-club-good-vibes.jpg"},
+        {"name": "Pickleball Club — Play Hard Dink Often", "image": "sports-pickleball-club-play-hard.jpg"},
+        {"name": "Soccer Club — One Team One Goal No Limits", "image": "sports-soccer-club-one-team.jpg"},
+        {"name": "Pickleball Club — Dink Rally Repeat", "image": "sports-pickleball-club-dink-rally.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
