@@ -528,6 +528,7 @@ REAL_DESIGNS = {
         {"name": "Sigma Psi Zeta — One Sisterhood One Heart", "image": "cowgirl-spz-one-sisterhood-one-heart.jpg"},
         {"name": "Sigma Psi Zeta — Sisters Strength Heart", "image": "cowgirl-spz-sisters-strength-heart.jpg"},
         {"name": "Sigma Psi Zeta — Forever & Always Stronger Together", "image": "cowgirl-spz-forever-and-always.jpg"},
+        {"name": "Sigma Sigma Sigma — Rope Lasso Western", "image": "cowgirl-sss-rope-lasso.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
