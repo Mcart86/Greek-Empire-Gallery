@@ -604,6 +604,7 @@ REAL_DESIGNS = {
         {"name": "Omega Delta Phi — Brothers By Choice Family By Waves", "image": "beach-odp-brothers-by-choice.jpg"},
         {"name": "Phi Alpha Delta — No Shoes No Stress Just Paradise", "image": "beach-pad-no-shoes-no-stress.jpg"},
         {"name": "Phi Sigma Pi — Tropical Vibes", "image": "beach-psp-tropical-vibes.jpg"},
+        {"name": "Pi Sigma Epsilon — Good Waves Good Times San Diego 2025", "image": "beach-pse-san-diego-2025.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
