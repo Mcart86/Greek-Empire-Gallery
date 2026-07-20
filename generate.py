@@ -602,7 +602,6 @@ REAL_DESIGNS = {
         {"name": "Phi Delta Theta — A Tradition Unlike Any Other Est. 1848", "image": "sports-phi-delt-masters-tradition-1848.jpg"},
         {"name": "Sigma Chi — Open 5th Annual Golf Tournament", "image": "sports-sigma-chi-open-5th-annual.jpg"},
         {"name": "Beta Sigma Beta — Open 6th Annual Golf Tournament 2026", "image": "sports-beta-sigma-beta-open-6th-2026.jpg"},
-        {"name": "Delta Tau Delta — Open 3rd Annual Golf Tournament", "image": "sports-delta-tau-delta-open-3rd-annual.jpg"},
         {"name": "Pi Kappa Phi — Golf Fall Rush 2023 Men of Honor", "image": "rush-pi-kapp-phi-golf-fall-rush-2023.jpg"},
         {"name": "Pi Kappa Phi — Go For The Gold Birthplace of Champions", "image": "sports-pi-kapp-phi-go-for-the-gold.jpg"},
     ],
