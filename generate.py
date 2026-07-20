@@ -500,6 +500,7 @@ REAL_DESIGNS = {
         {"name": "Alpha Tau Omega — Flag Lacrosse Est. 1865", "image": "fraternity-ato-flag-lacrosse-1865.jpg"},
         {"name": "Sigma Sigma — Brewed for the Few", "image": "fraternity-sigma-sigma-brewed-for-the-few.jpg"},
         {"name": "Beta Sigma Beta — Brotherhood Beyond Limits", "image": "fraternity-bsb-brotherhood-beyond-limits.jpg"},
+        {"name": "Beta Sigma Beta — WKND The Classic Pair", "image": "fraternity-bsb-wknd-classic-pair.jpg"},
     ],
     "Christmas": [
         {"name": "Kappa Alpha Psi — Holiday Party", "image": "christmas-kappa-alpha-psi-holiday-party.jpg"},
