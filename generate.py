@@ -409,8 +409,6 @@ REAL_DESIGNS = {
         {"name": "Delta Gamma — Fall Formal 2026 Dallas", "image": "western-dg-fall-formal-2026-dallas.jpg"},
         {"name": "Kappa Alpha Theta — Fall Formal 2026 Phoenix", "image": "western-kat-fall-formal-2026-phoenix.jpg"},
         {"name": "Delta Gamma — Bid Day 2026 Western", "image": "western-dg-bid-day-2026.jpg"},
-        {"name": "Kappa Alpha Theta — Bid Day 2026 Western", "image": "western-kat-bid-day-2026.jpg"},
-        {"name": "Sigma Chi — Bid Day 2026 Western", "image": "western-sigma-chi-bid-day-2026.jpg"},
         {"name": "Delta Gamma — Fall Rush 2025 Western", "image": "western-dg-fall-rush-2025.jpg"},
         {"name": "Delta Gamma — Fall Rush 2025 Cowboy", "image": "western-dg-fall-rush-2025-cowboy.jpg"},
         {"name": "Gamma Phi Beta — Cowboy Boots Big Little Reveal", "image": "big-little-gamma-phi-beta-boots.jpg"},
