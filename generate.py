@@ -558,6 +558,7 @@ REAL_DESIGNS = {
         {"name": "Zeta Tau Alpha — ZTA Desert Western", "image": "western-zta-desert-scene.jpg"},
         {"name": "Zeta Tau Alpha — Courage Kindness & Confidence", "image": "western-zta-courage-kindness-confidence.jpg"},
         {"name": "Zeta Tau Alpha — Seek The Noblest", "image": "western-zta-seek-the-noblest.jpg"},
+        {"name": "Alpha Sigma Tau — Built On Sisterhood", "image": "sorority-ast-built-on-sisterhood.jpg"},
     ],
     "Sports": [
         {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
