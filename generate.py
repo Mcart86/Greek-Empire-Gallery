@@ -599,6 +599,9 @@ REAL_DESIGNS = {
         {"name": "Book Club — One More Chapter Is Never Enough", "image": "club-book-club-one-more-chapter.jpg"},
         {"name": "Photography Club — Capture The Moments", "image": "club-photography-club-capture-moments.jpg"},
     ],
+    "Beach": [
+        {"name": "Omega Delta Phi — Beach Mode Activated", "image": "beach-odp-beach-mode-activated.jpg"},
+    ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
         {"name": "Delta Zeta — Boots Better Together Reveal", "image": "big-little-dz-boots-better-together.jpg"},
