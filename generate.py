@@ -363,6 +363,10 @@ REAL_DESIGNS = {
         {"name": "Sigma Alpha Epsilon — Halloween Bash 2022", "image": "halloween-sae-bash-2022.jpg"},
         {"name": "Alpha Tau Omega — Halloween Bash 2021", "image": "halloween-ato-bash-2021.jpg"},
         {"name": "Kappa Kappa Gamma — Halloween Bash 2023", "image": "halloween-kkg-bash-2023.jpg"},
+        {"name": "Sigma Sigma Sigma — Just A Little Spooky", "image": "halloween-sss-just-a-little-spooky.jpg"},
+        {"name": "Sigma Sigma Sigma — Spooky Season Sisterhood Forever", "image": "halloween-sss-spooky-season-sisterhood-forever.jpg"},
+        {"name": "Sigma Sigma Sigma — Bad & Boojee Since 1898", "image": "halloween-sss-bad-and-boojee.jpg"},
+        {"name": "Sigma Sigma Sigma — Witches Support Sisters", "image": "halloween-sss-witches-support-sisters.jpg"},
     ],
     "Formal": [
         {"name": "Alpha Delta Pi — Twilight Tropics Fall Formal 2025", "image": "formal-adpi-twilight-tropics-2025.jpg"},
