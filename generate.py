@@ -496,6 +496,8 @@ REAL_DESIGNS = {
         {"name": "Kappa Delta — Shamrock 5K Run/Walk Green", "image": "shamrock-kd-5k-green.jpg"},
         {"name": "Kappa Delta — Shamrock 5K Run/Walk Blue", "image": "shamrock-kd-5k-blue.jpg"},
         {"name": "Kappa Delta — Shamrock 5K Run/Walk Pink", "image": "shamrock-kd-5k-pink.jpg"},
+        {"name": "Kappa Delta — Kaydee Camp Shamrock the Rope 2026 Canoe", "image": "shamrock-kd-kaydee-camp-canoe-2026.jpg"},
+        {"name": "Kappa Delta — Kaydee Camp Shamrock the Rope 2026 Campfire", "image": "shamrock-kd-kaydee-camp-campfire-2026.jpg"},
     ],
     "Philanthropy": [
         {"name": "Shoes Speak Louder — Prevent Child Abuse 2020", "image": "philanthropy-shoes-speak-louder-2020.jpg"},
