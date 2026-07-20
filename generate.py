@@ -446,6 +446,7 @@ REAL_DESIGNS = {
         {"name": "Beta Sigma Beta — Full Throttle Rush 2026", "image": "rush-beta-sigma-beta-full-throttle-2026.jpg"},
         {"name": "Beta Sigma Beta — Top Rush Need for Brotherhood Fall 2026", "image": "rush-bsb-top-rush-need-for-brotherhood-2026.jpg"},
         {"name": "Theta Phi Alpha — Spring Rush Sisterhood Adventure Memories", "image": "rush-tpa-spring-rush-1912.jpg"},
+        {"name": "Pi Kappa Phi — Golf Fall Rush 2023 Men of Honor", "image": "rush-pi-kapp-phi-golf-fall-rush-2023.jpg"},
     ],
     "Winter": [
         {"name": "Kappa Kappa Gamma — Ski Spring Rush 2026", "image": "winter-kkg-ski-spring-rush-2026.jpg"},
@@ -606,6 +607,7 @@ REAL_DESIGNS = {
         {"name": "Sigma Chi — Open 5th Annual Golf Tournament", "image": "sports-sigma-chi-open-5th-annual.jpg"},
         {"name": "Beta Sigma Beta — Open 6th Annual Golf Tournament 2026", "image": "sports-beta-sigma-beta-open-6th-2026.jpg"},
         {"name": "Delta Tau Delta — Open 3rd Annual Golf Tournament", "image": "sports-delta-tau-delta-open-3rd-annual.jpg"},
+        {"name": "Pi Kappa Phi — Golf Fall Rush 2023 Men of Honor", "image": "rush-pi-kapp-phi-golf-fall-rush-2023.jpg"},
     ],
     "Club": [
         {"name": "Volleyball Club — Good Vibes Great Spikes", "image": "sports-volleyball-club-good-vibes.jpg"},
