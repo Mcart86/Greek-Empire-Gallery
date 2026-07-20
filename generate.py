@@ -328,7 +328,6 @@ REAL_DESIGNS = {
         {"name": "Alpha Gamma Delta — Bid Day 2026 Denim Patch", "image": "bid-day-alpha-gam.jpg"},
         {"name": "Alpha Xi Delta — Bid Day 2021 Boho", "image": "western-axd-bid-day-2021.jpg"},
         {"name": "Delta Gamma — Bid Day 2026 Western", "image": "western-dg-bid-day-2026.jpg"},
-        {"name": "Kappa Alpha Theta — Bid Day 2026 Western", "image": "western-kat-bid-day-2026.jpg"},
         {"name": "Alpha Phi — Bid Day 2024 Retro Rainbow", "image": "bid-day-alpha-phi-retro-rainbow-2024.jpg"},
         {"name": "Alpha Phi — Bid Day 2024 Heart Flower", "image": "bid-day-alpha-phi-heart-flower-2024.jpg"},
         {"name": "Alpha Delta Pi — Bid Day 2024 Disco Daisy", "image": "bid-day-adpi-disco-daisy-2024.jpg"},
