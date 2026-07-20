@@ -612,6 +612,7 @@ REAL_DESIGNS = {
         {"name": "Sigma Alpha Epsilon — Lifeguard Est. 1856", "image": "beach-sae-lifeguard-est-1856.jpg"},
         {"name": "Zeta Beta Tau — Est. 1898", "image": "beach-zbt-est-1898.jpg"},
         {"name": "Theta Phi Alpha — Sisters Friends Memories Est. 1912", "image": "beach-tpa-sisters-friends-memories.jpg"},
+        {"name": "Alpha Phi — Swimsuits Beach", "image": "beach-alpha-phi-swimsuits.jpg"},
     ],
     "Big Little": [
         {"name": "Alpha Gamma Delta — Tennis Perfect Match Reveal", "image": "big-little-agd-tennis-perfect-match.jpg"},
