@@ -592,12 +592,6 @@ REAL_DESIGNS = {
         {"name": "Theta Phi Alpha — Sisters Friends Memories Est. 1912", "image": "beach-tpa-sisters-friends-memories.jpg"},
     ],
     "Sports": [
-        {"name": "Kappa Delta — Golf Tournament 2026 Green", "image": "sports-kd-golf-tournament-2026-green.jpg"},
-        {"name": "Kappa Delta — Golf Tournament 2026 Navy", "image": "sports-kd-golf-tournament-2026-navy.jpg"},
-        {"name": "Kappa Delta — Golf Tournament 2026 Navy Arch", "image": "sports-kd-golf-tournament-2026-navy-arch.jpg"},
-        {"name": "Kappa Delta — Golf Tournament 2026 Cream Shades", "image": "sports-kd-golf-tournament-2026-cream-shades.jpg"},
-        {"name": "Kappa Delta — Golf Tournament 2026 Pink Circle", "image": "sports-kd-golf-tournament-2026-pink-circle.jpg"},
-        {"name": "Kappa Delta — Golf Tournament 2026 Navy Stripe", "image": "sports-kd-golf-tournament-2026-navy-stripe.jpg"},
         {"name": "Birdie Society — Est. 2026", "image": "sports-birdie-society-est-2026.jpg"},
         {"name": "Phi Delta Theta — A Tradition Unlike Any Other Est. 1848", "image": "sports-phi-delt-masters-tradition-1848.jpg"},
         {"name": "Sigma Chi — Open 5th Annual Golf Tournament", "image": "sports-sigma-chi-open-5th-annual.jpg"},
