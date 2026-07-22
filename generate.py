@@ -310,7 +310,7 @@ def foot():
 </html>"""
 
 # Real uploaded designs — overrides the first N placeholder slots per category.
-REAL_DESIGNS = {
+STORED_DESIGNS = {
     "Bid Day": [
         {"name": "Alpha Phi — Bid Day 24 Yeehaw", "image": "bid-day-alpha-phi.jpg"},
         {"name": "Kappa Delta — Bid Day 24 Choose Joy", "image": "bid-day-kappa-delta.jpg"},
@@ -646,6 +646,9 @@ REAL_DESIGNS = {
     ],
 }
 
+# To restore all designs: change the line below to REAL_DESIGNS = STORED_DESIGNS
+REAL_DESIGNS = {}
+
 def design_cards(cat_name, cat_slug, cat_idx, count=12):
     import urllib.parse
     cards = ""
@@ -716,7 +719,7 @@ def make_cat(idx, name, slug, desc):
         f'    <a href="{s}.html" class="browse-item">{n}</a>'
         for n, s, _ in CATS if s != slug
     )
-    cards = design_cards(name, slug, idx, count=max(12, len(REAL_DESIGNS.get(name, []))))
+    cards = design_cards(name, slug, idx, count=len(REAL_DESIGNS.get(name, [])))
     html = head(name) + nav_bar("&larr; The Collection", "index.html") + subnav() + f"""
 <section class="cat-hero-banner">
   <div class="cat-hero-content">
